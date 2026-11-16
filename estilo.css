@@ -268,3 +268,14 @@ h2::before{content:'';position:absolute;left:0;top:.18em;bottom:.18em;width:5px;
 .lt-eps .num{font:700 .75rem/1.4 var(--f-titulo);color:var(--acc);margin-right:8px}
 @media (min-width:760px){.lt-item{grid-template-columns:220px 1fr;align-items:start}}
 .lt-quando .certeza{font:700 .75rem/1.4 var(--f-corpo);background:var(--acc-bg);color:var(--acc);padding:4px 8px;border-radius:99px}
+
+/* teste como requisito, trava suave e anotações */
+.auto{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:8px 0 0}
+.auto span{font:600 .875rem/1.5 var(--f-corpo);color:var(--suave)}
+.auto button{font:600 .875rem/1.5 var(--f-corpo);min-height:44px;padding:8px 16px;border:2px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
+.auto button[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-bg);color:var(--acc)}
+#quiz-estado{font-weight:600;color:var(--acc)}
+.aviso.trava{margin:16px 0 0}
+.adiante .card-ep{border-style:dashed;opacity:.8}
+.adiante-tag{background:transparent!important;border:1px dashed var(--suave);color:var(--suave)!important}
+.nota-txt{display:block;width:100%;margin:8px 0;padding:12px 16px;font:1rem/1.6 var(--f-corpo);color:var(--texto);background:var(--card);border:1px solid var(--linha);border-radius:var(--raio);resize:vertical;min-height:144px}

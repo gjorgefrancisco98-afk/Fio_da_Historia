@@ -66,9 +66,42 @@
     Object.keys(mapa).forEach(function (id) { io.observe(d.getElementById(id)); });
   }
 
-  /* marcar como lido (página do episódio) */
+  /* episódio: teste, trava suave, marcar como lido e anotações */
   var ep = d.body.getAttribute('data-ep');
   if (ep) {
+    var pad = function (n) { return ('00' + n).slice(-3); };
+    var num = parseInt(ep, 10);
+    var sec = d.getElementById('teste');
+    var total = sec ? parseInt(sec.getAttribute('data-total') || '0', 10) : 0;
+    var minimo = sec ? parseInt(sec.getAttribute('data-min') || '0', 10) : 0;
+    var qk = 'biblia-quiz-' + ep;
+    var respostas = function () { try { return JSON.parse(ler(qk) || '[]'); } catch (e) { return []; } };
+    var acertos = function () { return respostas().filter(function (x) { return x === 1; }).length; };
+    var quizOk = function () { return total === 0 || acertos() >= minimo; };
+    var itensQ = sec ? sec.querySelectorAll('.quiz>li') : [];
+    var pintaQuiz = function () {
+      var r = respostas();
+      itensQ.forEach(function (li, i) {
+        li.querySelectorAll('[data-ac]').forEach(function (b) {
+          b.setAttribute('aria-pressed', String(r[i]) === b.getAttribute('data-ac') ? 'true' : 'false');
+        });
+      });
+      var st = d.getElementById('quiz-estado');
+      if (st) st.textContent = acertos() + ' de ' + total + ' marcadas como acerto' + (quizOk() ? ' — teste concluído.' : '.');
+    };
+    itensQ.forEach(function (li, i) {
+      li.querySelectorAll('[data-ac]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var r = respostas(), ja = quizOk();
+          r[i] = parseInt(b.getAttribute('data-ac'), 10);
+          gravar(qk, JSON.stringify(r));
+          pintaQuiz();
+          if (!ja && quizOk()) toast('Teste concluído! Agora marque o episódio como lido.');
+        });
+      });
+    });
+    pintaQuiz();
+
     var bs = d.querySelectorAll('[data-lido]');
     var pinta = function () {
       var on = lido(ep);
@@ -76,7 +109,13 @@
     };
     bs.forEach(function (b) {
       b.addEventListener('click', function () {
-        var on = !lido(ep); gravar('biblia-lido-' + ep, on ? '1' : '0');
+        var on = !lido(ep);
+        if (on && !quizOk()) {
+          toast('Antes de concluir, faça o teste: acerte ao menos ' + minimo + ' de ' + total + '.');
+          sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+          return;
+        }
+        gravar('biblia-lido-' + ep, on ? '1' : '0');
         if (on) {
           var s = dias(); if (s.indexOf(hoje()) < 0) { s.push(hoje()); gravar('biblia-dias', JSON.stringify(s.slice(-400))); }
           var n = sequencia();
@@ -86,6 +125,27 @@
       });
     });
     pinta();
+
+    /* trava suave: avisa, mas não bloqueia */
+    var faltam = [];
+    for (var j = 1; j < num; j++) if (!lido(pad(j))) faltam.push(pad(j));
+    if (faltam.length && !lido(ep)) {
+      var av = d.createElement('p'); av.className = 'aviso trava'; av.setAttribute('role', 'note');
+      av.innerHTML = 'Este episódio está adiante na trilha: ' + (faltam.length === 1 ? 'falta 1 episódio' : 'faltam ' + faltam.length + ' episódios') +
+        ' antes dele. Você pode ler assim mesmo, ou <a href="' + faltam[0] + '.html">continuar do ' + faltam[0] + '</a>.';
+      var cp = d.querySelector('.chips'); if (cp) cp.parentNode.insertBefore(av, cp);
+    }
+
+    /* anotações privadas (só neste aparelho) */
+    var ta = d.getElementById('nota-txt'), ne = d.getElementById('nota-estado');
+    if (ta) {
+      var nk = 'biblia-nota-' + ep; ta.value = ler(nk) || '';
+      var tm;
+      ta.addEventListener('input', function () {
+        clearTimeout(tm); if (ne) ne.textContent = 'Salvando…';
+        tm = setTimeout(function () { gravar(nk, ta.value); if (ne) ne.textContent = 'Salvo neste aparelho.'; }, 500);
+      });
+    }
   }
 
   /* índice: progresso, continuar, sequência */
@@ -98,6 +158,7 @@
       porEra[era] = porEra[era] || [0, 0]; porEra[era][1]++;
       if (lido(id)) { li.classList.add('lido'); feitos++; porEra[era][0]++; }
       else if (!prox) { prox = li; }
+      else { li.classList.add('adiante'); var t = li.querySelector('.tags'); if (t) { var sp = d.createElement('span'); sp.className = 'adiante-tag'; sp.textContent = 'adiante na trilha'; t.appendChild(sp); } }
     });
     d.getElementById('prog-bar').style.width = (feitos / itens.length * 100) + '%';
     d.getElementById('prog-txt').textContent = feitos + ' de ' + itens.length + ' episódios lidos';
