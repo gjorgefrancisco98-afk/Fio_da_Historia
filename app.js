@@ -60,7 +60,7 @@
     var bs = d.querySelectorAll('[data-lido]');
     var pinta = function () {
       var on = lido(ep);
-      bs.forEach(function (b) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? '✓ Lido' : '✓ Marcar como lido'; });
+      bs.forEach(function (b) { b.setAttribute('aria-pressed', on ? 'true' : 'false'); b.textContent = on ? 'Lido (toque para desmarcar)' : 'Marcar como lido'; });
     };
     bs.forEach(function (b) {
       b.addEventListener('click', function () {
@@ -68,7 +68,7 @@
         if (on) {
           var s = dias(); if (s.indexOf(hoje()) < 0) { s.push(hoje()); gravar('biblia-dias', JSON.stringify(s.slice(-400))); }
           var n = sequencia();
-          toast('Episódio concluído! ' + (n > 1 ? '🔥 ' + n + ' dias seguidos' : 'Primeiro dia da sequência 🔥'));
+          toast('Episódio concluído! ' + (n > 1 ? n + ' dias seguidos' : 'Primeiro dia da sequência'));
         } else { toast('Desmarcado.'); }
         pinta();
       });
@@ -96,7 +96,7 @@
       bc.textContent = feitos ? 'Continuar: ' + prox.getAttribute('data-t') + ' →' : 'Começar pelo primeiro episódio →';
     } else { bc.textContent = 'Tudo lido! Reler do começo'; bc.href = '001.html'; }
     var n = sequencia(), sq = d.getElementById('seq');
-    if (n > 0) { sq.hidden = false; sq.textContent = '🔥 ' + n + (n > 1 ? ' dias seguidos' : ' dia') + ' estudando'; }
+    if (n > 0) { sq.hidden = false; sq.textContent = n + (n > 1 ? ' dias seguidos' : ' dia') + ' estudando'; }
   }
 
   /* seletor de tradução */

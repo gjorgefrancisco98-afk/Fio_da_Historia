@@ -214,3 +214,15 @@ code{font:14px ui-monospace,monospace;background:var(--acc-bg);padding:1px 5px;b
 .l-ev .l-r{fill:var(--suave);font-size:12px}
 .l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
 .l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
+
+/* sem emojis: marcadores tipográficos */
+.pt{display:inline-block;width:.6em;height:.6em;border-radius:50%;background:var(--acc);margin-right:.55em;vertical-align:.02em}
+h2{position:relative;padding-left:14px}
+h2::before{content:'';position:absolute;left:0;top:.18em;bottom:.18em;width:5px;border-radius:5px;background:var(--acc)}
+.era h2{padding-left:0}.era h2::before{display:none}
+.pilulas li .k{display:block;font:800 .62rem/1.2 var(--f-titulo);letter-spacing:.09em;text-transform:uppercase;color:var(--acc);margin-bottom:1px}
+.pilulas li{border-radius:14px;padding:7px 12px}
+.reflexao small{display:block;font:800 .68rem var(--f-titulo);letter-spacing:.09em;text-transform:uppercase;opacity:.85;margin-bottom:4px}
+.callout{border-style:solid;border-width:0 0 0 5px;border-radius:0 var(--raio) var(--raio) 0}
+.tema svg{display:block;margin:auto}
+.aviso{border-left:4px solid var(--aviso-bd)}
