@@ -1,191 +1,54 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-era="2">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Abrão no Egito e a separação de Ló</title>
+<title>Abrão no Egito e a separação de Ló · Fio da História</title>
 <meta name="description" content="O herói da fé, na primeira crise, mente para salvar a pele. A Bíblia não esconde as falhas dos seus personagens.">
-<style>:root{
-  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
-  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
-  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
-  --banda:#f6e7da; --eixo:#6b6357;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
-    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
-    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
-    --banda:#3a2a1d; --eixo:#a89f90;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
-main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
-.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
-.topo a{color:var(--suave)}
-a{color:var(--destaque)}
-h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
-h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
-h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
-.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
-.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
-.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
-.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
-.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
-blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
-blockquote p{margin:0}
-#historia p{margin:1.1rem 0}
-#historia p strong:first-child{color:var(--destaque)}
-.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
-.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
-.botao:hover{background:var(--destaque-bg)}
-.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
-.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
-.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
-.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
-.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
-@media (max-width:520px){.mapa-vivo{height:340px}}
-.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
-.tabela{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
-th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--destaque-bg)}
-ul,ol{padding-left:1.4rem}
-li{margin:.3rem 0}
-code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
-.quiz li{margin:.9rem 0}
-details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
-summary{cursor:pointer;color:var(--destaque);font-weight:600}
-details p{margin:.4rem 0 0}
-.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
-.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
-.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
-.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
-.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
-.texto-bib summary{padding:8px 0;font-size:16px}
-.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
-.vers{margin:.35rem 0;line-height:1.65}
-.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
-#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
-#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
-#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
-.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
-.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
-.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
-.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
-/* SVG: mapa */
-.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
-.m-river{fill:none;stroke:var(--rio);stroke-width:3}
-.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
-.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
-.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
-.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
-.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
-.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
-.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
-.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
-/* SVG: linha do tempo */
-.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
-.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
-.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
-.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
-.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
-.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
-.l-ev .l-r{fill:var(--suave);font-size:12px}
-.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
-.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
-@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M16 46c12-4 6-20 18-24s14 4 14 4' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('biblia-tema');if(t)document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
-<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 2 · Patriarcas</span></header>
+<body data-ep="010">
+<div id="leitura" aria-hidden="true"></div>
+<header class="topo"><a class="logo" href="index.html">← Fio da <b>História</b></a>
+<button id="tema" class="tema" type="button" aria-label="Alternar tema claro e escuro">◐</button></header>
 <main>
-<article>
-<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
-<p class="selo">Episódio 010 · 4 min de leitura</p>
+<div class="hero" data-num="010">
+<p class="selo">🐪 Era 2 · Patriarcas · Episódio 010</p>
 <h1>Abrão no Egito e a separação de Ló</h1>
 <p class="gancho">O herói da fé, na primeira crise, mente para salvar a pele. A Bíblia não esconde as falhas dos seus personagens.</p>
-<ul class="meta">
-  <li><strong>Passagens:</strong> Gn 12.10–13.18</li>
-  <li><strong>Época:</strong> ~2000 a.C. <span class="certeza c-debatida">data: debatida</span></li>
-</ul>
-<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Gn 12.10–13.18). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
-<p><strong>1. Fome.</strong> Pouco depois de chegar, a fome atinge a terra, e Abrão desce ao Egito para viver ali como estrangeiro. É a primeira crise da promessa.</p>
-<p><strong>2. O plano do medo.</strong> Perto da fronteira, Abrão diz a Sarai: <em>você é bonita; quando os egípcios a virem, vão me matar e deixar você viva. Diga que é minha irmã.</em> O texto registra o plano sem comentário.</p>
-<p><strong>3. O palácio.</strong> Os oficiais de Faraó elogiam Sarai e ela é levada ao palácio. Por causa dela, Abrão recebe presentes e fica rico em animais e servos.</p>
-<p><strong>4. Pragas.</strong> Deus fere Faraó e a casa dele com grandes pragas, por causa de Sarai. Faraó chama Abrão: <em>o que você me fez? Por que não disse que era sua mulher?</em> Devolve Sarai e manda que Abrão saia do Egito, com tudo o que tinha.</p>
-<p><strong>5. Briga entre pastores.</strong> De volta ao Neguebe e a Betel, os rebanhos de Abrão e Ló crescem tanto que a terra não os comporta. Os pastores brigam.</p>
-<p><strong>6. A oferta de Abrão.</strong> Abrão diz a Ló: <em>não haja contenda entre nós, porque somos parentes. A terra toda está diante de você: se for para a esquerda, eu irei para a direita.</em> Quem tinha o direito de escolher primeiro abre mão dele.</p>
-<p><strong>7. A escolha de Ló.</strong> Ló olha e vê o vale do Jordão, bem irrigado, como o jardim do SENHOR e como a terra do Egito. Escolhe o vale e arma as tendas perto de Sodoma. O narrador avisa: <em>os homens de Sodoma eram maus e grandes pecadores contra o SENHOR</em>.</p>
-<p><strong>8. Depois da separação.</strong> Deus fala de novo a Abrão: <em>levante os olhos e olhe... toda a terra que você vê eu darei a você e à sua descendência</em>, que será como o pó da terra. Abrão se muda para Hebrom e constrói um altar.</p>
-<h3>O que o texto não diz</h3>
-<ul><li>Se o <strong>plano era necessário</strong>: o texto o relata, mas não o aprova.</li><li>Por que <strong>Faraó</strong> foi ferido e Abrão não: o texto mostra Deus protegendo Sarai e a promessa.</li><li>Se <strong>Gn 12, 20 e 26</strong> (a esposa como irmã) são três eventos ou três versões da mesma história.</li></ul></section>
-<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2012%3A10-13%3A18&version=ARA" target="_blank" rel="noopener">Ler Gn 12.10–13.18 na ARA ↗</a></div></section>
-<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;Canaã, Egito e a separação de Ló&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Betel&quot;, &quot;lat&quot;: 31.9333, &quot;lon&quot;: 35.2333, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Luz/Betel, \&quot;casa de Deus\&quot;. Identificada com Beitin.&quot;}, {&quot;nome&quot;: &quot;Hebrom (Manre, Macpela)&quot;, &quot;lat&quot;: 31.5326, &quot;lon&quot;: 35.0998, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Região de Manre e da caverna de Macpela (Gn 23).&quot;}, {&quot;nome&quot;: &quot;Berseba&quot;, &quot;lat&quot;: 31.2433, &quot;lon&quot;: 34.8437, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Ao sul de Canaã, na fronteira do Neguebe (Tel Beer Sheva).&quot;}, {&quot;nome&quot;: &quot;Egito (Mênfis, referência)&quot;, &quot;lat&quot;: 29.8503, &quot;lon&quot;: 31.255, &quot;tipo&quot;: &quot;fim&quot;, &quot;nota&quot;: &quot;Mênfis foi capital do Egito no Reino Antigo. Marca o Egito como referência; o texto não nomeia a cidade.&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta norte)&quot;, &quot;lat&quot;: 31.8386, &quot;lon&quot;: 35.6733, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Outra proposta: ao norte do mar Morto (Tall el-Hammam). Debatida.&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta sul)&quot;, &quot;lat&quot;: 31.2594, &quot;lon&quot;: 35.5444, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Uma proposta: ao sul do mar Morto (Bab edh-Dhra). Debatida.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Descida ao Egito (ilustrativa)&quot;, &quot;pontos&quot;: [[31.2433, 34.8437], [30.9, 34.2], [30.5, 32.5], [29.8503, 31.255]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Rotas são ilustrativas: o texto não as descreve.&quot;}], &quot;aviso&quot;: &quot;Ló escolheu o vale do Jordão, perto de Sodoma. Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Ló escolheu o vale do Jordão, perto de Sodoma. Pontos em roxo têm localização debatida. Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
-<section><h2>Resumo rápido</h2><ol><li>Fome em Canaã; Abrão desce ao Egito. Com medo, pede que Sarai se diga sua irmã.</li><li>Faraó leva Sarai ao palácio e enriquece Abrão. Pragas atingem a casa de Faraó, que descobre a verdade e os expulsa.</li><li>De volta a Canaã, os rebanhos de Abrão e Ló crescem demais e surgem brigas entre pastores.</li><li>Abrão oferece a Ló escolher primeiro a terra. Ló escolhe o vale do Jordão, bem irrigado, perto de Sodoma.</li><li>Deus reafirma a Abrão a promessa da terra e da descendência "como o pó da terra".</li></ol></section>
-<section><h2>Contexto histórico-literário</h2><ul><li><strong>Padrão repetido:</strong> o patriarca apresenta a esposa como irmã em Gn 12, Gn 20 (Gerar) e Gn 26 (Isaque).</li></ul>
+<ul class="pilulas"><li>⏱ 4 min</li><li>📅 ~2000 a.C. <span class='certeza'>(debatida)</span></li><li>📖 Gn 12.10–13.18</li></ul>
+</div>
+<p class='aviso'>⚠️ Em revisão, ainda sem conferência de especialista.</p>
+<nav class="chips" aria-label="Seções do episódio"><a href='#historia'>História</a><a href='#texto'>Texto</a><a href='#mapa'>Mapa</a><a href='#teste'>Teste</a></nav>
+<article>
+<details class='resumo'><summary>⚡ Resumo em 30 segundos</summary><div><ol><li>Fome em Canaã; Abrão desce ao Egito. Com medo, pede que Sarai se diga sua irmã.</li><li>Faraó leva Sarai ao palácio e enriquece Abrão. Pragas atingem a casa de Faraó, que descobre a verdade e os expulsa.</li><li>De volta a Canaã, os rebanhos de Abrão e Ló crescem demais e surgem brigas entre pastores.</li><li>Abrão oferece a Ló escolher primeiro a terra. Ló escolhe o vale do Jordão, bem irrigado, perto de Sodoma.</li><li>Deus reafirma a Abrão a promessa da terra e da descendência "como o pó da terra".</li></ol></div></details>
+<section id='historia'><h2>📜 A história</h2><p class='nota-leitura'><em>Narrativa fiel ao texto (Gn 12.10–13.18). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p>
+<div class='passos'><div class='passo'><div class='n'>1</div><h3>Fome</h3><p>Pouco depois de chegar, a fome atinge a terra, e Abrão desce ao Egito para viver ali como estrangeiro. É a primeira crise da promessa.</p></div><div class='passo'><div class='n'>2</div><h3>O plano do medo</h3><p>Perto da fronteira, Abrão diz a Sarai: <em>você é bonita; quando os egípcios a virem, vão me matar e deixar você viva. Diga que é minha irmã.</em> O texto registra o plano sem comentário.</p></div><div class='passo'><div class='n'>3</div><h3>O palácio</h3><p>Os oficiais de Faraó elogiam Sarai e ela é levada ao palácio. Por causa dela, Abrão recebe presentes e fica rico em animais e servos.</p></div><div class='passo'><div class='n'>4</div><h3>Pragas</h3><p>Deus fere Faraó e a casa dele com grandes pragas, por causa de Sarai. Faraó chama Abrão: <em>o que você me fez? Por que não disse que era sua mulher?</em> Devolve Sarai e manda que Abrão saia do Egito, com tudo o que tinha.</p></div><div class='passo'><div class='n'>5</div><h3>Briga entre pastores</h3><p>De volta ao Neguebe e a Betel, os rebanhos de Abrão e Ló crescem tanto que a terra não os comporta. Os pastores brigam.</p></div><div class='passo'><div class='n'>6</div><h3>A oferta de Abrão</h3><p>Abrão diz a Ló: <em>não haja contenda entre nós, porque somos parentes. A terra toda está diante de você: se for para a esquerda, eu irei para a direita.</em> Quem tinha o direito de escolher primeiro abre mão dele.</p></div><div class='passo'><div class='n'>7</div><h3>A escolha de Ló</h3><p>Ló olha e vê o vale do Jordão, bem irrigado, como o jardim do SENHOR e como a terra do Egito. Escolhe o vale e arma as tendas perto de Sodoma. O narrador avisa: <em>os homens de Sodoma eram maus e grandes pecadores contra o SENHOR</em>.</p></div><div class='passo'><div class='n'>8</div><h3>Depois da separação</h3><p>Deus fala de novo a Abrão: <em>levante os olhos e olhe... toda a terra que você vê eu darei a você e à sua descendência</em>, que será como o pó da terra. Abrão se muda para Hebrom e constrói um altar.</p></div></div>
+<aside class='callout'><h3>🔍 O que o texto não diz</h3><ul><li>Se o <strong>plano era necessário</strong>: o texto o relata, mas não o aprova.</li><li>Por que <strong>Faraó</strong> foi ferido e Abrão não: o texto mostra Deus protegendo Sarai e a promessa.</li><li>Se <strong>Gn 12, 20 e 26</strong> (a esposa como irmã) são três eventos ou três versões da mesma história.</li></ul></aside></section>
+<section id='texto' data-versao='aa'><h2>📖 Leia o texto bíblico</h2><p class='nota'>Depois da história, vale ler o próprio texto. Escolha a tradução.</p><div class='seletor' role='group' aria-label='Tradução'><span class='nota'>Tradução:</span> <button type='button' class='vbtn' data-v='aa' title='Almeida Revisada Imprensa Bíblica' aria-pressed='false'>AA</button><button type='button' class='vbtn' data-v='acf' title='Almeida Corrigida Fiel' aria-pressed='false'>ACF</button><button type='button' class='vbtn' data-v='nvi' title='Nova Versão Internacional' aria-pressed='false'>NVI</button></div><details class='texto-bib' open><summary>Gn 12.10–13.18 <span class='nota'>(29 versículos)</span></summary><div class='vers-aa'><h4>Gênesis 12</h4><p class='vers'><sup>10</sup> Ora, havia fome naquela terra; Abrão, pois, desceu ao Egito, para peregrinar ali, porquanto era grande a fome na terra.</p><p class='vers'><sup>11</sup> Quando ele estava prestes a entrar no Egito, disse a Sarai, sua mulher: Ora, bem sei que és mulher formosa à vista;</p><p class='vers'><sup>12</sup> e acontecerá que, quando os egípcios te virem, dirão: Esta é mulher dele. E me matarão a mim, mas a ti te guardarão em vida.</p><p class='vers'><sup>13</sup> Dize, peço-te, que és minha irmã, para que me vá bem por tua causa, e que viva a minha alma em atenção a ti.</p><p class='vers'><sup>14</sup> E aconteceu que, entrando Abrão no Egito, viram os egípcios que a mulher era mui formosa.</p><p class='vers'><sup>15</sup> Até os príncipes de Faraó a viram e gabaram-na diante dele; e foi levada a mulher para a casa de Faraó.</p><p class='vers'><sup>16</sup> E ele tratou bem a Abrão por causa dela; e este veio a ter ovelhas, bois e jumentos, servos e servas, jumentas e camelos.</p><p class='vers'><sup>17</sup> Feriu, porém, o Senhor a Faraó e a sua casa com grandes pragas, por causa de Sarai, mulher de Abrão.</p><p class='vers'><sup>18</sup> Então chamou Faraó a Abrão, e disse: Que é isto que me fizeste? por que não me disseste que ela era tua mulher?</p><p class='vers'><sup>19</sup> Por que disseste: E minha irmã? de maneira que a tomei para ser minha mulher. Agora, pois, eis aqui tua mulher; toma-a e vai-te.</p><p class='vers'><sup>20</sup> E Faraó deu ordens aos seus guardas a respeito dele, os quais o despediram a ele, e a sua mulher, e a tudo o que tinha.</p><h4>Gênesis 13</h4><p class='vers'><sup>1</sup> Subiu, pois, Abrão do Egito para o Negebe, levando sua mulher e tudo o que tinha, e Ló o acompanhava.</p><p class='vers'><sup>2</sup> Abrão era muito rico em gado, em prata e em ouro.</p><p class='vers'><sup>3</sup> Nas suas jornadas subiu do Negebe para Betel, até o lugar onde outrora estivera a sua tenda, entre Betel e Ai,</p><p class='vers'><sup>4</sup> até o lugar do altar, que dantes ali fizera; e ali invocou Abrão o nome do Senhor.</p><p class='vers'><sup>5</sup> E também Ló, que ia com Abrão, tinha rebanhos, gado e tendas.</p><p class='vers'><sup>6</sup> Ora, a terra não podia sustentá-los, para eles habitarem juntos; porque os seus bens eram muitos; de modo que não podiam habitar juntos.</p><p class='vers'><sup>7</sup> Pelo que houve contenda entre os pastores do gado de Abrão, e os pastores do gado de Ló. E nesse tempo os cananeus e os perizeus habitavam na terra.</p><p class='vers'><sup>8</sup> Disse, pois, Abrão a Ló: Ora, não haja contenda entre mim e ti, e entre os meus pastores e os teus pastores, porque somos irmãos.</p><p class='vers'><sup>9</sup> Porventura não está toda a terra diante de ti? Rogo-te que te apartes de mim. Se tu escolheres a esquerda, irei para a direita; e se a direita escolheres, irei eu para a esquerda.</p><p class='vers'><sup>10</sup> Então Ló levantou os olhos, e viu toda a planície do Jordão, que era toda bem regada {antes de haver o Senhor destruído Sodoma e Gomorra}, e era como o jardim do Senhor, como a terra do Egito, até chegar a Zoar.</p><p class='vers'><sup>11</sup> E Ló escolheu para si toda a planície do Jordão, e partiu para o oriente; assim se apartaram um do outro.</p><p class='vers'><sup>12</sup> Habitou Abrão na terra de Canaã, e Ló habitou nas cidades da planície, e foi armando as suas tendas até chegar a Sodoma.</p><p class='vers'><sup>13</sup> Ora, os homens de Sodoma eram maus e grandes pecadores contra o Senhor.</p><p class='vers'><sup>14</sup> E disse o Senhor a Abrão, depois que Ló se apartou dele: Levanta agora os olhos, e olha desde o lugar onde estás, para o norte, para o sul, para o oriente e para o oriente;</p><p class='vers'><sup>15</sup> porque toda esta terra que vês, te hei de dar a ti, e à tua descendência, para sempre.</p><p class='vers'><sup>16</sup> E farei a tua descendência como o pó da terra; de maneira que se puder ser contado o pó da terra, então também poderá ser contada a tua descendência.</p><p class='vers'><sup>17</sup> Levanta-te, percorre esta terra, no seu comprimento e na sua largura; porque a darei a ti.</p><p class='vers'><sup>18</sup> Então mudou Abrão as suas tendas, e foi habitar junto dos carvalhos de Manre, em Hebrom; e ali edificou um altar ao Senhor.</p></div><div class='vers-acf'><h4>Gênesis 12</h4><p class='vers'><sup>10</sup> E havia fome naquela terra; e desceu Abrão ao Egito, para peregrinar ali, porquanto a fome era grande na terra.</p><p class='vers'><sup>11</sup> E aconteceu que, chegando ele para entrar no Egito, disse a Sarai, sua mulher: Ora, bem sei que és mulher formosa à vista;</p><p class='vers'><sup>12</sup> E será que, quando os egípcios te virem, dirão: Esta é sua mulher. E matar-me-ão a mim, e a ti te guardarão em vida.</p><p class='vers'><sup>13</sup> Dize, peço-te, que és minha irmã, para que me vá bem por tua causa, e que viva a minha alma por amor de ti.</p><p class='vers'><sup>14</sup> E aconteceu que, entrando Abrão no Egito, viram os egípcios a mulher, que era mui formosa.</p><p class='vers'><sup>15</sup> E viram-na os príncipes de Faraó, e gabaram-na diante de Faraó; e foi a mulher tomada para a casa de Faraó.</p><p class='vers'><sup>16</sup> E fez bem a Abrão por amor dela; e ele teve ovelhas, vacas, jumentos, servos e servas, jumentas e camelos.</p><p class='vers'><sup>17</sup> Feriu, porém, o Senhor a Faraó e a sua casa, com grandes pragas, por causa de Sarai, mulher de Abrão.</p><p class='vers'><sup>18</sup> Então chamou Faraó a Abrão, e disse: Que é isto que me fizeste? Por que não me disseste que ela era tua mulher?</p><p class='vers'><sup>19</sup> Por que disseste: É minha irmã? Por isso a tomei por minha mulher; agora, pois, eis aqui tua mulher; toma-a e vai-te.</p><p class='vers'><sup>20</sup> E Faraó deu ordens aos seus homens a respeito dele; e acompanharam-no, a ele, e a sua mulher, e a tudo o que tinha.</p><h4>Gênesis 13</h4><p class='vers'><sup>1</sup> Subiu, pois, Abrão do Egito para o lado do sul, ele e sua mulher, e tudo o que tinha, e com ele Ló.</p><p class='vers'><sup>2</sup> E era Abrão muito rico em gado, em prata e em ouro.</p><p class='vers'><sup>3</sup> E fez as suas jornadas do sul até Betel, até ao lugar onde a princípio estivera a sua tenda, entre Betel e Ai;</p><p class='vers'><sup>4</sup> Até ao lugar do altar que outrora ali tinha feito; e Abrão invocou ali o nome do Senhor.</p><p class='vers'><sup>5</sup> E também Ló, que ia com Abrão, tinha rebanhos, gado e tendas.</p><p class='vers'><sup>6</sup> E não tinha capacidade a terra para poderem habitar juntos; porque os seus bens eram muitos; de maneira que não podiam habitar juntos.</p><p class='vers'><sup>7</sup> E houve contenda entre os pastores do gado de Abrão e os pastores do gado de Ló; e os cananeus e os perizeus habitavam então na terra.</p><p class='vers'><sup>8</sup> E disse Abrão a Ló: Ora, não haja contenda entre mim e ti, e entre os meus pastores e os teus pastores, porque somos irmãos.</p><p class='vers'><sup>9</sup> Não está toda a terra diante de ti? Eia, pois, aparta-te de mim; e se escolheres a esquerda, irei para a direita; e se a direita escolheres, eu irei para a esquerda.</p><p class='vers'><sup>10</sup> E levantou Ló os seus olhos, e viu toda a campina do Jordão, que era toda bem regada, antes do Senhor ter destruído Sodoma e Gomorra, e era como o jardim do Senhor, como a terra do Egito, quando se entra em Zoar.</p><p class='vers'><sup>11</sup> Então Ló escolheu para si toda a campina do Jordão, e partiu Ló para o oriente, e apartaram-se um do outro.</p><p class='vers'><sup>12</sup> Habitou Abrão na terra de Canaã e Ló habitou nas cidades da campina, e armou as suas tendas até Sodoma.</p><p class='vers'><sup>13</sup> Ora, eram maus os homens de Sodoma, e grandes pecadores contra o Senhor.</p><p class='vers'><sup>14</sup> E disse o Senhor a Abrão, depois que Ló se apartou dele: Levanta agora os teus olhos, e olha desde o lugar onde estás, para o lado do norte, e do sul, e do oriente, e do ocidente;</p><p class='vers'><sup>15</sup> Porque toda esta terra que vês, te hei de dar a ti, e à tua descendência, para sempre.</p><p class='vers'><sup>16</sup> E farei a tua descendência como o pó da terra; de maneira que se alguém puder contar o pó da terra, também a tua descendência será contada.</p><p class='vers'><sup>17</sup> Levanta-te, percorre essa terra, no seu comprimento e na sua largura; porque a ti a darei.</p><p class='vers'><sup>18</sup> E Abrão mudou as suas tendas, e foi, e habitou nos carvalhais de Manre, que estão junto a Hebrom; e edificou ali um altar ao Senhor.</p></div><div class='vers-nvi'><h4>Gênesis 12</h4><p class='vers'><sup>10</sup> Houve fome naquela terra, e Abrão desceu ao Egito para ali viver algum tempo, pois a fome era rigorosa.</p><p class='vers'><sup>11</sup> Quando estava chegando ao Egito, disse a Sarai, sua mulher: &quot;Bem sei que você é bonita.</p><p class='vers'><sup>12</sup> Quando os egípcios a virem, dirão: ‘Esta é a mulher dele’. E me matarão, mas deixarão você viva.</p><p class='vers'><sup>13</sup> Diga que é minha irmã, para que me tratem bem por amor a você e minha vida seja poupada por sua causa&quot;.</p><p class='vers'><sup>14</sup> Quando Abrão chegou ao Egito, viram os egípcios que Sarai era uma mulher muito bonita.</p><p class='vers'><sup>15</sup> Vendo-a, os homens da corte do faraó a elogiaram diante do faraó, e ela foi levada ao seu palácio.</p><p class='vers'><sup>16</sup> Ele tratou bem a Abrão por causa dela, e Abrão recebeu ovelhas e bois, jumentos e jumentas, servos e servas, e camelos.</p><p class='vers'><sup>17</sup> Mas o Senhor puniu o faraó e sua corte com graves doenças, por causa de Sarai, mulher de Abrão.</p><p class='vers'><sup>18</sup> Por isso o faraó mandou chamar Abrão e disse: &quot;O que você fez comigo? Por que não me falou que ela era sua mulher?</p><p class='vers'><sup>19</sup> Por que disse que ela era sua irmã? Foi por isso que eu a tomei para ser minha mulher. Aí está a sua mulher. Tome-a e vá! &quot;</p><p class='vers'><sup>20</sup> A seguir o faraó deu ordens para que providenciassem o necessário para que Abrão partisse, com sua mulher e com tudo o que possuía.</p><h4>Gênesis 13</h4><p class='vers'><sup>1</sup> Saiu, pois, Abrão do Egito e foi para o Neguebe, com sua mulher e com tudo o que possuía, e Ló foi com ele.</p><p class='vers'><sup>2</sup> Abrão tinha enriquecido muito, tanto em gado como em prata e ouro.</p><p class='vers'><sup>3</sup> Ele partiu do Neguebe em direção a Betel, indo de um lugar a outro, até que chegou ao lugar entre Betel e Ai onde já havia armado acampamento anteriormente</p><p class='vers'><sup>4</sup> e onde, pela primeira vez, tinha construído um altar. Ali Abrão invocou o nome do Senhor.</p><p class='vers'><sup>5</sup> Ló, que acompanhava Abrão, também possuía rebanhos e tendas.</p><p class='vers'><sup>6</sup> E não podiam morar os dois juntos na mesma região, porque possuíam tantos bens que a terra não podia sustentá-los.</p><p class='vers'><sup>7</sup> Por isso surgiu uma desavença entre os pastores dos rebanhos de Abrão e os de Ló. Nessa época os cananeus e os ferezeus habitavam aquela terra.</p><p class='vers'><sup>8</sup> Então Abrão disse a Ló: &quot;Não haja desavença entre mim e você, ou entre os seus pastores e os meus; afinal somos irmãos!</p><p class='vers'><sup>9</sup> Aí está a terra inteira diante de você. Vamos nos separar! Se você for para a esquerda, irei para a direita; se for para a direita, irei para a esquerda&quot;.</p><p class='vers'><sup>10</sup> Olhou então Ló e viu todo o vale do Jordão, todo ele bem irrigado, até Zoar; era como o jardim do Senhor, como a terra do Egito. Isto se deu antes do Senhor destruir Sodoma e Gomorra.</p><p class='vers'><sup>11</sup> Ló escolheu todo o vale do Jordão e partiu em direção ao Leste. Assim os dois se separaram:</p><p class='vers'><sup>12</sup> Abrão ficou na terra de Canaã, mas Ló mudou seu acampamento para um lugar próximo a Sodoma, entre as cidades do vale.</p><p class='vers'><sup>13</sup> Ora, os homens de Sodoma eram extremamente perversos e pecadores contra o Senhor.</p><p class='vers'><sup>14</sup> Disse o Senhor a Abrão, depois que Ló separou-se dele: &quot;De onde você está, olhe para o Norte, para o Sul, para o Leste e para o Oeste:</p><p class='vers'><sup>15</sup> Toda a terra que você está vendo darei a você e à sua descendência para sempre.</p><p class='vers'><sup>16</sup> Tornarei a sua descendência tão numerosa como o pó da terra. Se for possível contar o pó da terra, também se poderá contar a sua descendência.</p><p class='vers'><sup>17</sup> Percorra esta terra de alto a baixo, de um lado a outro, porque eu a darei a você&quot;.</p><p class='vers'><sup>18</sup> Então Abrão mudou seu acampamento e passou a viver próximo aos carvalhos de Manre, em Hebrom, onde construiu um altar dedicado ao Senhor.</p></div></details><p class='nota'>Textos bíblicos usados em caráter de estudo, a partir do acervo do projeto. Os direitos são dos detentores de cada tradução: AA (Imprensa Bíblica Brasileira), ACF (Sociedade Bíblica Trinitariana) e NVI (Biblica/Sociedade Bíblica Internacional).</p><p class='nota'>Prefere a ARA? Abra em um site externo: <a href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2012%3A10-13%3A18&version=ARA" target="_blank" rel="noopener">Gn 12.10–13.18 ↗</a></p></section>
+<section id='mapa'><h2>🗺️ Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;Canaã, Egito e a separação de Ló&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Betel&quot;, &quot;lat&quot;: 31.9333, &quot;lon&quot;: 35.2333, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Luz/Betel, \&quot;casa de Deus\&quot;. Identificada com Beitin.&quot;}, {&quot;nome&quot;: &quot;Hebrom (Manre, Macpela)&quot;, &quot;lat&quot;: 31.5326, &quot;lon&quot;: 35.0998, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Região de Manre e da caverna de Macpela (Gn 23).&quot;}, {&quot;nome&quot;: &quot;Berseba&quot;, &quot;lat&quot;: 31.2433, &quot;lon&quot;: 34.8437, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Ao sul de Canaã, na fronteira do Neguebe (Tel Beer Sheva).&quot;}, {&quot;nome&quot;: &quot;Egito (Mênfis, referência)&quot;, &quot;lat&quot;: 29.8503, &quot;lon&quot;: 31.255, &quot;tipo&quot;: &quot;fim&quot;, &quot;nota&quot;: &quot;Mênfis foi capital do Egito no Reino Antigo. Marca o Egito como referência; o texto não nomeia a cidade.&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta norte)&quot;, &quot;lat&quot;: 31.8386, &quot;lon&quot;: 35.6733, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Outra proposta: ao norte do mar Morto (Tall el-Hammam). Debatida.&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta sul)&quot;, &quot;lat&quot;: 31.2594, &quot;lon&quot;: 35.5444, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Uma proposta: ao sul do mar Morto (Bab edh-Dhra). Debatida.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Descida ao Egito (ilustrativa)&quot;, &quot;pontos&quot;: [[31.2433, 34.8437], [30.9, 34.2], [30.5, 32.5], [29.8503, 31.255]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Rotas são ilustrativas: o texto não as descreve.&quot;}], &quot;aviso&quot;: &quot;Ló escolheu o vale do Jordão, perto de Sodoma. Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Ló escolheu o vale do Jordão, perto de Sodoma. Pontos em roxo têm localização debatida. Toque nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<details class='dobra'><summary>🏛️ Contexto histórico-literário</summary><div><ul><li><strong>Padrão repetido:</strong> o patriarca apresenta a esposa como irmã em Gn 12, Gn 20 (Gerar) e Gn 26 (Isaque).</li></ul>
 <p>Alguns estudiosos veem três versões de uma mesma tradição; outros, três episódios distintos.</p>
-<ul><li><strong>Ló</strong> escolhe pela aparência ("viu... que era bem regado"). O narrador já avisa que Sodoma era má.</li><li>A generosidade de Abrão contrasta com a escolha interesseira de Ló.</li></ul></section>
-<section><h2>Conexões</h2><ul><li><strong>Gn 19:</strong> a escolha de Ló tem consequências.</li><li><strong>Êxodo:</strong> Israel também desce ao Egito por causa da fome e sai com pragas e bens.</li></ul></section>
-<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Por que Abrão pede a Sarai que diga ser sua irmã?<details><summary>Ver resposta</summary><p>Tem medo de ser morto por causa da beleza de Sarai.</p></details></li><li>Como Abrão resolve a briga com Ló?<details><summary>Ver resposta</summary><p>Oferece a Ló escolher primeiro a terra, abrindo mão do direito de escolher.</p></details></li><li>O que a escolha de Ló revela sobre os critérios dele?<details><summary>Ver resposta</summary><p>Ló escolhe pela aparência: o vale bem irrigado, perto de Sodoma. Abrão fica com a região montanhosa e recebe de novo a promessa da terra.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> a promessa de Deus depende da perfeição de Abrão?</div>
-<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
-<section><h2>Pontos debatidos</h2><ul><li><strong>Moralidade da mentira:</strong> como o texto avalia (ele relata, não aprova).</li><li><strong>Relação entre Gn 12, 20 e 26:</strong> variações de uma tradição ou eventos distintos.</li></ul></section>
-<section class="fontes"><h2>Fontes e revisão</h2>
+<ul><li><strong>Ló</strong> escolhe pela aparência ("viu... que era bem regado"). O narrador já avisa que Sodoma era má.</li><li>A generosidade de Abrão contrasta com a escolha interesseira de Ló.</li></ul></div></details>
+<details class='dobra'><summary>🔗 Conexões com outros textos</summary><div><ul><li><strong>Gn 19:</strong> a escolha de Ló tem consequências.</li><li><strong>Êxodo:</strong> Israel também desce ao Egito por causa da fome e sai com pragas e bens.</li></ul></div></details>
+<section id='teste'><h2>🧠 Teste-se</h2><ol class='quiz'><li>Por que Abrão pede a Sarai que diga ser sua irmã?<details><summary>Ver resposta</summary><p>Tem medo de ser morto por causa da beleza de Sarai.</p></details></li><li>Como Abrão resolve a briga com Ló?<details><summary>Ver resposta</summary><p>Oferece a Ló escolher primeiro a terra, abrindo mão do direito de escolher.</p></details></li><li>O que a escolha de Ló revela sobre os critérios dele?<details><summary>Ver resposta</summary><p>Ló escolhe pela aparência: o vale bem irrigado, perto de Sodoma. Abrão fica com a região montanhosa e recebe de novo a promessa da terra.</p></details></li></ol><div class='reflexao'><p>💭 a promessa de Deus depende da perfeição de Abrão?</p></div></section>
+<details class='dobra'><summary>⚖️ Pontos debatidos</summary><div><ul><li><strong>Moralidade da mentira:</strong> como o texto avalia (ele relata, não aprova).</li><li><strong>Relação entre Gn 12, 20 e 26:</strong> variações de uma tradição ou eventos distintos.</li></ul></div></details>
+<details class="dobra fontes"><summary>📚 Fontes e revisão</summary><div>
 <ul>
-<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Texto bíblico por referência; as falas em itálico são paráfrases do episódio.</li>
 <li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
 <li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
-</ul></section>
+</ul></div></details>
 </article>
-<nav class="navep"><a href="009.html">← O chamado de Abrão: a promessa</a><a class="prox" href="011.html">A guerra dos reis e Melquisedeque →</a></nav>
+<nav class="fim" aria-label="Navegação entre episódios"><a href="009.html"><small>← Anterior</small>O chamado de Abrão: a promessa</a><a class="prox" href="011.html"><small>Próximo →</small>A guerra dos reis e Melquisedeque</a></nav>
 </main>
-<script>
-(function(){
-  var chave='biblia-lido-010', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
-  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
-  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
-  show(on);
-  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
-})();
-</script>
-
-<script>
-(function(){
-  var el=document.getElementById('mapa-vivo'); if(!el) return;
-  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
-  if(typeof L==='undefined'){ fallback(); return; }
-  var d=JSON.parse(el.getAttribute('data-mapa'));
-  var map=L.map(el,{scrollWheelZoom:false});
-  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
-  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
-  topo.addTo(map);
-  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
-  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
-  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
-  map.on('click',function(){ map.scrollWheelZoom.enable(); });
-  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
-  (d.rotas||[]).forEach(function(r){
-    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
-    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
-    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
-  });
-  (d.lugares||[]).forEach(function(p){
-    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
-    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
-    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
-    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
-    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
-  });
-  map.fitBounds(pts,{padding:[34,34]});
-})();
-</script>
+<nav class="barra" aria-label="Ações do episódio"><a class="b-nav" href="009.html" aria-label="Episódio anterior">←</a><button type="button" class="b-lido" data-lido aria-pressed="false">✓ Marcar como lido</button><a class="b-nav" href="011.html" aria-label="Próximo episódio">→</a></nav>
+<script src="app.js"></script>
 </body>
 </html>

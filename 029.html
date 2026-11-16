@@ -1,188 +1,52 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-era="3">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Moisés: do Nilo ao deserto</title>
+<title>Moisés: do Nilo ao deserto · Fio da História</title>
 <meta name="description" content="O libertador de Israel é salvo por uma cesta, criado no palácio do inimigo e vira fugitivo.">
-<style>:root{
-  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
-  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
-  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
-  --banda:#f6e7da; --eixo:#6b6357;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
-    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
-    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
-    --banda:#3a2a1d; --eixo:#a89f90;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
-main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
-.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
-.topo a{color:var(--suave)}
-a{color:var(--destaque)}
-h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
-h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
-h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
-.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
-.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
-.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
-.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
-.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
-blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
-blockquote p{margin:0}
-#historia p{margin:1.1rem 0}
-#historia p strong:first-child{color:var(--destaque)}
-.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
-.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
-.botao:hover{background:var(--destaque-bg)}
-.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
-.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
-.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
-.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
-.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
-@media (max-width:520px){.mapa-vivo{height:340px}}
-.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
-.tabela{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
-th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--destaque-bg)}
-ul,ol{padding-left:1.4rem}
-li{margin:.3rem 0}
-code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
-.quiz li{margin:.9rem 0}
-details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
-summary{cursor:pointer;color:var(--destaque);font-weight:600}
-details p{margin:.4rem 0 0}
-.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
-.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
-.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
-.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
-.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
-.texto-bib summary{padding:8px 0;font-size:16px}
-.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
-.vers{margin:.35rem 0;line-height:1.65}
-.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
-#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
-#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
-#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
-.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
-.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
-.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
-.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
-/* SVG: mapa */
-.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
-.m-river{fill:none;stroke:var(--rio);stroke-width:3}
-.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
-.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
-.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
-.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
-.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
-.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
-.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
-.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
-/* SVG: linha do tempo */
-.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
-.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
-.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
-.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
-.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
-.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
-.l-ev .l-r{fill:var(--suave);font-size:12px}
-.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
-.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
-@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M16 46c12-4 6-20 18-24s14 4 14 4' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('biblia-tema');if(t)document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
-<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 3 · Êxodo e deserto</span></header>
+<body data-ep="029">
+<div id="leitura" aria-hidden="true"></div>
+<header class="topo"><a class="logo" href="index.html">← Fio da <b>História</b></a>
+<button id="tema" class="tema" type="button" aria-label="Alternar tema claro e escuro">◐</button></header>
 <main>
-<article>
-<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
-<p class="selo">Episódio 029 · 4 min de leitura</p>
+<div class="hero" data-num="029">
+<p class="selo">🔥 Era 3 · Êxodo e deserto · Episódio 029</p>
 <h1>Moisés: do Nilo ao deserto</h1>
 <p class="gancho">O libertador de Israel é salvo por uma cesta, criado no palácio do inimigo e vira fugitivo.</p>
-<ul class="meta">
-  <li><strong>Passagens:</strong> Êx 2</li>
-  <li><strong>Época:</strong> ~1500–1300 a.C. <span class="certeza c-debatida">data: debatida</span></li>
-</ul>
-<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Êx 2). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
-<p><strong>1. Um cesto no rio.</strong> Um homem e uma mulher da tribo de Levi têm um filho. Vendo que o menino era formoso, a mãe o esconde por três meses. Quando não pode mais escondê-lo, pega um cesto de juncos, passa betume e piche, põe a criança dentro e o deixa entre os juncos, à beira do rio. A irmã do menino fica de longe, para ver o que lhe acontece.</p>
-<p><strong>2. A filha de Faraó.</strong> A filha de Faraó desce ao rio para se banhar. Vê o cesto, manda trazê-lo, abre e vê o menino chorando. Sente compaixão: <em>este é um dos meninos dos hebreus.</em> A irmã se aproxima e oferece: <em>quer que eu chame uma ama hebreia?</em> Vai e chama a mãe do menino. A filha de Faraó diz: <em>leve este menino, amamente-o para mim, e eu pagarei.</em></p>
-<p><strong>3. Moisés.</strong> O menino cresce, é levado à filha de Faraó, que o adota e o chama <strong>Moisés</strong>, porque o tirou das águas.</p>
-<p><strong>4. O egípcio.</strong> Já adulto, Moisés sai para ver os seus irmãos hebreus e vê um egípcio ferindo um deles. Olha para os lados, vê que ninguém está olhando, mata o egípcio e o esconde na areia.</p>
-<p><strong>5. Descoberto.</strong> No dia seguinte, vê dois hebreus brigando e pergunta ao agressor: <em>por que você bate no seu companheiro?</em> Ele responde: <em>quem o pôs como chefe e juiz sobre nós? Pensa em me matar como matou o egípcio?</em> Moisés teme: <em>o caso é conhecido.</em> Faraó procura matá-lo, e Moisés foge para a terra de Midiã.</p>
-<p><strong>6. O poço.</strong> Moisés se senta junto a um poço. Sete filhas do sacerdote de Midiã vêm dar água ao rebanho do pai, e outros pastores as afastam. Moisés se levanta, defende-as e dá água ao rebanho. O pai, Reuel, pergunta por que voltaram cedo. Elas contam: <em>um egípcio nos livrou.</em> <em>Onde ele está? Chamem-no para comer.</em> Moisés se estabelece com ele e se casa com <strong>Zípora</strong>. Tem um filho, Gérson, nome que lembra <em>estrangeiro em terra estranha</em>.</p>
-<p><strong>7. Muito tempo depois.</strong> Morre o rei do Egito. Os filhos de Israel gemem e clamam por causa da escravidão. O texto fecha com quatro verbos: Deus <em>ouviu</em> o gemido, <em>lembrou-se</em> da aliança com Abraão, Isaque e Jacó, <em>viu</em> os filhos de Israel e <em>tomou conhecimento</em> deles.</p>
-<h3>O que o texto não diz</h3>
-<ul><li>A <strong>idade</strong> de Moisés quando matou o egípcio: Atos 7.23 diz quarenta anos.</li><li>Se Moisés <strong>sabia</strong> de sua origem hebreia desde pequeno: o texto diz que ele foi ver os irmãos.</li><li>Onde fica <strong>Midiã</strong> exatamente: a localização é debatida.</li></ul></section>
-<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=%C3%8Axodo%202&version=ARA" target="_blank" rel="noopener">Ler Êx 2 na ARA ↗</a></div></section>
-<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;Do Egito a Midiã&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Egito (Mênfis, referência)&quot;, &quot;lat&quot;: 29.8503, &quot;lon&quot;: 31.255, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Mênfis foi capital do Egito no Reino Antigo. Marca o Egito como referência; o texto não nomeia a cidade.&quot;}, {&quot;nome&quot;: &quot;Midiã (região)&quot;, &quot;lat&quot;: 28.47, &quot;lon&quot;: 35.0, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Região de Midiã, provavelmente no noroeste da Arábia. A localização exata é debatida.&quot;}, {&quot;nome&quot;: &quot;Sinai/Horebe (tradição: Jebel Musa)&quot;, &quot;lat&quot;: 28.5392, &quot;lon&quot;: 33.975, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Localização tradicional, no sul da península do Sinai. Debatida.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Fuga de Moisés (ilustrativa)&quot;, &quot;pontos&quot;: [[29.8503, 31.255], [30.4, 32.5], [29.0, 34.0], [28.47, 35.0]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;A localização de Midiã é debatida; o caminho do texto não é descrito.&quot;}], &quot;aviso&quot;: &quot;Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Pontos em roxo têm localização debatida. Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
-<section><h2>Resumo rápido</h2><ol><li>Uma mulher levita esconde o filho por três meses. Depois o coloca numa cesta de papiro às margens do Nilo; a irmã, <strong>Miriã</strong>, vigia.</li><li>A filha de Faraó o encontra, adota-o e, por acaso, contrata a própria mãe como ama. Ela o chama <strong>Moisés</strong> ("tirado das águas").</li><li>Já adulto, Moisés vê um egípcio espancando um hebreu, mata o egípcio e o esconde na areia.</li><li>No dia seguinte, um hebreu o rejeita: <em>quem lhe deu autoridade de chefe e juiz sobre nós?</em> Moisés teme e foge para <strong>Midiã</strong>.</li><li>Defende as filhas do sacerdote Reuel (Jetro) num poço; casa-se com <strong>Zípora</strong>; nasce Gérson.</li><li>Em Egito, Faraó morre; Israel clama, e o texto conclui: <em>Deus ouviu o gemido do povo e se lembrou da sua aliança</em>.</li></ol></section>
-<section><h2>Contexto histórico-literário</h2><ul><li>O nome "Moisés" parece ter raiz egípcia (como em Tutmés, Ramsés: "nascido de"), embora o texto o explique em hebraico.</li><li>A cesta lembra lendas de reis antigos expostos ao nascer (como Sargão de Acad). Diferença: aqui o ato é de proteção.</li><li>Moisés tem <strong>três vidas de 40 anos</strong>, segundo At 7: príncipe, pastor e líder.</li><li><strong>Midiã</strong> ficava a leste do mar Vermelho; o texto sugere ligação com o Sinai.</li></ul></section>
-<section><h2>Conexões</h2><ul><li><strong>Hb 11.23–27:</strong> a fé dos pais e de Moisés.</li><li><strong>At 7:</strong> a versão de Estêvão.</li></ul></section>
-<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Como Moisés sobrevive ao decreto de Faraó?<details><summary>Ver resposta</summary><p>A mãe o esconde por três meses e depois o coloca num cesto no rio. A filha de Faraó o encontra e o adota, e a própria mãe o amamenta.</p></details></li><li>Por que ele foge para Midiã?<details><summary>Ver resposta</summary><p>Mata um egípcio que feria um hebreu; quando o caso é conhecido, Faraó procura matá-lo, e ele foge.</p></details></li><li>Qual a última frase do capítulo e por que ela importa?<details><summary>Ver resposta</summary><p>Que Deus ouviu, lembrou-se da aliança, viu e tomou conhecimento. Prepara o chamado de Moisés no capítulo seguinte.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> a primeira tentativa de libertar o povo falha. O que faltava?</div>
-<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
-<section><h2>Pontos debatidos</h2><ul><li><strong>Localização de Midiã e do monte Sinai:</strong> debatida (Arábia, Sinai egípcio).</li><li><strong>Idade de Moisés</strong> e cronologia dos 40 anos: número redondo ou exato.</li></ul></section>
-<section class="fontes"><h2>Fontes e revisão</h2>
+<ul class="pilulas"><li>⏱ 4 min</li><li>📅 ~1500–1300 a.C. <span class='certeza'>(debatida)</span></li><li>📖 Êx 2</li></ul>
+</div>
+<p class='aviso'>⚠️ Em revisão, ainda sem conferência de especialista.</p>
+<nav class="chips" aria-label="Seções do episódio"><a href='#historia'>História</a><a href='#texto'>Texto</a><a href='#mapa'>Mapa</a><a href='#teste'>Teste</a></nav>
+<article>
+<details class='resumo'><summary>⚡ Resumo em 30 segundos</summary><div><ol><li>Uma mulher levita esconde o filho por três meses. Depois o coloca numa cesta de papiro às margens do Nilo; a irmã, <strong>Miriã</strong>, vigia.</li><li>A filha de Faraó o encontra, adota-o e, por acaso, contrata a própria mãe como ama. Ela o chama <strong>Moisés</strong> ("tirado das águas").</li><li>Já adulto, Moisés vê um egípcio espancando um hebreu, mata o egípcio e o esconde na areia.</li><li>No dia seguinte, um hebreu o rejeita: <em>quem lhe deu autoridade de chefe e juiz sobre nós?</em> Moisés teme e foge para <strong>Midiã</strong>.</li><li>Defende as filhas do sacerdote Reuel (Jetro) num poço; casa-se com <strong>Zípora</strong>; nasce Gérson.</li><li>Em Egito, Faraó morre; Israel clama, e o texto conclui: <em>Deus ouviu o gemido do povo e se lembrou da sua aliança</em>.</li></ol></div></details>
+<section id='historia'><h2>📜 A história</h2><p class='nota-leitura'><em>Narrativa fiel ao texto (Êx 2). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p>
+<div class='passos'><div class='passo'><div class='n'>1</div><h3>Um cesto no rio</h3><p>Um homem e uma mulher da tribo de Levi têm um filho. Vendo que o menino era formoso, a mãe o esconde por três meses. Quando não pode mais escondê-lo, pega um cesto de juncos, passa betume e piche, põe a criança dentro e o deixa entre os juncos, à beira do rio. A irmã do menino fica de longe, para ver o que lhe acontece.</p></div><div class='passo'><div class='n'>2</div><h3>A filha de Faraó</h3><p>A filha de Faraó desce ao rio para se banhar. Vê o cesto, manda trazê-lo, abre e vê o menino chorando. Sente compaixão: <em>este é um dos meninos dos hebreus.</em> A irmã se aproxima e oferece: <em>quer que eu chame uma ama hebreia?</em> Vai e chama a mãe do menino. A filha de Faraó diz: <em>leve este menino, amamente-o para mim, e eu pagarei.</em></p></div><div class='passo'><div class='n'>3</div><h3>Moisés</h3><p>O menino cresce, é levado à filha de Faraó, que o adota e o chama <strong>Moisés</strong>, porque o tirou das águas.</p></div><div class='passo'><div class='n'>4</div><h3>O egípcio</h3><p>Já adulto, Moisés sai para ver os seus irmãos hebreus e vê um egípcio ferindo um deles. Olha para os lados, vê que ninguém está olhando, mata o egípcio e o esconde na areia.</p></div><div class='passo'><div class='n'>5</div><h3>Descoberto</h3><p>No dia seguinte, vê dois hebreus brigando e pergunta ao agressor: <em>por que você bate no seu companheiro?</em> Ele responde: <em>quem o pôs como chefe e juiz sobre nós? Pensa em me matar como matou o egípcio?</em> Moisés teme: <em>o caso é conhecido.</em> Faraó procura matá-lo, e Moisés foge para a terra de Midiã.</p></div><div class='passo'><div class='n'>6</div><h3>O poço</h3><p>Moisés se senta junto a um poço. Sete filhas do sacerdote de Midiã vêm dar água ao rebanho do pai, e outros pastores as afastam. Moisés se levanta, defende-as e dá água ao rebanho. O pai, Reuel, pergunta por que voltaram cedo. Elas contam: <em>um egípcio nos livrou.</em> <em>Onde ele está? Chamem-no para comer.</em> Moisés se estabelece com ele e se casa com <strong>Zípora</strong>. Tem um filho, Gérson, nome que lembra <em>estrangeiro em terra estranha</em>.</p></div><div class='passo'><div class='n'>7</div><h3>Muito tempo depois</h3><p>Morre o rei do Egito. Os filhos de Israel gemem e clamam por causa da escravidão. O texto fecha com quatro verbos: Deus <em>ouviu</em> o gemido, <em>lembrou-se</em> da aliança com Abraão, Isaque e Jacó, <em>viu</em> os filhos de Israel e <em>tomou conhecimento</em> deles.</p></div></div>
+<aside class='callout'><h3>🔍 O que o texto não diz</h3><ul><li>A <strong>idade</strong> de Moisés quando matou o egípcio: Atos 7.23 diz quarenta anos.</li><li>Se Moisés <strong>sabia</strong> de sua origem hebreia desde pequeno: o texto diz que ele foi ver os irmãos.</li><li>Onde fica <strong>Midiã</strong> exatamente: a localização é debatida.</li></ul></aside></section>
+<section id='texto' data-versao='aa'><h2>📖 Leia o texto bíblico</h2><p class='nota'>Depois da história, vale ler o próprio texto. Escolha a tradução.</p><div class='seletor' role='group' aria-label='Tradução'><span class='nota'>Tradução:</span> <button type='button' class='vbtn' data-v='aa' title='Almeida Revisada Imprensa Bíblica' aria-pressed='false'>AA</button><button type='button' class='vbtn' data-v='acf' title='Almeida Corrigida Fiel' aria-pressed='false'>ACF</button><button type='button' class='vbtn' data-v='nvi' title='Nova Versão Internacional' aria-pressed='false'>NVI</button></div><details class='texto-bib' open><summary>Êx 2 <span class='nota'>(25 versículos)</span></summary><div class='vers-aa'><p class='vers'><sup>1</sup> Foi-se um homem da casa de Levi e casou com uma filha de Levi.</p><p class='vers'><sup>2</sup> A mulher concebeu e deu à luz um filho; e, vendo que ele era formoso, escondeu-o três meses.</p><p class='vers'><sup>3</sup> Não podendo, porém, escondê-lo por mais tempo, tomou para ele uma arca de juncos, e a revestiu de betume e pez; e, pondo nela o menino, colocou-a entre os juncos a margem do rio.</p><p class='vers'><sup>4</sup> E sua irmã postou-se de longe, para saber o que lhe aconteceria.</p><p class='vers'><sup>5</sup> A filha de Faraó desceu para banhar-se no rio, e as suas criadas passeavam à beira do rio. Vendo ela a arca no meio os juncos, mandou a sua criada buscá-la.</p><p class='vers'><sup>6</sup> E abrindo-a, viu a criança, e eis que o menino chorava; então ela teve compaixão dele, e disse: Este é um dos filhos dos hebreus.</p><p class='vers'><sup>7</sup> Então a irmã do menino perguntou à filha de Faraó: Queres que eu te vá chamar uma ama dentre as hebréias, para que crie este menino para ti?</p><p class='vers'><sup>8</sup> Respondeu-lhe a filha de Faraó: Vai. Foi, pois, a moça e chamou a mãe do menino.</p><p class='vers'><sup>9</sup> Disse-lhe a filha de Faraó: Leva este menino, e cria-mo; eu te darei o teu salário. E a mulher tomou o menino e o criou.</p><p class='vers'><sup>10</sup> Quando, pois, o menino era já grande, ela o trouxe à filha de Faraó, a qual o adotou; e lhe chamou Moisés, dizendo: Porque das águas o tirei.</p><p class='vers'><sup>11</sup> Ora, aconteceu naqueles dias que, sendo Moisés já homem, saiu a ter com seus irmãos e atentou para as suas cargas; e viu um egípcio que feria a um hebreu dentre, seus irmãos.</p><p class='vers'><sup>12</sup> Olhou para um lado e para outro, e vendo que não havia ninguém ali, matou o egípcio e escondeu-o na areia.</p><p class='vers'><sup>13</sup> Tornou a sair no dia seguinte, e eis que dois hebreus contendiam; e perguntou ao que fazia a injustiça: Por que feres a teu próximo?</p><p class='vers'><sup>14</sup> Respondeu ele: Quem te constituiu a ti príncipe e juiz sobre nós? Pensas tu matar-me, como mataste o egípcio? Temeu, pois, Moisés e disse: Certamente o negócio já foi descoberto.</p><p class='vers'><sup>15</sup> E quando Faraó soube disso, procurou matar a Moisés. Este, porém, fugiu da presença de Faraó, e foi habitar na terra de Midiã; e sentou-se junto a um poço.</p><p class='vers'><sup>16</sup> O sacerdote de Midiã tinha sete filhas, as quais vieram tirar água, e encheram os tanques para dar de beber ao rebanho de seu pai.</p><p class='vers'><sup>17</sup> Então vieram os pastores, e as expulsaram dali; Moisés, porém, levantou-se e as defendeu, e deu de beber ao rebanho delas.</p><p class='vers'><sup>18</sup> Quando elas voltaram a Reuel, seu pai, este lhes perguntou: como é que hoje voltastes tão cedo?</p><p class='vers'><sup>19</sup> Responderam elas: um egípcio nos livrou da mão dos pastores; e ainda tirou água para nós e deu de beber ao rebanho.</p><p class='vers'><sup>20</sup> E ele perguntou a suas filhas: Onde está ele; por que deixastes lá o homem? chamai-o para que coma pão.</p><p class='vers'><sup>21</sup> Então Moisés concordou em morar com aquele homem, o qual lhe deu sua filha Zípora.</p><p class='vers'><sup>22</sup> E ela deu à luz um filho, a quem ele chamou Gérson, porque disse: Peregrino sou em terra estrangeira.</p><p class='vers'><sup>23</sup> No decorrer de muitos dias, morreu o rei do Egito; e os filhos de Israel gemiam debaixo da servidão; pelo que clamaram, e subiu a Deus o seu clamor por causa dessa servidão.</p><p class='vers'><sup>24</sup> Então Deus, ouvindo-lhes os gemidos, lembrou-se do seu pacto com Abraão, com Isaque e com Jacó.</p><p class='vers'><sup>25</sup> E atentou Deus para os filhos de Israel; e Deus os conheceu.</p></div><div class='vers-acf'><p class='vers'><sup>1</sup> E foi um homem da casa de Levi e casou com uma filha de Levi.</p><p class='vers'><sup>2</sup> E a mulher concebeu e deu à luz um filho; e, vendo que ele era formoso, escondeu-o três meses.</p><p class='vers'><sup>3</sup> Não podendo, porém, mais escondê-lo, tomou uma arca de juncos, e a revestiu com barro e betume; e, pondo nela o menino, a pôs nos juncos à margem do rio.</p><p class='vers'><sup>4</sup> E sua irmã postou-se de longe, para saber o que lhe havia de acontecer.</p><p class='vers'><sup>5</sup> E a filha de Faraó desceu a lavar-se no rio, e as suas donzelas passeavam, pela margem do rio; e ela viu a arca no meio dos juncos, e enviou a sua criada, que a tomou.</p><p class='vers'><sup>6</sup> E abrindo-a, viu ao menino e eis que o menino chorava; e moveu-se de compaixão dele, e disse: Dos meninos dos hebreus é este.</p><p class='vers'><sup>7</sup> Então disse sua irmã à filha de Faraó: Irei chamar uma ama das hebréias, que crie este menino para ti?</p><p class='vers'><sup>8</sup> E a filha de Faraó disse-lhe: Vai. Foi, pois, a moça, e chamou a mãe do menino.</p><p class='vers'><sup>9</sup> Então lhe disse a filha de Faraó: Leva este menino, e cria-mo; eu te darei teu salário. E a mulher tomou o menino, e criou-o.</p><p class='vers'><sup>10</sup> E, quando o menino já era grande, ela o trouxe à filha de Faraó, a qual o adotou; e chamou-lhe Moisés, e disse: Porque das águas o tenho tirado.</p><p class='vers'><sup>11</sup> E aconteceu naqueles dias que, sendo Moisés já homem, saiu a seus irmãos, e atentou para as suas cargas; e viu que um egípcio feria a um hebreu, homem de seus irmãos.</p><p class='vers'><sup>12</sup> E olhou a um e a outro lado e, vendo que não havia ninguém ali, matou ao egípcio, e escondeu-o na areia.</p><p class='vers'><sup>13</sup> E tornou a sair no dia seguinte, e eis que dois homens hebreus contendiam; e disse ao injusto: Por que feres a teu próximo?</p><p class='vers'><sup>14</sup> O qual disse: Quem te tem posto a ti por maioral e juiz sobre nós? Pensas matar-me, como mataste o egípcio? Então temeu Moisés, e disse: Certamente este negócio foi descoberto.</p><p class='vers'><sup>15</sup> Ouvindo, pois, Faraó este caso, procurou matar a Moisés; mas Moisés fugiu de diante da face de Faraó, e habitou na terra de Midiã, e assentou-se junto a um poço.</p><p class='vers'><sup>16</sup> E o sacerdote de Midiã tinha sete filhas, as quais vieram tirar água, e encheram os bebedouros, para dar de beber ao rebanho de seu pai.</p><p class='vers'><sup>17</sup> Então vieram os pastores, e expulsaram-nas dali; Moisés, porém, levantou-se e defendeu-as, e deu de beber ao rebanho.</p><p class='vers'><sup>18</sup> E voltando elas a Reuel seu pai, ele disse: Por que hoje tornastes tão depressa?</p><p class='vers'><sup>19</sup> E elas disseram: Um homem egípcio nos livrou da mão dos pastores; e também nos tirou água em abundância, e deu de beber ao rebanho.</p><p class='vers'><sup>20</sup> E disse a suas filhas: E onde está ele? Por que deixastes o homem? Chamai-o para que coma pão.</p><p class='vers'><sup>21</sup> E Moisés consentiu em morar com aquele homem; e ele deu a Moisés sua filha Zípora,</p><p class='vers'><sup>22</sup> A qual deu à luz um filho, a quem ele chamou Gérson, porque disse: Peregrino fui em terra estranha.</p><p class='vers'><sup>23</sup> E aconteceu, depois de muitos dias, que morrendo o rei do Egito, os filhos de Israel suspiraram por causa da servidão, e clamaram; e o seu clamor subiu a Deus por causa de sua servidão.</p><p class='vers'><sup>24</sup> E ouviu Deus o seu gemido, e lembrou-se Deus da sua aliança com Abraão, com Isaque, e com Jacó;</p><p class='vers'><sup>25</sup> E viu Deus os filhos de Israel, e atentou Deus para a sua condição.</p></div><div class='vers-nvi'><p class='vers'><sup>1</sup> Um homem da tribo de Levi casou-se com uma mulher da mesma tribo,</p><p class='vers'><sup>2</sup> e ela engravidou e deu à luz um filho. Vendo que era bonito, ela o escondeu por três meses.</p><p class='vers'><sup>3</sup> Quando já não podia mais escondê-lo, pegou um cesto feito de junco e o vedou com piche e betume. Colocou nele o menino e deixou o cesto entre os juncos, à margem do Nilo.</p><p class='vers'><sup>4</sup> A irmã do menino ficou observando de longe para ver o que lhe aconteceria.</p><p class='vers'><sup>5</sup> A filha do faraó descera ao Nilo para tomar banho. Enquanto isso as suas servas andavam pela margem do rio. Nisso viu o cesto entre os juncos e mandou sua criada apanhá-lo.</p><p class='vers'><sup>6</sup> Ao abri-lo viu um bebê chorando. Ficou com pena dele e disse: &quot;Este menino é dos hebreus&quot;.</p><p class='vers'><sup>7</sup> Então a irmã do menino aproximou-se e perguntou à filha do faraó: &quot;A senhora quer que eu vá chamar uma mulher dos hebreus para amamentar e criar o menino? &quot;</p><p class='vers'><sup>8</sup> &quot;Quero&quot;, respondeu ela. E a moça foi chamar a mãe do menino.</p><p class='vers'><sup>9</sup> Então a filha do faraó disse à mulher: &quot;Leve este menino e amamente-o para mim, e eu lhe pagarei por isso&quot;. A mulher levou o menino e o amamentou.</p><p class='vers'><sup>10</sup> Tendo o menino crescido, ela o levou à filha do faraó, que o adotou e lhe deu o nome de Moisés, dizendo: &quot;Porque eu o tirei das águas&quot;.</p><p class='vers'><sup>11</sup> Certo dia, sendo Moisés já adulto, foi ao lugar onde estavam os seus irmãos hebreus e descobriu como era pesado o trabalho que realizavam. Viu também um egípcio espancar um dos hebreus.</p><p class='vers'><sup>12</sup> Correu o olhar por todos os lados e, não vendo ninguém, matou o egípcio e o escondeu na areia.</p><p class='vers'><sup>13</sup> No dia seguinte saiu e viu dois hebreus brigando. Então perguntou ao agressor: &quot;Por que você está espancando o seu companheiro? &quot;</p><p class='vers'><sup>14</sup> O homem respondeu: &quot;Quem o nomeou líder e juiz sobre nós? Quer matar-me como matou o egípcio? &quot; Moisés teve medo e pensou: &quot;Com certeza tudo já foi descoberto! &quot;</p><p class='vers'><sup>15</sup> Quando o faraó soube disso, procurou matar Moisés, mas este fugiu e foi morar na terra de Midiã. Ali assentou-se à beira de um poço.</p><p class='vers'><sup>16</sup> Ora, o sacerdote de Midiã tinha sete filhas. Elas foram buscar água para encher os bebedouros e dar de beber ao rebanho de seu pai.</p><p class='vers'><sup>17</sup> Alguns pastores se aproximaram e começaram a expulsá-las dali; Moisés, porém, veio em auxílio delas e deu água ao rebanho.</p><p class='vers'><sup>18</sup> Quando as moças voltaram a seu pai Reuel, este lhes perguntou: &quot;Por que voltaram tão cedo hoje? &quot;</p><p class='vers'><sup>19</sup> Elas responderam: &quot;Um egípcio defendeu-nos dos pastores e ainda tirou água do poço para nós e deu de beber ao rebanho&quot;.</p><p class='vers'><sup>20</sup> &quot;Onde está ele? &quot;, perguntou o pai a elas. &quot;Por que o deixaram lá? Convidem-no para comer conosco. &quot;</p><p class='vers'><sup>21</sup> Moisés aceitou e concordou também em morar na casa daquele homem; este lhe deu por mulher sua filha Zípora.</p><p class='vers'><sup>22</sup> Ela deu à luz um menino, a quem Moisés deu o nome de Gérson, dizendo: &quot;Sou imigrante em terra estrangeira&quot;.</p><p class='vers'><sup>23</sup> Muito tempo depois, morreu o rei do Egito. Os israelitas gemiam e clamavam debaixo da escravidão; e o seu clamor subiu até Deus.</p><p class='vers'><sup>24</sup> Ouviu Deus o lamento deles e lembrou-se da aliança que fizera com Abraão, Isaque e Jacó.</p><p class='vers'><sup>25</sup> Deus olhou para os israelitas e viu qual era a situação deles.</p></div></details><p class='nota'>Textos bíblicos usados em caráter de estudo, a partir do acervo do projeto. Os direitos são dos detentores de cada tradução: AA (Imprensa Bíblica Brasileira), ACF (Sociedade Bíblica Trinitariana) e NVI (Biblica/Sociedade Bíblica Internacional).</p><p class='nota'>Prefere a ARA? Abra em um site externo: <a href="https://www.biblegateway.com/passage/?search=%C3%8Axodo%202&version=ARA" target="_blank" rel="noopener">Êx 2 ↗</a></p></section>
+<section id='mapa'><h2>🗺️ Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;Do Egito a Midiã&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Egito (Mênfis, referência)&quot;, &quot;lat&quot;: 29.8503, &quot;lon&quot;: 31.255, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Mênfis foi capital do Egito no Reino Antigo. Marca o Egito como referência; o texto não nomeia a cidade.&quot;}, {&quot;nome&quot;: &quot;Midiã (região)&quot;, &quot;lat&quot;: 28.47, &quot;lon&quot;: 35.0, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Região de Midiã, provavelmente no noroeste da Arábia. A localização exata é debatida.&quot;}, {&quot;nome&quot;: &quot;Sinai/Horebe (tradição: Jebel Musa)&quot;, &quot;lat&quot;: 28.5392, &quot;lon&quot;: 33.975, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Localização tradicional, no sul da península do Sinai. Debatida.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Fuga de Moisés (ilustrativa)&quot;, &quot;pontos&quot;: [[29.8503, 31.255], [30.4, 32.5], [29.0, 34.0], [28.47, 35.0]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;A localização de Midiã é debatida; o caminho do texto não é descrito.&quot;}], &quot;aviso&quot;: &quot;Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Pontos em roxo têm localização debatida. Toque nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<details class='dobra'><summary>🏛️ Contexto histórico-literário</summary><div><ul><li>O nome "Moisés" parece ter raiz egípcia (como em Tutmés, Ramsés: "nascido de"), embora o texto o explique em hebraico.</li><li>A cesta lembra lendas de reis antigos expostos ao nascer (como Sargão de Acad). Diferença: aqui o ato é de proteção.</li><li>Moisés tem <strong>três vidas de 40 anos</strong>, segundo At 7: príncipe, pastor e líder.</li><li><strong>Midiã</strong> ficava a leste do mar Vermelho; o texto sugere ligação com o Sinai.</li></ul></div></details>
+<details class='dobra'><summary>🔗 Conexões com outros textos</summary><div><ul><li><strong>Hb 11.23–27:</strong> a fé dos pais e de Moisés.</li><li><strong>At 7:</strong> a versão de Estêvão.</li></ul></div></details>
+<section id='teste'><h2>🧠 Teste-se</h2><ol class='quiz'><li>Como Moisés sobrevive ao decreto de Faraó?<details><summary>Ver resposta</summary><p>A mãe o esconde por três meses e depois o coloca num cesto no rio. A filha de Faraó o encontra e o adota, e a própria mãe o amamenta.</p></details></li><li>Por que ele foge para Midiã?<details><summary>Ver resposta</summary><p>Mata um egípcio que feria um hebreu; quando o caso é conhecido, Faraó procura matá-lo, e ele foge.</p></details></li><li>Qual a última frase do capítulo e por que ela importa?<details><summary>Ver resposta</summary><p>Que Deus ouviu, lembrou-se da aliança, viu e tomou conhecimento. Prepara o chamado de Moisés no capítulo seguinte.</p></details></li></ol><div class='reflexao'><p>💭 a primeira tentativa de libertar o povo falha. O que faltava?</p></div></section>
+<details class='dobra'><summary>⚖️ Pontos debatidos</summary><div><ul><li><strong>Localização de Midiã e do monte Sinai:</strong> debatida (Arábia, Sinai egípcio).</li><li><strong>Idade de Moisés</strong> e cronologia dos 40 anos: número redondo ou exato.</li></ul></div></details>
+<details class="dobra fontes"><summary>📚 Fontes e revisão</summary><div>
 <ul>
-<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Texto bíblico por referência; as falas em itálico são paráfrases do episódio.</li>
 <li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
 <li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
-</ul></section>
+</ul></div></details>
 </article>
-<nav class="navep"><a href="028.html">← De hóspedes a escravos: Israel no Egito</a><a class="prox" href="030.html">A sarça ardente e o nome de Deus →</a></nav>
+<nav class="fim" aria-label="Navegação entre episódios"><a href="028.html"><small>← Anterior</small>De hóspedes a escravos: Israel no Egito</a><a class="prox" href="030.html"><small>Próximo →</small>A sarça ardente e o nome de Deus</a></nav>
 </main>
-<script>
-(function(){
-  var chave='biblia-lido-029', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
-  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
-  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
-  show(on);
-  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
-})();
-</script>
-
-<script>
-(function(){
-  var el=document.getElementById('mapa-vivo'); if(!el) return;
-  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
-  if(typeof L==='undefined'){ fallback(); return; }
-  var d=JSON.parse(el.getAttribute('data-mapa'));
-  var map=L.map(el,{scrollWheelZoom:false});
-  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
-  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
-  topo.addTo(map);
-  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
-  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
-  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
-  map.on('click',function(){ map.scrollWheelZoom.enable(); });
-  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
-  (d.rotas||[]).forEach(function(r){
-    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
-    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
-    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
-  });
-  (d.lugares||[]).forEach(function(p){
-    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
-    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
-    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
-    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
-    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
-  });
-  map.fitBounds(pts,{padding:[34,34]});
-})();
-</script>
+<nav class="barra" aria-label="Ações do episódio"><a class="b-nav" href="028.html" aria-label="Episódio anterior">←</a><button type="button" class="b-lido" data-lido aria-pressed="false">✓ Marcar como lido</button><a class="b-nav" href="030.html" aria-label="Próximo episódio">→</a></nav>
+<script src="app.js"></script>
 </body>
 </html>

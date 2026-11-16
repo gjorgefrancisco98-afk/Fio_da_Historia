@@ -1,189 +1,54 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-era="2">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>A guerra dos reis e Melquisedeque</title>
+<title>A guerra dos reis e Melquisedeque · Fio da História</title>
 <meta name="description" content="O pastor Abrão vira comandante, ganha uma batalha e recusa o butim. Por quê?">
-<style>:root{
-  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
-  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
-  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
-  --banda:#f6e7da; --eixo:#6b6357;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
-    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
-    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
-    --banda:#3a2a1d; --eixo:#a89f90;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
-main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
-.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
-.topo a{color:var(--suave)}
-a{color:var(--destaque)}
-h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
-h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
-h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
-.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
-.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
-.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
-.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
-.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
-blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
-blockquote p{margin:0}
-#historia p{margin:1.1rem 0}
-#historia p strong:first-child{color:var(--destaque)}
-.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
-.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
-.botao:hover{background:var(--destaque-bg)}
-.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
-.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
-.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
-.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
-.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
-@media (max-width:520px){.mapa-vivo{height:340px}}
-.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
-.tabela{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
-th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--destaque-bg)}
-ul,ol{padding-left:1.4rem}
-li{margin:.3rem 0}
-code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
-.quiz li{margin:.9rem 0}
-details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
-summary{cursor:pointer;color:var(--destaque);font-weight:600}
-details p{margin:.4rem 0 0}
-.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
-.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
-.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
-.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
-.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
-.texto-bib summary{padding:8px 0;font-size:16px}
-.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
-.vers{margin:.35rem 0;line-height:1.65}
-.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
-#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
-#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
-#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
-.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
-.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
-.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
-.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
-/* SVG: mapa */
-.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
-.m-river{fill:none;stroke:var(--rio);stroke-width:3}
-.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
-.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
-.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
-.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
-.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
-.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
-.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
-.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
-/* SVG: linha do tempo */
-.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
-.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
-.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
-.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
-.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
-.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
-.l-ev .l-r{fill:var(--suave);font-size:12px}
-.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
-.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
-@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M16 46c12-4 6-20 18-24s14 4 14 4' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('biblia-tema');if(t)document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
-<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 2 · Patriarcas</span></header>
+<body data-ep="011">
+<div id="leitura" aria-hidden="true"></div>
+<header class="topo"><a class="logo" href="index.html">← Fio da <b>História</b></a>
+<button id="tema" class="tema" type="button" aria-label="Alternar tema claro e escuro">◐</button></header>
 <main>
-<article>
-<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
-<p class="selo">Episódio 011 · 3 min de leitura</p>
+<div class="hero" data-num="011">
+<p class="selo">🐪 Era 2 · Patriarcas · Episódio 011</p>
 <h1>A guerra dos reis e Melquisedeque</h1>
 <p class="gancho">O pastor Abrão vira comandante, ganha uma batalha e recusa o butim. Por quê?</p>
-<ul class="meta">
-  <li><strong>Passagens:</strong> Gn 14</li>
-  <li><strong>Época:</strong> ~2000 a.C. <span class="certeza c-debatida">data: debatida</span></li>
-</ul>
-<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Gn 14). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
-<p><strong>1. Uma guerra de reis.</strong> Quatro reis do leste, liderados por Quedorlaomer, de Elão, enfrentam cinco reis do vale de Sidim, entre eles os de Sodoma e Gomorra. Por doze anos os reis do vale pagaram tributo; no décimo terceiro se rebelaram, e no décimo quarto os reis do leste vieram em campanha.</p>
-<p><strong>2. A derrota e o sequestro.</strong> Os cinco reis do vale são vencidos. Os vencedores levam os bens e os alimentos de Sodoma e Gomorra, e levam também Ló, sobrinho de Abrão, com tudo o que ele tinha.</p>
-<p><strong>3. A notícia.</strong> Um fugitivo chega até Abrão, o hebreu, que mora junto aos carvalhos de Manre. Quando Abrão ouve que o parente foi capturado, arma 318 homens nascidos em sua casa e persegue os reis até Dã.</p>
-<p><strong>4. O ataque.</strong> Abrão divide seus homens e ataca de noite, e persegue os inimigos até além de Damasco. Recupera tudo: os bens, Ló, as mulheres e o povo.</p>
-<p><strong>5. Melquisedeque.</strong> Na volta, o rei de Salém, Melquisedeque, que é também sacerdote do Deus Altíssimo, vem ao encontro de Abrão com pão e vinho. Ele o abençoa: <em>bendito seja Abrão pelo Deus Altíssimo, que entregou os seus inimigos em suas mãos</em>. E Abrão lhe dá o dízimo de tudo.</p>
-<p><strong>6. A recusa.</strong> O rei de Sodoma propõe: <em>dê-me as pessoas e fique com os bens.</em> Abrão responde que jurou ao SENHOR, Deus Altíssimo, que não ficará com nada, nem um fio de linha, para que ninguém diga: <em>eu enriqueci Abrão</em>. Pede apenas que seus aliados recebam a parte deles.</p>
-<h3>O que o texto não diz</h3>
-<ul><li>A <strong>identidade histórica</strong> dos reis do leste: vários nomes não são identificados com segurança.</li><li><strong>Quem era</strong> Melquisedeque: ele aparece só aqui, no Salmo 110 e em Hebreus.</li><li>Onde fica <strong>Salém</strong>: muitos leitores a associam a Jerusalém, mas o texto não diz.</li></ul></section>
-<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2014&version=ARA" target="_blank" rel="noopener">Ler Gn 14 na ARA ↗</a></div></section>
-<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;A guerra dos reis&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Hebrom (Manre, Macpela)&quot;, &quot;lat&quot;: 31.5326, &quot;lon&quot;: 35.0998, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Região de Manre e da caverna de Macpela (Gn 23).&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta sul)&quot;, &quot;lat&quot;: 31.2594, &quot;lon&quot;: 35.5444, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Uma proposta: ao sul do mar Morto (Bab edh-Dhra). Debatida.&quot;}, {&quot;nome&quot;: &quot;Dã&quot;, &quot;lat&quot;: 33.2486, &quot;lon&quot;: 35.6522, &quot;tipo&quot;: &quot;fim&quot;, &quot;nota&quot;: &quot;Limite norte da perseguição de Abrão (Gn 14.14). Tel Dan.&quot;}, {&quot;nome&quot;: &quot;Damasco&quot;, &quot;lat&quot;: 33.5138, &quot;lon&quot;: 36.2765, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Cidade ao norte de Canaã.&quot;}, {&quot;nome&quot;: &quot;Jerusalém (Salém)&quot;, &quot;lat&quot;: 31.7683, &quot;lon&quot;: 35.2137, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Associada a Salém, de Melquisedeque (Gn 14.18), segundo muitos leitores.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Perseguição de Abrão (ilustrativa)&quot;, &quot;pontos&quot;: [[31.5326, 35.0998], [31.7683, 35.2137], [32.2133, 35.2828], [33.2486, 35.6522], [33.6, 36.3]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Abrão persegue os reis até Dã e além de Damasco (Gn 14.14–15). O trajeto é ilustrativo.&quot;}], &quot;aviso&quot;: &quot;Salém é associada a Jerusalém por muitos leitores. Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Salém é associada a Jerusalém por muitos leitores. Pontos em roxo têm localização debatida. Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
-<section><h2>Resumo rápido</h2><ol><li>Uma coalizão de reis do leste, liderada por Quedorlaomer, vence os reis do vale do Jordão e leva Ló cativo.</li><li>Abrão reúne 318 homens treinados, persegue os inimigos até o norte e os derrota à noite.</li><li>Na volta, <strong>Melquisedeque</strong>, rei de Salém e "sacerdote do Deus Altíssimo", traz pão e vinho e o abençoa; Abrão lhe dá o dízimo.</li><li>O rei de Sodoma oferece o butim. Abrão recusa: não quer que ninguém diga "eu enriqueci Abrão".</li></ol></section>
-<section><h2>Contexto histórico-literário</h2><ul><li>Capítulo com nomes de reis e lugares difíceis de identificar; é um dos mais debatidos de Gênesis.</li><li><strong>Melquisedeque</strong> aparece de repente e some. Seu nome significa "rei de justiça" e "Salém" lembra "paz"</li></ul>
+<ul class="pilulas"><li>⏱ 3 min</li><li>📅 ~2000 a.C. <span class='certeza'>(debatida)</span></li><li>📖 Gn 14</li></ul>
+</div>
+<p class='aviso'>⚠️ Em revisão, ainda sem conferência de especialista.</p>
+<nav class="chips" aria-label="Seções do episódio"><a href='#historia'>História</a><a href='#texto'>Texto</a><a href='#mapa'>Mapa</a><a href='#teste'>Teste</a></nav>
+<article>
+<details class='resumo'><summary>⚡ Resumo em 30 segundos</summary><div><ol><li>Uma coalizão de reis do leste, liderada por Quedorlaomer, vence os reis do vale do Jordão e leva Ló cativo.</li><li>Abrão reúne 318 homens treinados, persegue os inimigos até o norte e os derrota à noite.</li><li>Na volta, <strong>Melquisedeque</strong>, rei de Salém e "sacerdote do Deus Altíssimo", traz pão e vinho e o abençoa; Abrão lhe dá o dízimo.</li><li>O rei de Sodoma oferece o butim. Abrão recusa: não quer que ninguém diga "eu enriqueci Abrão".</li></ol></div></details>
+<section id='historia'><h2>📜 A história</h2><p class='nota-leitura'><em>Narrativa fiel ao texto (Gn 14). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p>
+<div class='passos'><div class='passo'><div class='n'>1</div><h3>Uma guerra de reis</h3><p>Quatro reis do leste, liderados por Quedorlaomer, de Elão, enfrentam cinco reis do vale de Sidim, entre eles os de Sodoma e Gomorra. Por doze anos os reis do vale pagaram tributo; no décimo terceiro se rebelaram, e no décimo quarto os reis do leste vieram em campanha.</p></div><div class='passo'><div class='n'>2</div><h3>A derrota e o sequestro</h3><p>Os cinco reis do vale são vencidos. Os vencedores levam os bens e os alimentos de Sodoma e Gomorra, e levam também Ló, sobrinho de Abrão, com tudo o que ele tinha.</p></div><div class='passo'><div class='n'>3</div><h3>A notícia</h3><p>Um fugitivo chega até Abrão, o hebreu, que mora junto aos carvalhos de Manre. Quando Abrão ouve que o parente foi capturado, arma 318 homens nascidos em sua casa e persegue os reis até Dã.</p></div><div class='passo'><div class='n'>4</div><h3>O ataque</h3><p>Abrão divide seus homens e ataca de noite, e persegue os inimigos até além de Damasco. Recupera tudo: os bens, Ló, as mulheres e o povo.</p></div><div class='passo'><div class='n'>5</div><h3>Melquisedeque</h3><p>Na volta, o rei de Salém, Melquisedeque, que é também sacerdote do Deus Altíssimo, vem ao encontro de Abrão com pão e vinho. Ele o abençoa: <em>bendito seja Abrão pelo Deus Altíssimo, que entregou os seus inimigos em suas mãos</em>. E Abrão lhe dá o dízimo de tudo.</p></div><div class='passo'><div class='n'>6</div><h3>A recusa</h3><p>O rei de Sodoma propõe: <em>dê-me as pessoas e fique com os bens.</em> Abrão responde que jurou ao SENHOR, Deus Altíssimo, que não ficará com nada, nem um fio de linha, para que ninguém diga: <em>eu enriqueci Abrão</em>. Pede apenas que seus aliados recebam a parte deles.</p></div></div>
+<aside class='callout'><h3>🔍 O que o texto não diz</h3><ul><li>A <strong>identidade histórica</strong> dos reis do leste: vários nomes não são identificados com segurança.</li><li><strong>Quem era</strong> Melquisedeque: ele aparece só aqui, no Salmo 110 e em Hebreus.</li><li>Onde fica <strong>Salém</strong>: muitos leitores a associam a Jerusalém, mas o texto não diz.</li></ul></aside></section>
+<section id='texto' data-versao='aa'><h2>📖 Leia o texto bíblico</h2><p class='nota'>Depois da história, vale ler o próprio texto. Escolha a tradução.</p><div class='seletor' role='group' aria-label='Tradução'><span class='nota'>Tradução:</span> <button type='button' class='vbtn' data-v='aa' title='Almeida Revisada Imprensa Bíblica' aria-pressed='false'>AA</button><button type='button' class='vbtn' data-v='acf' title='Almeida Corrigida Fiel' aria-pressed='false'>ACF</button><button type='button' class='vbtn' data-v='nvi' title='Nova Versão Internacional' aria-pressed='false'>NVI</button></div><details class='texto-bib' open><summary>Gn 14 <span class='nota'>(24 versículos)</span></summary><div class='vers-aa'><p class='vers'><sup>1</sup> Aconteceu nos dias de Anrafel, rei de Sinar, Arioque, rei de Elasar, Quedorlaomer, rei de Elão, e Tidal, rei de Goiim,</p><p class='vers'><sup>2</sup> que estes fizeram guerra a Bera, rei de Sodoma, a Birsa, rei de Gomorra, a Sinabe, rei de Admá, a Semeber, rei de Zeboim, e ao rei de Belá {esta é Zoar}.</p><p class='vers'><sup>3</sup> Todos estes se ajuntaram no vale de Sidim {que é o Mar Salgado}.</p><p class='vers'><sup>4</sup> Doze anos haviam servido a Quedorlaomer, mas ao décimo terceiro ano rebelaram-se.</p><p class='vers'><sup>5</sup> Por isso, ao décimo quarto ano veio Quedorlaomer, e os reis que estavam com ele, e feriram aos refains em Asterote-Carnaim, aos zuzins em Hão, aos emins em Savé-Quiriataim,</p><p class='vers'><sup>6</sup> e aos horeus no seu monte Seir, até El-Parã, que está junto ao deserto.</p><p class='vers'><sup>7</sup> Depois voltaram e vieram a En-Mispate {que é Cades}, e feriram toda a terra dos amalequitas, e também dos amorreus, que habitavam em Hazazom-Tamar.</p><p class='vers'><sup>8</sup> Então saíram os reis de Sodoma, de Gomorra, de Admá, de Zeboim e de Belá {esta é Zoar}, e ordenaram batalha contra eles no vale de Sidim,</p><p class='vers'><sup>9</sup> contra Quedorlaomer, rei de Elão, Tidal, rei de Goiim, Anrafel, rei de Sinar, e Arioque, rei de Elasar; quatro reis contra cinco.</p><p class='vers'><sup>10</sup> Ora, o vale de Sidim estava cheio de poços de betume; e fugiram os reis de Sodoma e de Gomorra, e caíram ali; e os restantes fugiram para o monte.</p><p class='vers'><sup>11</sup> Tomaram, então, todos os bens de Sodoma e de Gomorra com todo o seu mantimento, e se foram.</p><p class='vers'><sup>12</sup> Tomaram também a Ló, filho do irmão de Abrão, que habitava em Sodoma, e os bens dele, e partiram.</p><p class='vers'><sup>13</sup> Então veio um que escapara, e o contou a Abrão, o hebreu. Ora, este habitava junto dos carvalhos de Manre, o amorreu, irmão de Escol e de Aner; estes eram aliados de Abrão.</p><p class='vers'><sup>14</sup> Ouvindo, pois, Abrão que seu irmão estava preso, levou os seus homens treinados, nascidos em sua casa, em número de trezentos e dezoito, e perseguiu os reis até Dã.</p><p class='vers'><sup>15</sup> Dividiu-se contra eles de noite, ele e os seus servos, e os feriu, perseguindo-os até Hobá, que fica à esquerda de Damasco.</p><p class='vers'><sup>16</sup> Assim tornou a trazer todos os bens, e tornou a trazer também a Ló, seu irmão, e os bens dele, e também as mulheres e o povo.</p><p class='vers'><sup>17</sup> Depois que Abrão voltou de ferir a Quedorlaomer e aos reis que estavam com ele, saiu-lhe ao encontro o rei de Sodoma, no vale de Savé {que é o vale do rei}.</p><p class='vers'><sup>18</sup> Ora, Melquisedeque, rei de Salém, trouxe pão e vinho; pois era sacerdote do Deus Altíssimo;</p><p class='vers'><sup>19</sup> e abençoou a Abrão, dizendo: bendito seja Abrão pelo Deus Altíssimo, o Criador dos céus e da terra!</p><p class='vers'><sup>20</sup> E bendito seja o Deus Altíssimo, que entregou os teus inimigos nas tuas mãos! E Abrão deu-lhe o dízimo de tudo.</p><p class='vers'><sup>21</sup> Então o rei de Sodoma disse a Abrão: Dá-me a mim as pessoas; e os bens toma-os para ti.</p><p class='vers'><sup>22</sup> Abrão, porém, respondeu ao rei de Sodoma: Levanto minha mão ao Senhor, o Deus Altíssimo, o Criador dos céus e da terra,</p><p class='vers'><sup>23</sup> jurando que não tomarei coisa alguma de tudo o que é teu, nem um fio, nem uma correia de sapato, para que não digas: Eu enriqueci a Abrão;</p><p class='vers'><sup>24</sup> salvo tão somente o que os mancebos comeram, e a parte que toca aos homens Aner, Escol e Manre, que foram comigo; que estes tomem a sua parte.</p></div><div class='vers-acf'><p class='vers'><sup>1</sup> E aconteceu nos dias de Anrafel, rei de Sinar, Arioque, rei de Elasar, Quedorlaomer, rei de Elão, e Tidal, rei de Goim,</p><p class='vers'><sup>2</sup> Que estes fizeram guerra a Bera, rei de Sodoma, a Birsa, rei de Gomorra, a Sinabe, rei de Admá, e a Semeber, rei de Zeboim, e ao rei de Belá (esta é Zoar).</p><p class='vers'><sup>3</sup> Todos estes se ajuntaram no vale de Sidim (que é o Mar Salgado).</p><p class='vers'><sup>4</sup> Doze anos haviam servido a Quedorlaomer, mas ao décimo terceiro ano rebelaram-se.</p><p class='vers'><sup>5</sup> E ao décimo quarto ano veio Quedorlaomer, e os reis que estavam com ele, e feriram aos refains em Asterote-Carnaim, e aos zuzins em Hã, e aos emins em Savé-Quiriataim,</p><p class='vers'><sup>6</sup> E aos horeus no seu monte Seir, até El-Parã que está junto ao deserto.</p><p class='vers'><sup>7</sup> Depois tornaram e vieram a En-Mispate (que é Cades), e feriram toda a terra dos amalequitas, e também aos amorreus, que habitavam em Hazazom-Tamar.</p><p class='vers'><sup>8</sup> Então saiu o rei de Sodoma, e o rei de Gomorra, e o rei de Admá, e o rei de Zeboim, e o rei de Belá (esta é Zoar), e ordenaram batalha contra eles no vale de Sidim,</p><p class='vers'><sup>9</sup> Contra Quedorlaomer, rei de Elão, e Tidal, rei de Goim, e Anrafel, rei de Sinar, e Arioque, rei de Elasar; quatro reis contra cinco.</p><p class='vers'><sup>10</sup> E o vale de Sidim estava cheio de poços de betume; e fugiram os reis de Sodoma e de Gomorra, e caíram ali; e os restantes fugiram para um monte.</p><p class='vers'><sup>11</sup> E tomaram todos os bens de Sodoma, e de Gomorra, e todo o seu mantimento e foram-se.</p><p class='vers'><sup>12</sup> Também tomaram a Ló, que habitava em Sodoma, filho do irmão de Abrão, e os seus bens, e foram-se.</p><p class='vers'><sup>13</sup> Então veio um, que escapara, e o contou a Abrão, o hebreu; ele habitava junto dos carvalhais de Manre, o amorreu, irmão de Escol, e irmão de Aner; eles eram confederados de Abrão.</p><p class='vers'><sup>14</sup> Ouvindo, pois, Abrão que o seu irmão estava preso, armou os seus criados, nascidos em sua casa, trezentos e dezoito, e os perseguiu até Dã.</p><p class='vers'><sup>15</sup> E dividiu-se contra eles de noite, ele e os seus criados, e os feriu, e os perseguiu até Hobá, que fica à esquerda de Damasco.</p><p class='vers'><sup>16</sup> E tornou a trazer todos os seus bens, e tornou a trazer também a Ló, seu irmão, e os seus bens, e também as mulheres, e o povo.</p><p class='vers'><sup>17</sup> E o rei de Sodoma saiu-lhe ao encontro (depois que voltou de ferir a Quedorlaomer e aos reis que estavam com ele) até ao Vale de Savé, que é o vale do rei.</p><p class='vers'><sup>18</sup> E Melquisedeque, rei de Salém, trouxe pão e vinho; e era este sacerdote do Deus Altíssimo.</p><p class='vers'><sup>19</sup> E abençoou-o, e disse: Bendito seja Abrão pelo Deus Altíssimo, o Possuidor dos céus e da terra;</p><p class='vers'><sup>20</sup> E bendito seja o Deus Altíssimo, que entregou os teus inimigos nas tuas mãos. E Abrão deu-lhe o dízimo de tudo.</p><p class='vers'><sup>21</sup> E o rei de Sodoma disse a Abrão: Dá-me a mim as pessoas, e os bens toma para ti.</p><p class='vers'><sup>22</sup> Abrão, porém, disse ao rei de Sodoma: Levantei minha mão ao Senhor, o Deus Altíssimo, o Possuidor dos céus e da terra,</p><p class='vers'><sup>23</sup> Jurando que desde um fio até à correia de um sapato, não tomarei coisa alguma de tudo o que é teu; para que não digas: Eu enriqueci a Abrão;</p><p class='vers'><sup>24</sup> Salvo tão-somente o que os jovens comeram, e a parte que toca aos homens que comigo foram, Aner, Escol e Manre; estes que tomem a sua parte.</p></div><div class='vers-nvi'><p class='vers'><sup>1</sup> Naquela época Anrafel, rei de Sinear, Arioque, rei de Elasar, Quedorlaomer, rei de Elão, e Tidal, rei de Goim,</p><p class='vers'><sup>2</sup> foram à guerra contra Bera, rei de Sodoma, contra Birsa, rei de Gomorra, contra Sinabe, rei de Admá, contra Semeber, rei de Zeboim, e contra o rei de Belá, que é Zoar.</p><p class='vers'><sup>3</sup> Todos esses últimos juntaram suas tropas no vale de Sidim, onde fica o mar Salgado.</p><p class='vers'><sup>4</sup> Doze anos estiveram sujeitos a Quedorlaomer, mas no décimo terceiro ano se rebelaram.</p><p class='vers'><sup>5</sup> No décimo quarto ano, Quedorlaomer e os reis que a ele se aliaram derrotaram os refains em Asterote-Carnaim, os zuzins em Hã, os emins em Savé-Quiriataim</p><p class='vers'><sup>6</sup> e os horeus desde os montes de Seir até El-Parã, próximo ao deserto.</p><p class='vers'><sup>7</sup> Depois, voltaram e foram para En-Mispate, que é Cades, e conquistaram todo o território dos amalequitas e dos amorreus que viviam em Hazazom-Tamar.</p><p class='vers'><sup>8</sup> Então os reis de Sodoma, de Gomorra, de Admá, de Zeboim e de Belá, que é Zoar, marcharam e tomaram posição de combate no vale de Sidim</p><p class='vers'><sup>9</sup> contra Quedorlaomer, rei de Elão, contra Tidal, rei de Goim, contra Anrafel, rei de Sinear, e contra Arioque, rei de Elasar. Eram quatro reis contra cinco.</p><p class='vers'><sup>10</sup> Ora, o vale de Sidim era cheio de poços de betume e, quando os reis de Sodoma e de Gomorra fugiram, alguns dos seus homens caíram nos poços e o restante escapou para os montes.</p><p class='vers'><sup>11</sup> Os vencedores saquearam todos os bens de Sodoma e de Gomorra e todo o seu mantimento, e partiram.</p><p class='vers'><sup>12</sup> Levaram também Ló, sobrinho de Abrão, e os bens que ele possuía, visto que morava em Sodoma.</p><p class='vers'><sup>13</sup> Mas alguém que tinha escapado veio e relatou tudo a Abrão, o hebreu. Abrão vivia próximo aos carvalhos de Manre, o amorreu, irmão de Escol e de Aner, aliados de Abrão.</p><p class='vers'><sup>14</sup> Quando Abrão ouviu que seu parente fora levado prisioneiro, mandou convocar os trezentos e dezoito homens treinados, nascidos em sua casa, e saiu em perseguição aos inimigos até Dã.</p><p class='vers'><sup>15</sup> Atacou-os durante a noite em grupos, e assim os derrotou, perseguindo-os até Hobá, ao norte de Damasco.</p><p class='vers'><sup>16</sup> Recuperou todos os bens e trouxe de volta seu parente Ló com tudo o que possuía, juntamente com as mulheres e o restante dos prisioneiros.</p><p class='vers'><sup>17</sup> Voltando Abrão da vitória sobre Quedorlaomer e sobre os reis que a ele se haviam aliado, o rei de Sodoma foi ao seu encontro no vale de Savé, isto é, o vale do Rei.</p><p class='vers'><sup>18</sup> Então Melquisedeque, rei de Salém e sacerdote do Deus Altíssimo, trouxe pão e vinho</p><p class='vers'><sup>19</sup> e abençoou Abrão, dizendo: &quot;Bendito seja Abrão pelo Deus Altíssimo, Criador dos céus e da terra.</p><p class='vers'><sup>20</sup> E bendito seja o Deus Altíssimo, que entregou seus inimigos em suas mãos&quot;. E Abrão lhe deu o dízimo de tudo.</p><p class='vers'><sup>21</sup> O rei de Sodoma disse a Abrão: &quot;Dê-me as pessoas e pode ficar com os bens&quot;.</p><p class='vers'><sup>22</sup> Mas Abrão respondeu ao rei de Sodoma: &quot;De mãos levantadas ao Senhor, Deus Altíssimo, Criador dos céus e da terra, juro</p><p class='vers'><sup>23</sup> que não aceitarei nada do que lhe pertence, nem mesmo um cordão ou uma correia de sandália, para que você jamais venha a dizer: ‘Eu enriqueci Abrão’.</p><p class='vers'><sup>24</sup> Nada aceitarei, a não ser o que os meus servos comeram e a porção pertencente a Aner, Escol e Manre, os quais me acompanharam. Que eles recebam a sua porção&quot;.</p></div></details><p class='nota'>Textos bíblicos usados em caráter de estudo, a partir do acervo do projeto. Os direitos são dos detentores de cada tradução: AA (Imprensa Bíblica Brasileira), ACF (Sociedade Bíblica Trinitariana) e NVI (Biblica/Sociedade Bíblica Internacional).</p><p class='nota'>Prefere a ARA? Abra em um site externo: <a href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2014&version=ARA" target="_blank" rel="noopener">Gn 14 ↗</a></p></section>
+<section id='mapa'><h2>🗺️ Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;A guerra dos reis&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Hebrom (Manre, Macpela)&quot;, &quot;lat&quot;: 31.5326, &quot;lon&quot;: 35.0998, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Região de Manre e da caverna de Macpela (Gn 23).&quot;}, {&quot;nome&quot;: &quot;Sodoma (proposta sul)&quot;, &quot;lat&quot;: 31.2594, &quot;lon&quot;: 35.5444, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Uma proposta: ao sul do mar Morto (Bab edh-Dhra). Debatida.&quot;}, {&quot;nome&quot;: &quot;Dã&quot;, &quot;lat&quot;: 33.2486, &quot;lon&quot;: 35.6522, &quot;tipo&quot;: &quot;fim&quot;, &quot;nota&quot;: &quot;Limite norte da perseguição de Abrão (Gn 14.14). Tel Dan.&quot;}, {&quot;nome&quot;: &quot;Damasco&quot;, &quot;lat&quot;: 33.5138, &quot;lon&quot;: 36.2765, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Cidade ao norte de Canaã.&quot;}, {&quot;nome&quot;: &quot;Jerusalém (Salém)&quot;, &quot;lat&quot;: 31.7683, &quot;lon&quot;: 35.2137, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Associada a Salém, de Melquisedeque (Gn 14.18), segundo muitos leitores.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Perseguição de Abrão (ilustrativa)&quot;, &quot;pontos&quot;: [[31.5326, 35.0998], [31.7683, 35.2137], [32.2133, 35.2828], [33.2486, 35.6522], [33.6, 36.3]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Abrão persegue os reis até Dã e além de Damasco (Gn 14.14–15). O trajeto é ilustrativo.&quot;}], &quot;aviso&quot;: &quot;Salém é associada a Jerusalém por muitos leitores. Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Salém é associada a Jerusalém por muitos leitores. Pontos em roxo têm localização debatida. Toque nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<details class='dobra'><summary>🏛️ Contexto histórico-literário</summary><div><ul><li>Capítulo com nomes de reis e lugares difíceis de identificar; é um dos mais debatidos de Gênesis.</li><li><strong>Melquisedeque</strong> aparece de repente e some. Seu nome significa "rei de justiça" e "Salém" lembra "paz"</li></ul>
 <p>(e Jerusalém, segundo muitas leituras).</p>
-<ul><li>Aparece apenas aqui, em <strong>Sl 110.4</strong> (o rei como sacerdote "segundo a ordem de Melquisedeque") e em <strong>Hebreus 5–7</strong>.</li></ul></section>
-<section><h2>Conexões</h2><ul><li><strong>Sl 110.4 e Hb 5–7:</strong> o sacerdócio de Melquisedeque como modelo do sacerdócio de Cristo.</li></ul></section>
-<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Por que Abrão entra em guerra?<details><summary>Ver resposta</summary><p>Para resgatar Ló, que foi levado cativo na guerra dos reis.</p></details></li><li>O que Melquisedeque faz e o que Abrão faz em resposta?<details><summary>Ver resposta</summary><p>Melquisedeque traz pão e vinho e abençoa Abrão. Abrão lhe dá o dízimo de tudo.</p></details></li><li>Por que Abrão recusa o butim?<details><summary>Ver resposta</summary><p>Não quer que ninguém possa dizer que foi o rei de Sodoma quem enriqueceu Abrão: a riqueza dele vem de Deus.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> o que revela alguém não querer ficar devendo a quem tem poder?</div>
-<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
-<section><h2>Pontos debatidos</h2><ul><li><strong>Identificação dos reis</strong> e historicidade do ataque.</li><li><strong>Quem é Melquisedeque:</strong> rei-sacerdote cananeu, ou figura com leitura simbólica posterior (Hb).</li></ul></section>
-<section class="fontes"><h2>Fontes e revisão</h2>
+<ul><li>Aparece apenas aqui, em <strong>Sl 110.4</strong> (o rei como sacerdote "segundo a ordem de Melquisedeque") e em <strong>Hebreus 5–7</strong>.</li></ul></div></details>
+<details class='dobra'><summary>🔗 Conexões com outros textos</summary><div><ul><li><strong>Sl 110.4 e Hb 5–7:</strong> o sacerdócio de Melquisedeque como modelo do sacerdócio de Cristo.</li></ul></div></details>
+<section id='teste'><h2>🧠 Teste-se</h2><ol class='quiz'><li>Por que Abrão entra em guerra?<details><summary>Ver resposta</summary><p>Para resgatar Ló, que foi levado cativo na guerra dos reis.</p></details></li><li>O que Melquisedeque faz e o que Abrão faz em resposta?<details><summary>Ver resposta</summary><p>Melquisedeque traz pão e vinho e abençoa Abrão. Abrão lhe dá o dízimo de tudo.</p></details></li><li>Por que Abrão recusa o butim?<details><summary>Ver resposta</summary><p>Não quer que ninguém possa dizer que foi o rei de Sodoma quem enriqueceu Abrão: a riqueza dele vem de Deus.</p></details></li></ol><div class='reflexao'><p>💭 o que revela alguém não querer ficar devendo a quem tem poder?</p></div></section>
+<details class='dobra'><summary>⚖️ Pontos debatidos</summary><div><ul><li><strong>Identificação dos reis</strong> e historicidade do ataque.</li><li><strong>Quem é Melquisedeque:</strong> rei-sacerdote cananeu, ou figura com leitura simbólica posterior (Hb).</li></ul></div></details>
+<details class="dobra fontes"><summary>📚 Fontes e revisão</summary><div>
 <ul>
-<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Texto bíblico por referência; as falas em itálico são paráfrases do episódio.</li>
 <li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
 <li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
-</ul></section>
+</ul></div></details>
 </article>
-<nav class="navep"><a href="010.html">← Abrão no Egito e a separação de Ló</a><a class="prox" href="012.html">A aliança com Abrão →</a></nav>
+<nav class="fim" aria-label="Navegação entre episódios"><a href="010.html"><small>← Anterior</small>Abrão no Egito e a separação de Ló</a><a class="prox" href="012.html"><small>Próximo →</small>A aliança com Abrão</a></nav>
 </main>
-<script>
-(function(){
-  var chave='biblia-lido-011', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
-  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
-  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
-  show(on);
-  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
-})();
-</script>
-
-<script>
-(function(){
-  var el=document.getElementById('mapa-vivo'); if(!el) return;
-  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
-  if(typeof L==='undefined'){ fallback(); return; }
-  var d=JSON.parse(el.getAttribute('data-mapa'));
-  var map=L.map(el,{scrollWheelZoom:false});
-  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
-  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
-  topo.addTo(map);
-  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
-  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
-  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
-  map.on('click',function(){ map.scrollWheelZoom.enable(); });
-  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
-  (d.rotas||[]).forEach(function(r){
-    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
-    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
-    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
-  });
-  (d.lugares||[]).forEach(function(p){
-    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
-    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
-    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
-    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
-    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
-  });
-  map.fitBounds(pts,{padding:[34,34]});
-})();
-</script>
+<nav class="barra" aria-label="Ações do episódio"><a class="b-nav" href="010.html" aria-label="Episódio anterior">←</a><button type="button" class="b-lido" data-lido aria-pressed="false">✓ Marcar como lido</button><a class="b-nav" href="012.html" aria-label="Próximo episódio">→</a></nav>
+<script src="app.js"></script>
 </body>
 </html>

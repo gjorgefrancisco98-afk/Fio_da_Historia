@@ -1,192 +1,56 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-era="1">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>O jardim: a criação contada do ponto de vista humano</title>
+<title>O jardim: a criação contada do ponto de vista humano · Fio da História</title>
 <meta name="description" content="O primeiro &quot;não é bom&quot; da Bíblia aparece antes de qualquer pecado. O que estava faltando?">
-<style>:root{
-  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
-  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
-  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
-  --banda:#f6e7da; --eixo:#6b6357;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
-    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
-    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
-    --banda:#3a2a1d; --eixo:#a89f90;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
-main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
-.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
-.topo a{color:var(--suave)}
-a{color:var(--destaque)}
-h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
-h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
-h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
-.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
-.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
-.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
-.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
-.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
-blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
-blockquote p{margin:0}
-#historia p{margin:1.1rem 0}
-#historia p strong:first-child{color:var(--destaque)}
-.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
-.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
-.botao:hover{background:var(--destaque-bg)}
-.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
-.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
-.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
-.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
-.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
-@media (max-width:520px){.mapa-vivo{height:340px}}
-.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
-.tabela{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
-th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--destaque-bg)}
-ul,ol{padding-left:1.4rem}
-li{margin:.3rem 0}
-code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
-.quiz li{margin:.9rem 0}
-details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
-summary{cursor:pointer;color:var(--destaque);font-weight:600}
-details p{margin:.4rem 0 0}
-.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
-.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
-.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
-.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
-.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
-.texto-bib summary{padding:8px 0;font-size:16px}
-.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
-.vers{margin:.35rem 0;line-height:1.65}
-.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
-#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
-#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
-#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
-.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
-.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
-.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
-.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
-/* SVG: mapa */
-.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
-.m-river{fill:none;stroke:var(--rio);stroke-width:3}
-.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
-.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
-.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
-.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
-.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
-.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
-.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
-.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
-/* SVG: linha do tempo */
-.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
-.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
-.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
-.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
-.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
-.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
-.l-ev .l-r{fill:var(--suave);font-size:12px}
-.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
-.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
-@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M16 46c12-4 6-20 18-24s14 4 14 4' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('biblia-tema');if(t)document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
-<body>
-<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 1 · Origens</span></header>
+<body data-ep="002">
+<div id="leitura" aria-hidden="true"></div>
+<header class="topo"><a class="logo" href="index.html">← Fio da <b>História</b></a>
+<button id="tema" class="tema" type="button" aria-label="Alternar tema claro e escuro">◐</button></header>
 <main>
-<article>
-<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
-<p class="selo">Episódio 002 · 4 min de leitura</p>
+<div class="hero" data-num="002">
+<p class="selo">🌱 Era 1 · Origens · Episódio 002</p>
 <h1>O jardim: a criação contada do ponto de vista humano</h1>
 <p class="gancho">O primeiro "não é bom" da Bíblia aparece antes de qualquer pecado. O que estava faltando?</p>
-<ul class="meta">
-  <li><strong>Passagens:</strong> Gn 2.4–25</li>
-  <li><strong>Época:</strong> não datável <span class="certeza c-não-datável">data: não datável</span></li>
-</ul>
-<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Gn 2.4–25). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
-<p><strong>1. Pó e sopro.</strong> O capítulo 2 volta a câmera para perto. Não havia ainda plantas nem chuva, e não havia ninguém para cultivar a terra. Deus forma o homem do pó do chão e sopra nas narinas dele o fôlego de vida. O homem passa a viver.</p>
-<p><strong>2. O jardim.</strong> Deus planta um jardim no Éden, no oriente, com árvores bonitas e boas para comer, e coloca ali o homem <em>para cultivá-lo e guardá-lo</em>. Quatro rios saem do Éden, e dois deles são o Tigre e o Eufrates. O trabalho já existe, antes de qualquer erro.</p>
-<p><strong>3. A regra.</strong> Deus permite comer de todas as árvores do jardim, menos de uma: a do conhecimento do bem e do mal. O texto avisa que comer dela traria a morte.</p>
-<p><strong>4. O primeiro "não é bom".</strong> Depois de tanta coisa boa, aparece algo diferente: <em>não é bom que o homem esteja só</em>. Deus decide fazer alguém que seja companhia à altura dele.</p>
-<p><strong>5. O desfile.</strong> Deus traz os animais e deixa o homem dar nome a cada um. Todos recebem um nome, mas nenhum é a companhia que faltava.</p>
-<p><strong>6. A mulher.</strong> Deus faz o homem dormir profundamente, forma a mulher e a traz até ele. O homem reage com um verso de alegria, o primeiro poema da Bíblia: <em>esta, sim, é osso dos meus ossos e carne da minha carne</em>.</p>
-<p><strong>7. Sem vergonha.</strong> O capítulo fecha com uma imagem de paz: os dois estão nus e não sentem vergonha. Guarde essa frase. No próximo episódio ela vai mudar.</p>
-<h3>O que o texto não diz</h3>
-<ul><li><strong>Onde ficava o Éden.</strong> Dois dos rios são conhecidos, mas a localização exata é debatida.</li><li><strong>O que a árvore representa.</strong> O texto a apresenta como a fronteira que Deus colocou, e as leituras divergem.</li><li><strong>Quanto tempo</strong> o casal viveu no jardim antes do capítulo 3.</li></ul></section>
-<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%202%3A4-25&version=ARA" target="_blank" rel="noopener">Ler Gn 2.4–25 na ARA ↗</a></div></section>
-<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;A região dos rios do Éden&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Babilônia (Babel)&quot;, &quot;lat&quot;: 32.5364, &quot;lon&quot;: 44.4209, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Babel/Babilônia, na região de Sinear.&quot;}, {&quot;nome&quot;: &quot;Nínive&quot;, &quot;lat&quot;: 36.3593, &quot;lon&quot;: 43.1525, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Capital da Assíria (Gn 10.11).&quot;}, {&quot;nome&quot;: &quot;Ur&quot;, &quot;lat&quot;: 30.9628, &quot;lon&quot;: 46.1031, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Cidade da Mesopotâmia sul (Tell el-Muqayyar). A identificação com a Ur de Gn 11 é a mais aceita, mas há quem proponha outra Ur no norte.&quot;}], &quot;rotas&quot;: [], &quot;aviso&quot;: &quot;A localização do Éden é desconhecida. O mapa mostra só a região do Tigre e do Eufrates, os dois rios que o texto nomeia (Gn 2.14).&quot;}'></div><figcaption>A localização do Éden é desconhecida. O mapa mostra só a região do Tigre e do Eufrates, os dois rios que o texto nomeia (Gn 2.14). Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
-<section><h2>Resumo rápido</h2><p>Enquanto Gn 1 mostra o cosmos visto de longe, Gn 2 aproxima a câmera:</p>
-<ol><li>O homem é formado do pó da terra e recebe o sopro de vida.</li><li>Deus planta um jardim no Éden e coloca o homem para cultivá-lo e guardá-lo.</li><li>Há uma regra: de uma árvore ele não deve comer.</li><li>Deus declara que "não é bom" que o homem esteja só. Desfile dos animais; nenhum deles é "auxílio idôneo".</li><li>A mulher é formada e o homem a reconhece com um grito poético de alegria.</li><li>O relato fecha com a imagem de um casal sem vergonha.</li></ol></section>
-<section><h2>Contexto histórico-literário</h2><ul><li><strong>Mudança de estilo:</strong> Gn 2 usa o nome divino "YHWH" (traduzido "SENHOR" na ARA) e um tom mais íntimo,</li></ul>
+<ul class="pilulas"><li>⏱ 4 min</li><li>📅 não datável <span class='certeza'>(não datável)</span></li><li>📖 Gn 2.4–25</li></ul>
+</div>
+<p class='aviso'>⚠️ Em revisão, ainda sem conferência de especialista.</p>
+<nav class="chips" aria-label="Seções do episódio"><a href='#historia'>História</a><a href='#texto'>Texto</a><a href='#mapa'>Mapa</a><a href='#teste'>Teste</a></nav>
+<article>
+<details class='resumo'><summary>⚡ Resumo em 30 segundos</summary><div><p>Enquanto Gn 1 mostra o cosmos visto de longe, Gn 2 aproxima a câmera:</p>
+<ol><li>O homem é formado do pó da terra e recebe o sopro de vida.</li><li>Deus planta um jardim no Éden e coloca o homem para cultivá-lo e guardá-lo.</li><li>Há uma regra: de uma árvore ele não deve comer.</li><li>Deus declara que "não é bom" que o homem esteja só. Desfile dos animais; nenhum deles é "auxílio idôneo".</li><li>A mulher é formada e o homem a reconhece com um grito poético de alegria.</li><li>O relato fecha com a imagem de um casal sem vergonha.</li></ol></div></details>
+<section id='historia'><h2>📜 A história</h2><p class='nota-leitura'><em>Narrativa fiel ao texto (Gn 2.4–25). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p>
+<div class='passos'><div class='passo'><div class='n'>1</div><h3>Pó e sopro</h3><p>O capítulo 2 volta a câmera para perto. Não havia ainda plantas nem chuva, e não havia ninguém para cultivar a terra. Deus forma o homem do pó do chão e sopra nas narinas dele o fôlego de vida. O homem passa a viver.</p></div><div class='passo'><div class='n'>2</div><h3>O jardim</h3><p>Deus planta um jardim no Éden, no oriente, com árvores bonitas e boas para comer, e coloca ali o homem <em>para cultivá-lo e guardá-lo</em>. Quatro rios saem do Éden, e dois deles são o Tigre e o Eufrates. O trabalho já existe, antes de qualquer erro.</p></div><div class='passo'><div class='n'>3</div><h3>A regra</h3><p>Deus permite comer de todas as árvores do jardim, menos de uma: a do conhecimento do bem e do mal. O texto avisa que comer dela traria a morte.</p></div><div class='passo'><div class='n'>4</div><h3>O primeiro "não é bom"</h3><p>Depois de tanta coisa boa, aparece algo diferente: <em>não é bom que o homem esteja só</em>. Deus decide fazer alguém que seja companhia à altura dele.</p></div><div class='passo'><div class='n'>5</div><h3>O desfile</h3><p>Deus traz os animais e deixa o homem dar nome a cada um. Todos recebem um nome, mas nenhum é a companhia que faltava.</p></div><div class='passo'><div class='n'>6</div><h3>A mulher</h3><p>Deus faz o homem dormir profundamente, forma a mulher e a traz até ele. O homem reage com um verso de alegria, o primeiro poema da Bíblia: <em>esta, sim, é osso dos meus ossos e carne da minha carne</em>.</p></div><div class='passo'><div class='n'>7</div><h3>Sem vergonha</h3><p>O capítulo fecha com uma imagem de paz: os dois estão nus e não sentem vergonha. Guarde essa frase. No próximo episódio ela vai mudar.</p></div></div>
+<aside class='callout'><h3>🔍 O que o texto não diz</h3><ul><li><strong>Onde ficava o Éden.</strong> Dois dos rios são conhecidos, mas a localização exata é debatida.</li><li><strong>O que a árvore representa.</strong> O texto a apresenta como a fronteira que Deus colocou, e as leituras divergem.</li><li><strong>Quanto tempo</strong> o casal viveu no jardim antes do capítulo 3.</li></ul></aside></section>
+<section id='texto' data-versao='aa'><h2>📖 Leia o texto bíblico</h2><p class='nota'>Depois da história, vale ler o próprio texto. Escolha a tradução.</p><div class='seletor' role='group' aria-label='Tradução'><span class='nota'>Tradução:</span> <button type='button' class='vbtn' data-v='aa' title='Almeida Revisada Imprensa Bíblica' aria-pressed='false'>AA</button><button type='button' class='vbtn' data-v='acf' title='Almeida Corrigida Fiel' aria-pressed='false'>ACF</button><button type='button' class='vbtn' data-v='nvi' title='Nova Versão Internacional' aria-pressed='false'>NVI</button></div><details class='texto-bib' open><summary>Gn 2.4–25 <span class='nota'>(22 versículos)</span></summary><div class='vers-aa'><h4>Gênesis 2</h4><p class='vers'><sup>4</sup> Eis as origens dos céus e da terra, quando foram criados. No dia em que o Senhor Deus fez a terra e os céus</p><p class='vers'><sup>5</sup> não havia ainda nenhuma planta do campo na terra, pois nenhuma erva do campo tinha ainda brotado; porque o Senhor Deus não tinha feito chover sobre a terra, nem havia homem para lavrar a terra.</p><p class='vers'><sup>6</sup> Um vapor, porém, subia da terra, e regava toda a face da terra.</p><p class='vers'><sup>7</sup> E formou o Senhor Deus o homem do pó da terra, e soprou-lhe nas narinas o fôlego da vida; e o homem tornou-se alma vivente.</p><p class='vers'><sup>8</sup> Então plantou o Senhor Deus um jardim, da banda do oriente, no Éden; e pôs ali o homem que tinha formado.</p><p class='vers'><sup>9</sup> E o Senhor Deus fez brotar da terra toda qualidade de árvores agradáveis à vista e boas para comida, bem como a árvore da vida no meio do jardim, e a árvore do conhecimento do bem e do mal.</p><p class='vers'><sup>10</sup> E saía um rio do Éden para regar o jardim; e dali se dividia e se tornava em quatro braços.</p><p class='vers'><sup>11</sup> O nome do primeiro é Pisom: este é o que rodeia toda a terra de Havilá, onde há ouro;</p><p class='vers'><sup>12</sup> e o ouro dessa terra é bom: ali há o bdélio, e a pedra de berilo.</p><p class='vers'><sup>13</sup> O nome do segundo rio é Giom: este é o que rodeia toda a terra de Cuche.</p><p class='vers'><sup>14</sup> O nome do terceiro rio é Tigre: este é o que corre pelo oriente da Assíria. E o quarto rio é o Eufrates.</p><p class='vers'><sup>15</sup> Tomou, pois, o Senhor Deus o homem, e o pôs no jardim do Édem para o lavrar e guardar.</p><p class='vers'><sup>16</sup> Ordenou o Senhor Deus ao homem, dizendo: De toda árvore do jardim podes comer livremente;</p><p class='vers'><sup>17</sup> mas da árvore do conhecimento do bem e do mal, dessa não comerás; porque no dia em que dela comeres, certamente morrerás.</p><p class='vers'><sup>18</sup> Disse mais o Senhor Deus: Não é bom que o homem esteja só; far-lhe-ei uma ajudadora que lhe seja idônea.</p><p class='vers'><sup>19</sup> Da terra formou, pois, o Senhor Deus todos os animais o campo e todas as aves do céu, e os trouxe ao homem, para ver como lhes chamaria; e tudo o que o homem chamou a todo ser vivente, isso foi o seu nome.</p><p class='vers'><sup>20</sup> Assim o homem deu nomes a todos os animais domésticos, às aves do céu e a todos os animais do campo; mas para o homem não se achava ajudadora idônea.</p><p class='vers'><sup>21</sup> Então o Senhor Deus fez cair um sono pesado sobre o homem, e este adormeceu; tomou-lhe, então, uma das costelas, e fechou a carne em seu lugar;</p><p class='vers'><sup>22</sup> e da costela que o senhor Deus lhe tomara, formou a mulher e a trouxe ao homem.</p><p class='vers'><sup>23</sup> Então disse o homem: Esta é agora osso dos meus ossos, e carne da minha carne; ela será chamada varoa, porquanto do varão foi tomada.</p><p class='vers'><sup>24</sup> Portanto deixará o homem a seu pai e a sua mãe, e unir-se-á à sua mulher, e serão uma só carne.</p><p class='vers'><sup>25</sup> E ambos estavam nus, o homem e sua mulher; e não se envergonhavam.</p></div><div class='vers-acf'><h4>Gênesis 2</h4><p class='vers'><sup>4</sup> Estas são as origens dos céus e da terra, quando foram criados; no dia em que o Senhor Deus fez a terra e os céus,</p><p class='vers'><sup>5</sup> E toda a planta do campo que ainda não estava na terra, e toda a erva do campo que ainda não brotava; porque ainda o Senhor Deus não tinha feito chover sobre a terra, e não havia homem para lavrar a terra.</p><p class='vers'><sup>6</sup> Um vapor, porém, subia da terra, e regava toda a face da terra.</p><p class='vers'><sup>7</sup> E formou o Senhor Deus o homem do pó da terra, e soprou em suas narinas o fôlego da vida; e o homem foi feito alma vivente.</p><p class='vers'><sup>8</sup> E plantou o Senhor Deus um jardim no Éden, do lado oriental; e pôs ali o homem que tinha formado.</p><p class='vers'><sup>9</sup> E o Senhor Deus fez brotar da terra toda a árvore agradável à vista, e boa para comida; e a árvore da vida no meio do jardim, e a árvore do conhecimento do bem e do mal.</p><p class='vers'><sup>10</sup> E saía um rio do Éden para regar o jardim; e dali se dividia e se tornava em quatro braços.</p><p class='vers'><sup>11</sup> O nome do primeiro é Pisom; este é o que rodeia toda a terra de Havilá, onde há ouro.</p><p class='vers'><sup>12</sup> E o ouro dessa terra é bom; ali há o bdélio, e a pedra sardônica.</p><p class='vers'><sup>13</sup> E o nome do segundo rio é Giom; este é o que rodeia toda a terra de Cuxe.</p><p class='vers'><sup>14</sup> E o nome do terceiro rio é Tigre; este é o que vai para o lado oriental da Assíria; e o quarto rio é o Eufrates.</p><p class='vers'><sup>15</sup> E tomou o Senhor Deus o homem, e o pôs no jardim do Éden para o lavrar e o guardar.</p><p class='vers'><sup>16</sup> E ordenou o Senhor Deus ao homem, dizendo: De toda a árvore do jardim comerás livremente,</p><p class='vers'><sup>17</sup> Mas da árvore do conhecimento do bem e do mal, dela não comerás; porque no dia em que dela comeres, certamente morrerás.</p><p class='vers'><sup>18</sup> E disse o Senhor Deus: Não é bom que o homem esteja só; far-lhe-ei uma ajudadora idônea para ele.</p><p class='vers'><sup>19</sup> Havendo, pois, o Senhor Deus formado da terra todo o animal do campo, e toda a ave dos céus, os trouxe a Adão, para este ver como lhes chamaria; e tudo o que Adão chamou a toda a alma vivente, isso foi o seu nome.</p><p class='vers'><sup>20</sup> E Adão pôs os nomes a todo o gado, e às aves dos céus, e a todo o animal do campo; mas para o homem não se achava ajudadora idônea.</p><p class='vers'><sup>21</sup> Então o Senhor Deus fez cair um sono pesado sobre Adão, e este adormeceu; e tomou uma das suas costelas, e cerrou a carne em seu lugar;</p><p class='vers'><sup>22</sup> E da costela que o Senhor Deus tomou do homem, formou uma mulher, e trouxe-a a Adão.</p><p class='vers'><sup>23</sup> E disse Adão: Esta é agora osso dos meus ossos, e carne da minha carne; esta será chamada mulher, porquanto do homem foi tomada.</p><p class='vers'><sup>24</sup> Portanto deixará o homem o seu pai e a sua mãe, e apegar-se-á à sua mulher, e serão ambos uma carne.</p><p class='vers'><sup>25</sup> E ambos estavam nus, o homem e a sua mulher; e não se envergonhavam.</p></div><div class='vers-nvi'><h4>Gênesis 2</h4><p class='vers'><sup>4</sup> Esta é a história das origens dos céus e da terra, no tempo em que foram criados: Quando o Senhor Deus fez a terra e os céus,</p><p class='vers'><sup>5</sup> ainda não tinha brotado nenhum arbusto no campo, e nenhuma planta havia germinado, porque o Senhor Deus ainda não tinha feito chover sobre a terra, e também não havia homem para cultivar o solo.</p><p class='vers'><sup>6</sup> Todavia brotava água da terra e irrigava toda a superfície do solo.</p><p class='vers'><sup>7</sup> Então o Senhor Deus formou o homem do pó da terra e soprou em suas narinas o fôlego de vida, e o homem se tornou um ser vivente.</p><p class='vers'><sup>8</sup> Ora, o Senhor Deus tinha plantado um jardim no Éden, para os lados do leste; e ali colocou o homem que formara.</p><p class='vers'><sup>9</sup> O Senhor Deus fez nascer então do solo todo tipo de árvores agradáveis aos olhos e boas para alimento. E no meio do jardim estavam a árvore da vida e a árvore do conhecimento do bem e do mal.</p><p class='vers'><sup>10</sup> No Éden nascia um rio que irrigava o jardim, e depois se dividia em quatro.</p><p class='vers'><sup>11</sup> O nome do primeiro é Pisom. Ele percorre toda a terra de Havilá, onde existe ouro.</p><p class='vers'><sup>12</sup> O ouro daquela terra é excelente; lá também existem o bdélio e a pedra de ônix.</p><p class='vers'><sup>13</sup> O segundo, que percorre toda a terra de Cuxe, é o Giom.</p><p class='vers'><sup>14</sup> O terceiro, que corre pelo lado leste da Assíria, é o Tigre. E o quarto rio é o Eufrates.</p><p class='vers'><sup>15</sup> O Senhor Deus colocou o homem no jardim do Éden para cuidar dele e cultivá-lo.</p><p class='vers'><sup>16</sup> E o Senhor Deus ordenou ao homem: &quot;Coma livremente de qualquer árvore do jardim,</p><p class='vers'><sup>17</sup> mas não coma da árvore do conhecimento do bem e do mal, porque no dia em que dela comer, certamente você morrerá&quot;.</p><p class='vers'><sup>18</sup> Então o Senhor Deus declarou: &quot;Não é bom que o homem esteja só; farei para ele alguém que o auxilie e lhe corresponda&quot;.</p><p class='vers'><sup>19</sup> Depois que formou da terra todos os animais do campo e todas as aves do céu, o Senhor Deus os trouxe ao homem para ver como este lhes chamaria; e o nome que o homem desse a cada ser vivo, esse seria o seu nome.</p><p class='vers'><sup>20</sup> Assim o homem deu nomes a todos os rebanhos domésticos, às aves do céu e a todos os animais selvagens. Todavia não se encontrou para o homem alguém que o auxiliasse e lhe correspondesse.</p><p class='vers'><sup>21</sup> Então o Senhor Deus fez o homem cair em profundo sono e, enquanto este dormia, tirou-lhe uma das costelas, fechando o lugar com carne.</p><p class='vers'><sup>22</sup> Com a costela que havia tirado do homem, o Senhor Deus fez uma mulher e a trouxe a ele.</p><p class='vers'><sup>23</sup> Disse então o homem: &quot;Esta, sim, é osso dos meus ossos e carne da minha carne! Ela será chamada mulher, porque do homem foi tirada&quot;.</p><p class='vers'><sup>24</sup> Por essa razão, o homem deixará pai e mãe e se unirá à sua mulher, e eles se tornarão uma só carne.</p><p class='vers'><sup>25</sup> O homem e sua mulher viviam nus, e não sentiam vergonha.</p></div></details><p class='nota'>Textos bíblicos usados em caráter de estudo, a partir do acervo do projeto. Os direitos são dos detentores de cada tradução: AA (Imprensa Bíblica Brasileira), ACF (Sociedade Bíblica Trinitariana) e NVI (Biblica/Sociedade Bíblica Internacional).</p><p class='nota'>Prefere a ARA? Abra em um site externo: <a href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%202%3A4-25&version=ARA" target="_blank" rel="noopener">Gn 2.4–25 ↗</a></p></section>
+<section id='mapa'><h2>🗺️ Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;A região dos rios do Éden&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Babilônia (Babel)&quot;, &quot;lat&quot;: 32.5364, &quot;lon&quot;: 44.4209, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Babel/Babilônia, na região de Sinear.&quot;}, {&quot;nome&quot;: &quot;Nínive&quot;, &quot;lat&quot;: 36.3593, &quot;lon&quot;: 43.1525, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Capital da Assíria (Gn 10.11).&quot;}, {&quot;nome&quot;: &quot;Ur&quot;, &quot;lat&quot;: 30.9628, &quot;lon&quot;: 46.1031, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Cidade da Mesopotâmia sul (Tell el-Muqayyar). A identificação com a Ur de Gn 11 é a mais aceita, mas há quem proponha outra Ur no norte.&quot;}], &quot;rotas&quot;: [], &quot;aviso&quot;: &quot;A localização do Éden é desconhecida. O mapa mostra só a região do Tigre e do Eufrates, os dois rios que o texto nomeia (Gn 2.14).&quot;}'></div><figcaption>A localização do Éden é desconhecida. O mapa mostra só a região do Tigre e do Eufrates, os dois rios que o texto nomeia (Gn 2.14). Toque nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<details class='dobra'><summary>🏛️ Contexto histórico-literário</summary><div><ul><li><strong>Mudança de estilo:</strong> Gn 2 usa o nome divino "YHWH" (traduzido "SENHOR" na ARA) e um tom mais íntimo,</li></ul>
 <p>com Deus agindo como oleiro e jardineiro.</p>
 <ul><li><strong>Jogo de palavras:</strong> "homem" (<em>adam</em>) vem de "terra" (<em>adamá</em>). A identidade humana é ligada ao solo.</li><li><strong>Trabalho:</strong> é parte da vocação antes da queda, não castigo.</li><li><strong>Éden:</strong> o texto situa o jardim com quatro rios, dois deles (Tigre e Eufrates) conhecidos. Onde ficava</li></ul>
-<p>é debatido; a localização exata não é o foco.</p></section>
-<section><h2>Conexões</h2><ul><li><strong>Gn 3:</strong> o jardim e a árvore voltam no episódio seguinte.</li><li><strong>Sl 8:</strong> reflexão poética sobre o lugar do ser humano.</li><li><strong>Ap 22.1–5:</strong> o rio e a árvore da vida reaparecem no fim da Bíblia.</li></ul></section>
-<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Qual a primeira coisa que o texto diz que "não é boa"?<details><summary>Ver resposta</summary><p>Que o homem esteja só. É o primeiro "não é bom" da Bíblia, e vem antes de qualquer pecado.</p></details></li><li>Que tarefa o homem recebe no jardim?<details><summary>Ver resposta</summary><p>Cultivar e guardar o jardim: o trabalho já faz parte da vocação humana antes da queda.</p></details></li><li>Que jogo de palavras une "homem" e "terra"?<details><summary>Ver resposta</summary><p>Em hebraico "homem" (adam) soa como "terra" (adamá): a identidade humana é ligada ao solo.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> o que significa a vida humana ser vista como relacionamento e trabalho desde o começo?</div>
-<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
-<section><h2>Pontos debatidos</h2><ul><li><strong>Relação entre Gn 1 e Gn 2:</strong> relatos complementares ou tradições distintas (ver episódio 001).</li><li><strong>Linguagem simbólica ou literal</strong> do jardim, das árvores e da formação da mulher.</li><li><strong>Interpretação da expressão "auxílio idôneo":</strong> leituras divergem sobre o sentido exato do termo hebraico.</li></ul></section>
-<section class="fontes"><h2>Fontes e revisão</h2>
+<p>é debatido; a localização exata não é o foco.</p></div></details>
+<details class='dobra'><summary>🔗 Conexões com outros textos</summary><div><ul><li><strong>Gn 3:</strong> o jardim e a árvore voltam no episódio seguinte.</li><li><strong>Sl 8:</strong> reflexão poética sobre o lugar do ser humano.</li><li><strong>Ap 22.1–5:</strong> o rio e a árvore da vida reaparecem no fim da Bíblia.</li></ul></div></details>
+<section id='teste'><h2>🧠 Teste-se</h2><ol class='quiz'><li>Qual a primeira coisa que o texto diz que "não é boa"?<details><summary>Ver resposta</summary><p>Que o homem esteja só. É o primeiro "não é bom" da Bíblia, e vem antes de qualquer pecado.</p></details></li><li>Que tarefa o homem recebe no jardim?<details><summary>Ver resposta</summary><p>Cultivar e guardar o jardim: o trabalho já faz parte da vocação humana antes da queda.</p></details></li><li>Que jogo de palavras une "homem" e "terra"?<details><summary>Ver resposta</summary><p>Em hebraico "homem" (adam) soa como "terra" (adamá): a identidade humana é ligada ao solo.</p></details></li></ol><div class='reflexao'><p>💭 o que significa a vida humana ser vista como relacionamento e trabalho desde o começo?</p></div></section>
+<details class='dobra'><summary>⚖️ Pontos debatidos</summary><div><ul><li><strong>Relação entre Gn 1 e Gn 2:</strong> relatos complementares ou tradições distintas (ver episódio 001).</li><li><strong>Linguagem simbólica ou literal</strong> do jardim, das árvores e da formação da mulher.</li><li><strong>Interpretação da expressão "auxílio idôneo":</strong> leituras divergem sobre o sentido exato do termo hebraico.</li></ul></div></details>
+<details class="dobra fontes"><summary>📚 Fontes e revisão</summary><div>
 <ul>
-<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Texto bíblico por referência; as falas em itálico são paráfrases do episódio.</li>
 <li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
 <li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
-</ul></section>
+</ul></div></details>
 </article>
-<nav class="navep"><a href="001.html">← No princípio: a criação como um mundo ordenado</a><a class="prox" href="003.html">A queda: a quebra da confiança →</a></nav>
+<nav class="fim" aria-label="Navegação entre episódios"><a href="001.html"><small>← Anterior</small>No princípio: a criação como um mundo ordenado</a><a class="prox" href="003.html"><small>Próximo →</small>A queda: a quebra da confiança</a></nav>
 </main>
-<script>
-(function(){
-  var chave='biblia-lido-002', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
-  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
-  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
-  show(on);
-  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
-})();
-</script>
-
-<script>
-(function(){
-  var el=document.getElementById('mapa-vivo'); if(!el) return;
-  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
-  if(typeof L==='undefined'){ fallback(); return; }
-  var d=JSON.parse(el.getAttribute('data-mapa'));
-  var map=L.map(el,{scrollWheelZoom:false});
-  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
-  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
-  topo.addTo(map);
-  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
-  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
-  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
-  map.on('click',function(){ map.scrollWheelZoom.enable(); });
-  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
-  (d.rotas||[]).forEach(function(r){
-    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
-    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
-    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
-  });
-  (d.lugares||[]).forEach(function(p){
-    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
-    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
-    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
-    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
-    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
-  });
-  map.fitBounds(pts,{padding:[34,34]});
-})();
-</script>
+<nav class="barra" aria-label="Ações do episódio"><a class="b-nav" href="001.html" aria-label="Episódio anterior">←</a><button type="button" class="b-lido" data-lido aria-pressed="false">✓ Marcar como lido</button><a class="b-nav" href="003.html" aria-label="Próximo episódio">→</a></nav>
+<script src="app.js"></script>
 </body>
 </html>

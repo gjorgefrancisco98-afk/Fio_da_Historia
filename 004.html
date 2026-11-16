@@ -1,161 +1,54 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-era="1">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Caim e Abel: a primeira violência</title>
+<title>Caim e Abel: a primeira violência · Fio da História</title>
 <meta name="description" content="A segunda geração humana já produz um assassino. O que deu errado entre os irmãos?">
-<style>:root{
-  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
-  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
-  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
-  --banda:#f6e7da; --eixo:#6b6357;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
-    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
-    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
-    --banda:#3a2a1d; --eixo:#a89f90;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
-main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
-.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
-.topo a{color:var(--suave)}
-a{color:var(--destaque)}
-h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
-h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
-h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
-.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
-.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
-.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
-.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
-.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
-blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
-blockquote p{margin:0}
-#historia p{margin:1.1rem 0}
-#historia p strong:first-child{color:var(--destaque)}
-.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
-.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
-.botao:hover{background:var(--destaque-bg)}
-.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
-.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
-.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
-.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
-.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
-@media (max-width:520px){.mapa-vivo{height:340px}}
-.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
-.tabela{overflow-x:auto}
-table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
-th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
-th{background:var(--destaque-bg)}
-ul,ol{padding-left:1.4rem}
-li{margin:.3rem 0}
-code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
-.quiz li{margin:.9rem 0}
-details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
-summary{cursor:pointer;color:var(--destaque);font-weight:600}
-details p{margin:.4rem 0 0}
-.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
-.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
-.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
-.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
-.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
-.texto-bib summary{padding:8px 0;font-size:16px}
-.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
-.vers{margin:.35rem 0;line-height:1.65}
-.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
-#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
-#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
-#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
-.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
-.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
-.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
-.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
-.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
-/* SVG: mapa */
-.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
-.m-river{fill:none;stroke:var(--rio);stroke-width:3}
-.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
-.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
-.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
-.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
-.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
-.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
-.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
-.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
-.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
-/* SVG: linha do tempo */
-.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
-.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
-.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
-.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
-.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
-.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
-.l-ev .l-r{fill:var(--suave);font-size:12px}
-.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
-.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
-@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
-</style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f766e'/%3E%3Cpath d='M16 46c12-4 6-20 18-24s14 4 14 4' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{var t=localStorage.getItem('biblia-tema');if(t)document.documentElement.setAttribute('data-tema',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Sora:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="estilo.css">
 
 </head>
-<body>
-<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 1 · Origens</span></header>
+<body data-ep="004">
+<div id="leitura" aria-hidden="true"></div>
+<header class="topo"><a class="logo" href="index.html">← Fio da <b>História</b></a>
+<button id="tema" class="tema" type="button" aria-label="Alternar tema claro e escuro">◐</button></header>
 <main>
-<article>
-<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
-<p class="selo">Episódio 004 · 4 min de leitura</p>
+<div class="hero" data-num="004">
+<p class="selo">🌱 Era 1 · Origens · Episódio 004</p>
 <h1>Caim e Abel: a primeira violência</h1>
 <p class="gancho">A segunda geração humana já produz um assassino. O que deu errado entre os irmãos?</p>
-<ul class="meta">
-  <li><strong>Passagens:</strong> Gn 4</li>
-  <li><strong>Época:</strong> não datável <span class="certeza c-não-datável">data: não datável</span></li>
-</ul>
-<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Gn 4). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
-<p><strong>1. Dois irmãos.</strong> Depois do exílio do Éden, nascem Caim e Abel. Caim cultiva a terra; Abel cuida de ovelhas. Cada um traz uma oferta a Deus: Caim, frutos da terra; Abel, os primeiros cordeiros e a gordura deles.</p>
-<p><strong>2. A oferta aceita e a recusada.</strong> Deus aceita a oferta de Abel e não a de Caim. O texto não explica a razão. Caim fica muito irritado, com o rosto abatido.</p>
-<p><strong>3. O aviso.</strong> Deus fala com ele antes do crime: <em>por que você está irritado? Se agir bem, não será aceito?</em> E dá um alerta: o pecado está à porta, à espreita, e quer dominá-lo, <em>mas você deve dominá-lo</em>.</p>
-<p><strong>4. No campo.</strong> Caim fala com Abel. O texto não registra o que ele disse. Estando no campo, Caim se levanta contra o irmão e o mata. É a primeira morte da Bíblia, e é um assassinato.</p>
-<p><strong>5. Onde está o seu irmão?</strong> Deus pergunta: <em>onde está seu irmão Abel?</em> Caim responde que não sabe e devolve a pergunta: <em>por acaso sou o guardião do meu irmão?</em> Deus diz que o sangue de Abel clama da terra.</p>
-<p><strong>6. A sentença e a marca.</strong> Caim será errante, e a terra não lhe dará mais a colheita de antes. Ele teme que alguém o mate. Deus coloca um sinal em Caim, para que ninguém o fira. Caim se estabelece na terra de Node, a leste do Éden.</p>
-<p><strong>7. Duas linhagens.</strong> Caim constrói uma cidade. Seus descendentes criam a vida de tendas, a música e o trabalho com metais. Lameque, bisneto de Caim, canta um poema de vingança multiplicada. Adão e Eva têm outro filho, Sete, e na geração dele <em>as pessoas passaram a invocar o nome do SENHOR</em>.</p>
-<h3>O que o texto não diz</h3>
-<ul><li><strong>Por que</strong> Deus aceitou a oferta de Abel: Hebreus 11.4 liga o fato à fé, mas Gênesis não explica.</li><li><strong>Quem eram as outras pessoas</strong> que Caim teme (Gn 4.14) e com quem se casa.</li><li>O que <strong>a marca</strong> de Caim era. O texto diz só que era um sinal de proteção.</li></ul></section>
-<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%204&version=ARA" target="_blank" rel="noopener">Ler Gn 4 na ARA ↗</a></div></section>
-<section id="mapa"><h2>Mapa e linha do tempo</h2><p class='nota'>Mapa e diagramas deste episódio ainda serão produzidos.</p></section>
-<section><h2>Resumo rápido</h2><ol><li>Nascem Caim (agricultor) e Abel (pastor). Cada um traz uma oferta a Deus.</li><li>Deus aceita a de Abel e não a de Caim. O texto não explica o motivo de modo direto; Hb 11.4 relaciona</li><li>Caim se irrita. Deus o avisa: o pecado "jaz à porta" e o deseja, mas ele pode dominá-lo.</li><li>Caim leva Abel ao campo e o mata.</li><li>Deus pergunta: "Onde está Abel, teu irmão?" A resposta é a célebre: <em>acaso sou eu o guarda do meu irmão?</em></li><li>A sentença: Caim será errante. Ele teme a vingança; Deus o marca para protegê-lo.</li><li>Caim constrói uma cidade; seus descendentes aparecem com cultura e tecnologia. Lameque canta uma</li></ol></section>
-<section><h2>Contexto histórico-literário</h2><ul><li>O capítulo traça <strong>duas linhagens</strong>: a de Caim (cidades, artes, violência) e a de Sete (invocação de Deus).</li><li>O sangue de Abel "clama" da terra: a imagem remete ao tema bíblico de que a injustiça não passa despercebida.</li><li>A <strong>marca de Caim</strong> é um sinal de proteção, não uma maldição racial; leituras racistas posteriores não têm base no texto.</li><li>Pergunta recorrente entre leitores: <em>com quem Caim teme se encontrar e com quem se casa?</em> O texto não responde.</li></ul></section>
-<section><h2>Conexões</h2><ul><li><strong>Hb 11.4:</strong> Abel é lembrado como exemplo de fé.</li><li><strong>1 Jo 3.12:</strong> Caim como exemplo de ódio ao irmão.</li><li><strong>Mt 23.35:</strong> Jesus menciona o sangue de Abel.</li></ul></section>
-<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Que aviso Deus dá a Caim antes do crime?<details><summary>Ver resposta</summary><p>Que o pecado estava à porta, querendo dominá-lo, mas que ele podia dominá-lo.</p></details></li><li>O que significa a pergunta <em>será que eu sou responsável pelo meu irmão?</em><details><summary>Ver resposta</summary><p>Caim nega responsabilidade pelo irmão. O texto mostra que ele é, sim, responsável por quem está ao seu lado.</p></details></li><li>Quais as duas linhagens que o capítulo apresenta?<details><summary>Ver resposta</summary><p>A linhagem de Caim, ligada a cidades, artes e violência, e a de Sete, ligada a invocar o nome do SENHOR.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> a violência cresce de Caim a Lameque; o que a narrativa quer dizer com isso?</div>
-<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
-<section><h2>Pontos debatidos</h2><ul><li><strong>Por que Deus rejeitou a oferta de Caim?</strong> Hipóteses: a atitude do coração, a qualidade da oferta,</li></ul>
+<ul class="pilulas"><li>⏱ 4 min</li><li>📅 não datável <span class='certeza'>(não datável)</span></li><li>📖 Gn 4</li></ul>
+</div>
+<p class='aviso'>⚠️ Em revisão, ainda sem conferência de especialista.</p>
+<nav class="chips" aria-label="Seções do episódio"><a href='#historia'>História</a><a href='#texto'>Texto</a><a href='#teste'>Teste</a></nav>
+<article>
+<details class='resumo'><summary>⚡ Resumo em 30 segundos</summary><div><ol><li>Nascem Caim (agricultor) e Abel (pastor). Cada um traz uma oferta a Deus.</li><li>Deus aceita a de Abel e não a de Caim. O texto não explica o motivo de modo direto; Hb 11.4 relaciona</li><li>Caim se irrita. Deus o avisa: o pecado "jaz à porta" e o deseja, mas ele pode dominá-lo.</li><li>Caim leva Abel ao campo e o mata.</li><li>Deus pergunta: "Onde está Abel, teu irmão?" A resposta é a célebre: <em>acaso sou eu o guarda do meu irmão?</em></li><li>A sentença: Caim será errante. Ele teme a vingança; Deus o marca para protegê-lo.</li><li>Caim constrói uma cidade; seus descendentes aparecem com cultura e tecnologia. Lameque canta uma</li></ol></div></details>
+<section id='historia'><h2>📜 A história</h2><p class='nota-leitura'><em>Narrativa fiel ao texto (Gn 4). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p>
+<div class='passos'><div class='passo'><div class='n'>1</div><h3>Dois irmãos</h3><p>Depois do exílio do Éden, nascem Caim e Abel. Caim cultiva a terra; Abel cuida de ovelhas. Cada um traz uma oferta a Deus: Caim, frutos da terra; Abel, os primeiros cordeiros e a gordura deles.</p></div><div class='passo'><div class='n'>2</div><h3>A oferta aceita e a recusada</h3><p>Deus aceita a oferta de Abel e não a de Caim. O texto não explica a razão. Caim fica muito irritado, com o rosto abatido.</p></div><div class='passo'><div class='n'>3</div><h3>O aviso</h3><p>Deus fala com ele antes do crime: <em>por que você está irritado? Se agir bem, não será aceito?</em> E dá um alerta: o pecado está à porta, à espreita, e quer dominá-lo, <em>mas você deve dominá-lo</em>.</p></div><div class='passo'><div class='n'>4</div><h3>No campo</h3><p>Caim fala com Abel. O texto não registra o que ele disse. Estando no campo, Caim se levanta contra o irmão e o mata. É a primeira morte da Bíblia, e é um assassinato.</p></div><div class='passo'><div class='n'>5</div><h3>Onde está o seu irmão?</h3><p>Deus pergunta: <em>onde está seu irmão Abel?</em> Caim responde que não sabe e devolve a pergunta: <em>por acaso sou o guardião do meu irmão?</em> Deus diz que o sangue de Abel clama da terra.</p></div><div class='passo'><div class='n'>6</div><h3>A sentença e a marca</h3><p>Caim será errante, e a terra não lhe dará mais a colheita de antes. Ele teme que alguém o mate. Deus coloca um sinal em Caim, para que ninguém o fira. Caim se estabelece na terra de Node, a leste do Éden.</p></div><div class='passo'><div class='n'>7</div><h3>Duas linhagens</h3><p>Caim constrói uma cidade. Seus descendentes criam a vida de tendas, a música e o trabalho com metais. Lameque, bisneto de Caim, canta um poema de vingança multiplicada. Adão e Eva têm outro filho, Sete, e na geração dele <em>as pessoas passaram a invocar o nome do SENHOR</em>.</p></div></div>
+<aside class='callout'><h3>🔍 O que o texto não diz</h3><ul><li><strong>Por que</strong> Deus aceitou a oferta de Abel: Hebreus 11.4 liga o fato à fé, mas Gênesis não explica.</li><li><strong>Quem eram as outras pessoas</strong> que Caim teme (Gn 4.14) e com quem se casa.</li><li>O que <strong>a marca</strong> de Caim era. O texto diz só que era um sinal de proteção.</li></ul></aside></section>
+<section id='texto' data-versao='aa'><h2>📖 Leia o texto bíblico</h2><p class='nota'>Depois da história, vale ler o próprio texto. Escolha a tradução.</p><div class='seletor' role='group' aria-label='Tradução'><span class='nota'>Tradução:</span> <button type='button' class='vbtn' data-v='aa' title='Almeida Revisada Imprensa Bíblica' aria-pressed='false'>AA</button><button type='button' class='vbtn' data-v='acf' title='Almeida Corrigida Fiel' aria-pressed='false'>ACF</button><button type='button' class='vbtn' data-v='nvi' title='Nova Versão Internacional' aria-pressed='false'>NVI</button></div><details class='texto-bib' open><summary>Gn 4 <span class='nota'>(26 versículos)</span></summary><div class='vers-aa'><p class='vers'><sup>1</sup> Conheceu Adão a Eva, sua mulher; ela concebeu e, tendo dado à luz a Caim, disse: Alcancei do Senhor um varão.</p><p class='vers'><sup>2</sup> Tornou a dar à luz a um filho-a seu irmão Abel. Abel foi pastor de ovelhas, e Caim foi lavrador da terra.</p><p class='vers'><sup>3</sup> Ao cabo de dias trouxe Caim do fruto da terra uma oferta ao Senhor.</p><p class='vers'><sup>4</sup> Abel também trouxe dos primogênitos das suas ovelhas, e da sua gordura. Ora, atentou o Senhor para Abel e para a sua oferta,</p><p class='vers'><sup>5</sup> mas para Caim e para a sua oferta não atentou. Pelo que irou-se Caim fortemente, e descaiu-lhe o semblante.</p><p class='vers'><sup>6</sup> Então o Senhor perguntou a Caim: Por que te iraste? e por que está descaído o teu semblante?</p><p class='vers'><sup>7</sup> Porventura se procederes bem, não se há de levantar o teu semblante? e se não procederes bem, o pecado jaz à porta, e sobre ti será o seu desejo; mas sobre ele tu deves dominar.</p><p class='vers'><sup>8</sup> Falou Caim com o seu irmão Abel. E, estando eles no campo, Caim se levantou contra o seu irmão Abel, e o matou.</p><p class='vers'><sup>9</sup> Perguntou, pois, o Senhor a Caim: Onde está Abel, teu irmão? Respondeu ele: Não sei; sou eu o guarda do meu irmão?</p><p class='vers'><sup>10</sup> E disse Deus: Que fizeste? A voz do sangue de teu irmão está clamando a mim desde a terra.</p><p class='vers'><sup>11</sup> Agora maldito és tu desde a terra, que abriu a sua boca para da tua mão receber o sangue de teu irmão.</p><p class='vers'><sup>12</sup> Quando lavrares a terra, não te dará mais a sua força; fugitivo e vagabundo serás na terra.</p><p class='vers'><sup>13</sup> Então disse Caim ao Senhor: É maior a minha punição do que a que eu possa suportar.</p><p class='vers'><sup>14</sup> Eis que hoje me lanças da face da terra; também da tua presença ficarei escondido; serei fugitivo e vagabundo na terra; e qualquer que me encontrar matar-me-á.</p><p class='vers'><sup>15</sup> O Senhor, porém, lhe disse: Portanto quem matar a Caim, sete vezes sobre ele cairá a vingança. E pôs o Senhor um sinal em Caim, para que não o ferisse quem quer que o encontrasse.</p><p class='vers'><sup>16</sup> Então saiu Caim da presença do Senhor, e habitou na terra de Node, ao oriente do Éden.</p><p class='vers'><sup>17</sup> Conheceu Caim a sua mulher, a qual concebeu, e deu à luz a Enoque. Caim edificou uma cidade, e lhe deu o nome do filho, Enoque.</p><p class='vers'><sup>18</sup> A Enoque nasceu Irade, e Irade gerou a Meujael, e Meujael gerou a Metusael, e Metusael gerou a Lameque.</p><p class='vers'><sup>19</sup> Lameque tomou para si duas mulheres: o nome duma era Ada, e o nome da outra Zila.</p><p class='vers'><sup>20</sup> E Ada deu à luz a Jabal; este foi o pai dos que habitam em tendas e possuem gado.</p><p class='vers'><sup>21</sup> O nome do seu irmão era Jubal; este foi o pai de todos os que tocam harpa e flauta.</p><p class='vers'><sup>22</sup> A Zila também nasceu um filho, Tubal-Caim, fabricante de todo instrumento cortante de cobre e de ferro; e a irmã de Tubal-Caim foi Naamá.</p><p class='vers'><sup>23</sup> Disse Lameque a suas mulheres: Ada e Zila, ouvi a minha voz; escutai, mulheres de Lameque, as minhas palavras; pois matei um homem por me ferir, e um mancebo por me pisar.</p><p class='vers'><sup>24</sup> Se Caim há de ser vingado sete vezes, com certeza Lameque o será setenta e sete vezes.</p><p class='vers'><sup>25</sup> Tornou Adão a conhecer sua mulher, e ela deu à luz um filho, a quem pôs o nome de Sete; porque, disse ela, Deus me deu outro filho em lugar de Abel; porquanto Caim o matou.</p><p class='vers'><sup>26</sup> A Sete também nasceu um filho, a quem pôs o nome de Enos. Foi nesse tempo, que os homens começaram a invocar o nome do Senhor.</p></div><div class='vers-acf'><p class='vers'><sup>1</sup> E conheceu Adão a Eva, sua mulher, e ela concebeu e deu à luz a Caim, e disse: Alcancei do SENHOR um homem.</p><p class='vers'><sup>2</sup> E deu à luz mais a seu irmão Abel; e Abel foi pastor de ovelhas, e Caim foi lavrador da terra.</p><p class='vers'><sup>3</sup> E aconteceu ao cabo de dias que Caim trouxe do fruto da terra uma oferta ao Senhor.</p><p class='vers'><sup>4</sup> E Abel também trouxe dos primogênitos das suas ovelhas, e da sua gordura; e atentou o Senhor para Abel e para a sua oferta.</p><p class='vers'><sup>5</sup> Mas para Caim e para a sua oferta não atentou. E irou-se Caim fortemente, e descaiu-lhe o semblante.</p><p class='vers'><sup>6</sup> E o Senhor disse a Caim: Por que te iraste? E por que descaiu o teu semblante?</p><p class='vers'><sup>7</sup> Se bem fizeres, não é certo que serás aceito? E se não fizeres bem, o pecado jaz à porta, e sobre ti será o seu desejo, mas sobre ele deves dominar.</p><p class='vers'><sup>8</sup> E falou Caim com o seu irmão Abel; e sucedeu que, estando eles no campo, se levantou Caim contra o seu irmão Abel, e o matou.</p><p class='vers'><sup>9</sup> E disse o Senhor a Caim: Onde está Abel, teu irmão? E ele disse: Não sei; sou eu guardador do meu irmão?</p><p class='vers'><sup>10</sup> E disse Deus: Que fizeste? A voz do sangue do teu irmão clama a mim desde a terra.</p><p class='vers'><sup>11</sup> E agora maldito és tu desde a terra, que abriu a sua boca para receber da tua mão o sangue do teu irmão.</p><p class='vers'><sup>12</sup> Quando lavrares a terra, não te dará mais a sua força; fugitivo e vagabundo serás na terra.</p><p class='vers'><sup>13</sup> Então disse Caim ao Senhor: É maior a minha maldade que a que possa ser perdoada.</p><p class='vers'><sup>14</sup> Eis que hoje me lanças da face da terra, e da tua face me esconderei; e serei fugitivo e vagabundo na terra, e será que todo aquele que me achar, me matará.</p><p class='vers'><sup>15</sup> O Senhor, porém, disse-lhe: Portanto qualquer que matar a Caim, sete vezes será castigado. E pôs o Senhor um sinal em Caim, para que o não ferisse qualquer que o achasse.</p><p class='vers'><sup>16</sup> E saiu Caim de diante da face do Senhor, e habitou na terra de Node, do lado oriental do Éden.</p><p class='vers'><sup>17</sup> E conheceu Caim a sua mulher, e ela concebeu, e deu à luz a Enoque; e ele edificou uma cidade, e chamou o nome da cidade conforme o nome de seu filho Enoque;</p><p class='vers'><sup>18</sup> E a Enoque nasceu Irade, e Irade gerou a Meujael, e Meujael gerou a Metusael e Metusael gerou a Lameque.</p><p class='vers'><sup>19</sup> E tomou Lameque para si duas mulheres; o nome de uma era Ada, e o nome da outra, Zilá.</p><p class='vers'><sup>20</sup> E Ada deu à luz a Jabal; este foi o pai dos que habitam em tendas e têm gado.</p><p class='vers'><sup>21</sup> E o nome do seu irmão era Jubal; este foi o pai de todos os que tocam harpa e órgão.</p><p class='vers'><sup>22</sup> E Zilá também deu à luz a Tubalcaim, mestre de toda a obra de cobre e ferro; e a irmã de Tubalcaim foi Noema.</p><p class='vers'><sup>23</sup> E disse Lameque a suas mulheres Ada e Zilá: Ouvi a minha voz; vós, mulheres de Lameque, escutai as minhas palavras; porque eu matei um homem por me ferir, e um jovem por me pisar.</p><p class='vers'><sup>24</sup> Porque sete vezes Caim será castigado; mas Lameque setenta vezes sete.</p><p class='vers'><sup>25</sup> E tornou Adão a conhecer a sua mulher; e ela deu à luz um filho, e chamou o seu nome Sete; porque, disse ela, Deus me deu outro filho em lugar de Abel; porquanto Caim o matou.</p><p class='vers'><sup>26</sup> E a Sete também nasceu um filho; e chamou o seu nome Enos; então se começou a invocar o nome do Senhor.</p></div><div class='vers-nvi'><p class='vers'><sup>1</sup> Adão teve relações com Eva, sua mulher, e ela engravidou e deu à luz Caim. Disse ela: &quot;Com o auxílio do Senhor tive um filho homem&quot;.</p><p class='vers'><sup>2</sup> Voltou a dar à luz, desta vez a Abel, irmão dele. Abel tornou-se pastor de ovelhas, e Caim, agricultor.</p><p class='vers'><sup>3</sup> Passado algum tempo, Caim trouxe do fruto da terra uma oferta ao Senhor.</p><p class='vers'><sup>4</sup> Abel, por sua vez, trouxe as partes gordas das primeiras crias do seu rebanho. O Senhor aceitou com agrado Abel e sua oferta,</p><p class='vers'><sup>5</sup> mas não aceitou Caim e sua oferta. Por isso Caim se enfureceu e o seu rosto se transtornou.</p><p class='vers'><sup>6</sup> O Senhor disse a Caim: &quot;Por que você está furioso? Por que se transtornou o seu rosto?</p><p class='vers'><sup>7</sup> Se você fizer o bem, não será aceito? Mas se não o fizer, saiba que o pecado o ameaça à porta; ele deseja conquistá-lo, mas você deve dominá-lo&quot;.</p><p class='vers'><sup>8</sup> Disse, porém, Caim a seu irmão Abel: &quot;Vamos para o campo&quot;. Quando estavam lá, Caim atacou seu irmão Abel e o matou.</p><p class='vers'><sup>9</sup> Então o Senhor perguntou a Caim: &quot;Onde está seu irmão Abel? &quot; Respondeu ele: &quot;Não sei; sou eu o responsável por meu irmão? &quot;</p><p class='vers'><sup>10</sup> Disse o Senhor: &quot;O que foi que você fez? Escute! Da terra o sangue do seu irmão está clamando.</p><p class='vers'><sup>11</sup> Agora amaldiçoado é você pela terra, que abriu a boca para receber da sua mão o sangue do seu irmão.</p><p class='vers'><sup>12</sup> Quando você cultivar a terra, esta não lhe dará mais da sua força. Você será um fugitivo errante pelo mundo&quot;.</p><p class='vers'><sup>13</sup> Disse Caim ao Senhor: &quot;Meu castigo é maior do que posso suportar.</p><p class='vers'><sup>14</sup> Hoje me expulsas desta terra, e terei que me esconder da tua face; serei um fugitivo errante pelo mundo, e qualquer que me encontrar me matará&quot;.</p><p class='vers'><sup>15</sup> Mas o Senhor lhe respondeu: &quot;Não será assim; se alguém matar Caim, sofrerá sete vezes a vingança&quot;. E o Senhor colocou em Caim um sinal, para que ninguém que viesse a encontrá-lo o matasse.</p><p class='vers'><sup>16</sup> Então Caim afastou-se da presença do Senhor e foi viver na terra de Node, a leste do Éden.</p><p class='vers'><sup>17</sup> Caim teve relações com sua mulher, e ela engravidou e deu à luz Enoque. Depois Caim fundou uma cidade, à qual deu o nome do seu filho Enoque.</p><p class='vers'><sup>18</sup> A Enoque nasceu-lhe Irade, Irade gerou a Meujael, Meujael a Metusael, e Metusael a Lameque.</p><p class='vers'><sup>19</sup> Lameque tomou duas mulheres: uma chamava-se Ada e a outra, Zilá.</p><p class='vers'><sup>20</sup> Ada deu à luz Jabal, que foi o pai daqueles que moram em tendas e criam rebanhos.</p><p class='vers'><sup>21</sup> O nome do irmão dele era Jubal, que foi o pai de todos os que tocam harpa e flauta.</p><p class='vers'><sup>22</sup> Zilá também deu à luz um filho, Tubalcaim, que fabricava todo tipo de ferramentas de bronze e de ferro. Tubalcaim teve uma irmã chamada Naamá.</p><p class='vers'><sup>23</sup> Disse Lameque às suas mulheres: &quot;Ada e Zilá, ouçam-me; mulheres de Lameque, escutem minhas palavras: Eu matei um homem porque me feriu, e um menino, porque me machucou.</p><p class='vers'><sup>24</sup> Se Caim é vingado sete vezes, Lameque o será setenta e sete&quot;.</p><p class='vers'><sup>25</sup> Novamente Adão teve relações com sua mulher, e ela deu à luz outro filho, a quem chamou Sete, dizendo: &quot;Deus me concedeu um filho no lugar de Abel, visto que Caim o matou&quot;.</p><p class='vers'><sup>26</sup> Também a Sete nasceu um filho, a quem deu o nome de Enos. Nessa época começou-se a invocar o nome do Senhor.</p></div></details><p class='nota'>Textos bíblicos usados em caráter de estudo, a partir do acervo do projeto. Os direitos são dos detentores de cada tradução: AA (Imprensa Bíblica Brasileira), ACF (Sociedade Bíblica Trinitariana) e NVI (Biblica/Sociedade Bíblica Internacional).</p><p class='nota'>Prefere a ARA? Abra em um site externo: <a href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%204&version=ARA" target="_blank" rel="noopener">Gn 4 ↗</a></p></section>
+
+<details class='dobra'><summary>🏛️ Contexto histórico-literário</summary><div><ul><li>O capítulo traça <strong>duas linhagens</strong>: a de Caim (cidades, artes, violência) e a de Sete (invocação de Deus).</li><li>O sangue de Abel "clama" da terra: a imagem remete ao tema bíblico de que a injustiça não passa despercebida.</li><li>A <strong>marca de Caim</strong> é um sinal de proteção, não uma maldição racial; leituras racistas posteriores não têm base no texto.</li><li>Pergunta recorrente entre leitores: <em>com quem Caim teme se encontrar e com quem se casa?</em> O texto não responde.</li></ul></div></details>
+<details class='dobra'><summary>🔗 Conexões com outros textos</summary><div><ul><li><strong>Hb 11.4:</strong> Abel é lembrado como exemplo de fé.</li><li><strong>1 Jo 3.12:</strong> Caim como exemplo de ódio ao irmão.</li><li><strong>Mt 23.35:</strong> Jesus menciona o sangue de Abel.</li></ul></div></details>
+<section id='teste'><h2>🧠 Teste-se</h2><ol class='quiz'><li>Que aviso Deus dá a Caim antes do crime?<details><summary>Ver resposta</summary><p>Que o pecado estava à porta, querendo dominá-lo, mas que ele podia dominá-lo.</p></details></li><li>O que significa a pergunta <em>será que eu sou responsável pelo meu irmão?</em><details><summary>Ver resposta</summary><p>Caim nega responsabilidade pelo irmão. O texto mostra que ele é, sim, responsável por quem está ao seu lado.</p></details></li><li>Quais as duas linhagens que o capítulo apresenta?<details><summary>Ver resposta</summary><p>A linhagem de Caim, ligada a cidades, artes e violência, e a de Sete, ligada a invocar o nome do SENHOR.</p></details></li></ol><div class='reflexao'><p>💭 a violência cresce de Caim a Lameque; o que a narrativa quer dizer com isso?</p></div></section>
+<details class='dobra'><summary>⚖️ Pontos debatidos</summary><div><ul><li><strong>Por que Deus rejeitou a oferta de Caim?</strong> Hipóteses: a atitude do coração, a qualidade da oferta,</li></ul>
 <p>ou a escolha divina sem explicação.</p>
-<ul><li><strong>Origem dos outros povos</strong> (Gn 4.14–17): leituras diferentes sobre a população do mundo.</li></ul></section>
-<section class="fontes"><h2>Fontes e revisão</h2>
+<ul><li><strong>Origem dos outros povos</strong> (Gn 4.14–17): leituras diferentes sobre a população do mundo.</li></ul></div></details>
+<details class="dobra fontes"><summary>📚 Fontes e revisão</summary><div>
 <ul>
-<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Texto bíblico por referência; as falas em itálico são paráfrases do episódio.</li>
 <li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
 <li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
-</ul></section>
+</ul></div></details>
 </article>
-<nav class="navep"><a href="003.html">← A queda: a quebra da confiança</a><a class="prox" href="005.html">As genealogias: por que listar nomes? →</a></nav>
+<nav class="fim" aria-label="Navegação entre episódios"><a href="003.html"><small>← Anterior</small>A queda: a quebra da confiança</a><a class="prox" href="005.html"><small>Próximo →</small>As genealogias: por que listar nomes?</a></nav>
 </main>
-<script>
-(function(){
-  var chave='biblia-lido-004', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
-  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
-  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
-  show(on);
-  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
-})();
-</script>
-
-
+<nav class="barra" aria-label="Ações do episódio"><a class="b-nav" href="003.html" aria-label="Episódio anterior">←</a><button type="button" class="b-lido" data-lido aria-pressed="false">✓ Marcar como lido</button><a class="b-nav" href="005.html" aria-label="Próximo episódio">→</a></nav>
+<script src="app.js"></script>
 </body>
 </html>
