@@ -31,11 +31,22 @@
     var tick = false;
     var atualiza = function () {
       var h = R.scrollHeight - R.clientHeight;
-      barra.style.width = (h > 0 ? Math.min(100, R.scrollTop / h * 100) : 0) + '%'; tick = false;
+      barra.style.transform = 'scaleX(' + (h > 0 ? Math.min(1, R.scrollTop / h) : 0) + ')'; tick = false;
     };
     addEventListener('scroll', function () { if (!tick) { tick = true; requestAnimationFrame(atualiza); } }, { passive: true });
     atualiza();
   }
+
+  /* atalhos: rolagem suave só ao clicar (nunca durante o toque) */
+  d.querySelectorAll('.chips a').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      var s = d.querySelector(a.getAttribute('href')); if (!s) return;
+      ev.preventDefault();
+      var y = s.getBoundingClientRect().top + R.scrollTop - 64;
+      var reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: y, behavior: reduz ? 'auto' : 'smooth' });
+    });
+  });
 
   /* atalhos: destaca a seção visível */
   var chips = d.querySelectorAll('.chips a');
@@ -47,7 +58,8 @@
         if (e.isIntersecting && mapa[e.target.id]) {
           chips.forEach(function (c) { c.removeAttribute('aria-current'); });
           mapa[e.target.id].setAttribute('aria-current', 'true');
-          mapa[e.target.id].scrollIntoView({ block: 'nearest', inline: 'center' });
+          var ch=mapa[e.target.id], bx=ch.parentNode;
+          bx.scrollLeft = ch.offsetLeft - (bx.clientWidth - ch.offsetWidth) / 2;
         }
       });
     }, { rootMargin: '-20% 0px -65% 0px' });
@@ -134,7 +146,11 @@
       var trava = d.createElement('button');
       trava.type = 'button'; trava.className = 'mapa-trava'; trava.innerHTML = '<span>Toque para explorar o mapa</span>';
       el.appendChild(trava);
-      trava.addEventListener('click', function () { map.dragging.enable(); trava.remove(); });
+      var solta = d.createElement('button');
+      solta.type = 'button'; solta.className = 'mapa-solta'; solta.textContent = 'Voltar a rolar a página'; solta.hidden = true;
+      el.appendChild(solta);
+      trava.addEventListener('click', function () { map.dragging.enable(); trava.hidden = true; solta.hidden = false; });
+      solta.addEventListener('click', function () { map.dragging.disable(); trava.hidden = false; solta.hidden = true; });
     } else {
       map.on('click', function () { map.scrollWheelZoom.enable(); });
     }
