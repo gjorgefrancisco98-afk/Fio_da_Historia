@@ -48,10 +48,9 @@ h3{font-size:1.05rem;line-height:1.4;margin:0 0 .3rem;font-weight:700}
 main{max-width:46rem;margin:0 auto;padding:0 16px 24px}
 
 /* herói do episódio */
-.hero{position:relative;overflow:hidden;background:var(--acc-bg);border-radius:24px;margin:4px 0 14px}
+.hero{position:relative;overflow:hidden;background:var(--acc-bg);border:4px solid var(--ink);border-radius:14px;box-shadow:6px 6px 0 var(--hq-sombra);margin:4px 6px 20px 0}
 .hero-t{padding:18px 20px 20px}
-.ilu{height:150px;background:var(--i-sky)}
-@media (min-width:700px){.ilu{height:210px}}
+.ilu{aspect-ratio:640/300;max-height:260px;background:var(--c-sky);border-bottom:4px solid var(--ink)}
 .selo{font:700 .78rem/1.2 var(--f-titulo);letter-spacing:.08em;text-transform:uppercase;color:var(--acc);margin:0}
 .gancho{font-size:1.2rem;line-height:1.55;margin:.3rem 0 1rem}
 .pilulas{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;font:700 .85rem/1.2 var(--f-corpo)}
@@ -231,19 +230,32 @@ h2::before{content:'';position:absolute;left:0;top:.18em;bottom:.18em;width:5px;
 .mapa-solta{position:absolute;left:10px;bottom:10px;z-index:900;background:var(--card);color:var(--texto);border:2px solid var(--acc);border-radius:99px;font:800 .8rem var(--f-corpo);padding:0 14px;min-height:40px;cursor:pointer}
 .mapa-trava[hidden],.mapa-solta[hidden]{display:none}
 
-/* ilustrações: paleta por era (a geometria está em ilustracoes.py) */
-:root,[data-era="1"]{--i-sky:light-dark(#d3f0eb,#10312e);--i-far:light-dark(#a6dcd4,#194a45);--i-mid:light-dark(#5fb8ad,#22655e);--i-near:light-dark(#1f8f83,#2b8279);--i-ink:light-dark(#0b3b37,#04100f)}
-[data-era="2"]{--i-sky:light-dark(#fbe6bf,#34250e);--i-far:light-dark(#f1c680,#5f4212);--i-mid:light-dark(#dd9a49,#80531a);--i-near:light-dark(#b86a2a,#a0601e);--i-ink:light-dark(#4a2410,#150b04)}
-[data-era="3"]{--i-sky:light-dark(#e3daf9,#211841);--i-far:light-dark(#c5b4f1,#372a6b);--i-mid:light-dark(#9d82e3,#503c99);--i-near:light-dark(#6d4fc5,#6650b8);--i-ink:light-dark(#2a1766,#0b0722)}
-:root,[data-era]{--i-gold:#f4b942;--i-pale:light-dark(#fffaf0,#f1ecff)}
-.ilu-svg{display:block;width:100%;height:100%}
-.il-sky{fill:var(--i-sky)}.il-far{fill:var(--i-far)}.il-mid{fill:var(--i-mid)}.il-near{fill:var(--i-near)}
-.il-ink{fill:var(--i-ink)}.il-inkl{stroke:var(--i-ink)}
-.il-gold{fill:var(--i-gold)}.il-goldl{stroke:var(--i-gold)}.il-pale{fill:var(--i-pale)}
-.il-midl{stroke:var(--i-mid)}.il-farl{stroke:var(--i-far)}
-.il-halo{fill:var(--i-gold);opacity:.28}
-.il-fio{stroke:var(--i-gold)}.il-no{fill:var(--i-gold);stroke:var(--i-sky);stroke-width:3}
-.thumb{height:76px;margin:-6px -6px 12px;border-radius:12px;overflow:hidden;background:var(--i-sky)}
+/* ilustrações em estilo HQ clássica (geometria em ilustracoes.py) */
+:root,[data-era="1"]{--c-sky:#7fd8cb;--c-far:#4fb39a;--c-mid:#3a9a7e;--c-near:#2f7d5f}
+[data-era="2"]{--c-sky:#ffd27a;--c-far:#f0a54e;--c-mid:#d9803a;--c-near:#b05f27}
+[data-era="3"]{--c-sky:#b7a4f0;--c-far:#8e75d8;--c-mid:#6e55bd;--c-near:#4c3c93}
+:root{--ink:#1a1423;--hq-sombra:light-dark(#1a1423,#000)}
+.hq{display:block;width:100%;height:100%}
+.hq path,.hq rect,.hq circle,.hq ellipse{stroke:var(--ink);stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+.hq .semtraco,.hq .ponto,.hq .olho{stroke:none}
+.hq .olho{fill:var(--ink)}
+.hq .ponto{fill:rgba(26,20,35,.22)}
+.hq .c-sky{fill:var(--c-sky)}.hq .c-far{fill:var(--c-far)}.hq .c-mid{fill:var(--c-mid)}.hq .c-near{fill:var(--c-near)}
+.hq .sol,.hq .faixa{fill:#ffd23f}.hq .lua{fill:#fff3c4}.hq .chama{fill:#ff7a1a}
+.hq .vermelho{fill:#e0443a}.hq .azul{fill:#2f6fb8}.hq .ocre{fill:#d9962b}.hq .creme,.hq .pano{fill:#fff1d0}
+.hq .folha{fill:#3f9e5a}.hq .madeira{fill:#8a5a33}.hq .pedra{fill:#b9b2a8}.hq .rocha{fill:#8d8aa6}.hq .rocha2{fill:#6f6c8c}
+.hq .areia{fill:#f0cf8a}.hq .areia2{fill:#d9b266}.hq .tijolo{fill:#c8683b}.hq .agua{fill:#3d8fd6}.hq .nuvem{fill:#f4f6fb}
+.hq .pele{fill:#f2c29b}.hq .barba{fill:#f4f1ea}
+.hq .tinta{fill:none;stroke-width:3}
+.hq .raio{stroke:#ffd23f;stroke-width:5;fill:none}
+.hq .fio{stroke:#e0443a;stroke-width:6}.hq .no{fill:#e0443a}
+.hq .serpente{fill:none;stroke:#3f9e5a;stroke-width:12}
+.hq .arco-vermelho{fill:none;stroke:#e0443a;stroke-width:11}.hq .arco-sol{fill:none;stroke:#ffd23f;stroke-width:11}
+.hq .arco-folha{fill:none;stroke:#3f9e5a;stroke-width:11}.hq .arco-agua{fill:none;stroke:#3d8fd6;stroke-width:11}
+.hq .moldura{stroke:var(--ink);stroke-width:8}
+.hq .legenda{fill:#ffd23f;stroke:var(--ink);stroke-width:4}
+.hq .legenda-t{font:800 21px Sora,system-ui,sans-serif;fill:var(--ink);stroke:none;letter-spacing:.06em}
+.thumb{height:76px;margin:-6px -6px 12px;border:3px solid var(--ink);border-radius:6px;overflow:hidden;background:var(--c-sky)}
 
 /* linha do tempo geral */
 .lt{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
