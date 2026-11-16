@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Jacó em Betel e a casa de Labão</title>
+<meta name="description" content="O enganador é enganado, e nessa casa nascem os doze filhos que formarão Israel.">
+<style>:root{
+  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
+  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
+  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
+  --banda:#f6e7da; --eixo:#6b6357;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
+    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
+    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
+    --banda:#3a2a1d; --eixo:#a89f90;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
+main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
+.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
+.topo a{color:var(--suave)}
+a{color:var(--destaque)}
+h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
+h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
+h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
+.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
+.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
+.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
+.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
+.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
+blockquote p{margin:0}
+#historia p{margin:1.1rem 0}
+#historia p strong:first-child{color:var(--destaque)}
+.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
+.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
+.botao:hover{background:var(--destaque-bg)}
+.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
+.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
+.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
+.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
+.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
+@media (max-width:520px){.mapa-vivo{height:340px}}
+.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
+.tabela{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
+th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--destaque-bg)}
+ul,ol{padding-left:1.4rem}
+li{margin:.3rem 0}
+code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
+.quiz li{margin:.9rem 0}
+details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
+summary{cursor:pointer;color:var(--destaque);font-weight:600}
+details p{margin:.4rem 0 0}
+.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
+.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
+.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
+.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
+.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
+.texto-bib summary{padding:8px 0;font-size:16px}
+.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
+.vers{margin:.35rem 0;line-height:1.65}
+.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
+#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
+#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
+#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
+.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
+.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
+.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
+.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
+/* SVG: mapa */
+.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
+.m-river{fill:none;stroke:var(--rio);stroke-width:3}
+.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
+.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
+.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
+.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
+.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
+.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
+.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
+.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
+/* SVG: linha do tempo */
+.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
+.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
+.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
+.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
+.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
+.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
+.l-ev .l-r{fill:var(--suave);font-size:12px}
+.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
+.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
+@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 2 · Patriarcas</span></header>
+<main>
+<article>
+<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
+<p class="selo">Episódio 018 · 4 min de leitura</p>
+<h1>Jacó em Betel e a casa de Labão</h1>
+<p class="gancho">O enganador é enganado, e nessa casa nascem os doze filhos que formarão Israel.</p>
+<ul class="meta">
+  <li><strong>Passagens:</strong> Gn 28 · Gn 29 · Gn 30 · Gn 31</li>
+  <li><strong>Época:</strong> ~1850 a.C. <span class="certeza c-debatida">data: debatida</span></li>
+</ul>
+<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Gn 28, Gn 29, Gn 30, Gn 31). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
+<p><strong>1. A escada.</strong> Jacó foge de Berseba rumo a Harã. Ao pôr do sol, deita-se ao relento, com uma pedra por travesseiro, e sonha: uma escada apoiada na terra, com o topo no céu, e anjos subindo e descendo. No alto está o SENHOR: <em>eu sou o Deus de Abraão e de Isaque; darei a você e à sua descendência a terra em que está deitado. Por meio de você serão abençoadas todas as famílias da terra. Estou com você e o guardarei por onde for.</em></p>
+<p><strong>2. Betel.</strong> Jacó acorda assustado: <em>o SENHOR está neste lugar, e eu não sabia!</em> Levanta a pedra como marco, derrama óleo sobre ela e dá ao lugar o nome Betel, <em>casa de Deus</em>. E faz um voto: se Deus o guardar e o trouxer de volta, o SENHOR será o seu Deus.</p>
+<p><strong>3. O poço de Harã.</strong> Jacó chega a um poço, onde os pastores esperam para dar água às ovelhas. Raquel chega com o rebanho do pai. Jacó remove sozinho a pedra do poço, beija Raquel e chora. Labão, o tio, o acolhe.</p>
+<p><strong>4. Sete anos.</strong> Jacó propõe trabalhar sete anos por Raquel. O texto diz que <em>pareceram-lhe poucos dias, pelo amor que tinha a ela</em>. Na noite do casamento, Labão entrega Lia, a filha mais velha. De manhã, Jacó descobre. <em>O que você me fez?</em> Labão responde que não é costume casar a mais nova antes da primogênita, e oferece Raquel em troca de mais sete anos.</p>
+<p><strong>5. A casa dividida.</strong> Lia tem Rúben, Simeão, Levi e Judá; Raquel, estéril, dá a serva Bila a Jacó, e nascem Dã e Naftali; Lia dá a serva Zilpa, e nascem Gade e Aser; Lia tem ainda Issacar, Zebulom e Diná; por fim, Raquel tem José. A rivalidade entre as irmãs marca cada nome.</p>
+<p><strong>6. Fuga.</strong> Jacó enriquece com os rebanhos e percebe que a atitude de Labão mudou. Deus diz: <em>volte para a terra de seus pais</em>. Jacó foge com mulheres, filhos e rebanhos, sem avisar. Raquel leva escondidos os ídolos domésticos do pai.</p>
+<p><strong>7. O pacto.</strong> Labão o alcança em sete dias. Deus o adverte em sonho para não ameaçar Jacó. Labão procura os ídolos; Raquel os esconde na sela do camelo e se senta sobre eles. Os dois fazem um pacto e erguem um marco de pedras em Gileade.</p>
+<h3>O que o texto não diz</h3>
+<ul><li>Quem <strong>sabia</strong> do engano da noite de núpcias além de Labão.</li><li>O que eram os <strong>ídolos domésticos</strong> (terafins): objetos de culto ou ligados a direitos de herança.</li><li>Como <strong>Jacó</strong> reagiu em cada fase: o texto mostra os fatos mais que os sentimentos.</li></ul></section>
+<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2028&version=ARA" target="_blank" rel="noopener">Ler Gn 28 na ARA ↗</a><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2029&version=ARA" target="_blank" rel="noopener">Ler Gn 29 na ARA ↗</a><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2030&version=ARA" target="_blank" rel="noopener">Ler Gn 30 na ARA ↗</a><a class="botao" href="https://www.biblegateway.com/passage/?search=G%C3%AAnesis%2031&version=ARA" target="_blank" rel="noopener">Ler Gn 31 na ARA ↗</a></div></section>
+<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;A fuga de Jacó e a casa de Labão&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Berseba&quot;, &quot;lat&quot;: 31.2433, &quot;lon&quot;: 34.8437, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Ao sul de Canaã, na fronteira do Neguebe (Tel Beer Sheva).&quot;}, {&quot;nome&quot;: &quot;Betel&quot;, &quot;lat&quot;: 31.9333, &quot;lon&quot;: 35.2333, &quot;tipo&quot;: &quot;cidade&quot;, &quot;nota&quot;: &quot;Luz/Betel, \&quot;casa de Deus\&quot;. Identificada com Beitin.&quot;}, {&quot;nome&quot;: &quot;Harã&quot;, &quot;lat&quot;: 36.8667, &quot;lon&quot;: 39.0333, &quot;tipo&quot;: &quot;fim&quot;, &quot;nota&quot;: &quot;Cidade no norte da Mesopotâmia (sudeste da Turquia atual). Região de Naor e Labão.&quot;}, {&quot;nome&quot;: &quot;Gileade (região)&quot;, &quot;lat&quot;: 32.4, &quot;lon&quot;: 35.75, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Região a leste do Jordão onde Labão alcançou Jacó.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Ida de Jacó (ilustrativa)&quot;, &quot;pontos&quot;: [[31.2433, 34.8437], [31.5326, 35.0998], [31.9333, 35.2333], [32.2133, 35.2828], [33.5138, 36.2765], [35.0, 38.0], [36.8667, 39.0333]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Rotas são ilustrativas: o texto não as descreve.&quot;}, {&quot;nome&quot;: &quot;Volta de Jacó (ilustrativa)&quot;, &quot;pontos&quot;: [[36.8667, 39.0333], [34.5, 38.5], [33.5138, 36.2765], [32.4, 35.75]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;Labão alcança Jacó em Gileade (Gn 31.23).&quot;}], &quot;aviso&quot;: &quot;Rotas são ilustrativas: o texto não as descreve.&quot;}'></div><figcaption>Rotas são ilustrativas: o texto não as descreve. Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<section><h2>Resumo rápido</h2><ol><li>Em fuga, Jacó dorme em Luz e sonha com uma <strong>escada</strong> ligando a terra ao céu; anjos sobem e descem. Deus repete a ele as promessas de Abraão e de Isaque. Jacó chama o lugar <strong>Betel</strong> ("casa de Deus").</li><li>Em Harã, Jacó se apaixona por <strong>Raquel</strong> e trabalha sete anos por ela. Labão o engana e entrega <strong>Lia</strong>; Jacó trabalha mais sete por Raquel.</li><li>A rivalidade entre as irmãs e as servas produz doze filhos (mais Diná):<ul><li>Lia: Rúben, Simeão, Levi, Judá, Issacar, Zebulom.</li><li>Bila (serva de Raquel): Dã, Naftali.</li><li>Zilpa (serva de Lia): Gade, Aser.</li><li>Raquel: José (e depois Benjamim).</li></ul></li><li>Após vinte anos, Jacó prospera e foge com famílias e rebanhos. Labão o persegue, mas Deus o adverte. Fazem um pacto em Gileade.</li></ol></section>
+<section><h2>Contexto histórico-literário</h2><ul><li>Os "doze filhos" originam as <strong>doze tribos</strong>, embora a lista de tribos varie em outros textos.</li><li>A escada lembra <strong>zigurates</strong> mesopotâmicos (uma "escada" do céu); o texto transforma a imagem em encontro com o Deus de Israel.</li><li>Os ídolos domésticos (<em>terafins</em>) que Raquel leva ligam-se a direitos de herança em contextos do Oriente antigo.</li></ul></section>
+<section><h2>Conexões</h2><ul><li><strong>Jo 1.51:</strong> Jesus remete à escada de Jacó.</li><li><strong>Os 12.12:</strong> profeta Oseias lembra a fuga de Jacó e o serviço por uma esposa.</li></ul></section>
+<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>O que Jacó vê em Betel e que promessas recebe?<details><summary>Ver resposta</summary><p>Uma escada entre a terra e o céu, com anjos, e as promessas de Deus de dar a terra, a descendência e a bênção às famílias.</p></details></li><li>Como Labão engana Jacó?<details><summary>Ver resposta</summary><p>Entrega Lia, a mais velha, em vez de Raquel, e exige mais sete anos de trabalho por ela.</p></details></li><li>Quais são as mães dos doze filhos?<details><summary>Ver resposta</summary><p>Lia: Rúben, Simeão, Levi, Judá, Issacar e Zebulom (e Diná); Bila: Dã e Naftali; Zilpa: Gade e Aser; Raquel: José (e Benjamim).</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> Deus aparece a Jacó em fuga, no meio do erro. O que isso mostra sobre a presença divina?</div>
+<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
+<section><h2>Pontos debatidos</h2><ul><li><strong>Terafins:</strong> natureza e função (ídolos, títulos de herança).</li><li><strong>Tamanho do período:</strong> 20 anos (Gn 31.38) e a cronologia dos nascimentos.</li></ul></section>
+<section class="fontes"><h2>Fontes e revisão</h2>
+<ul>
+<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
+<li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
+</ul></section>
+</article>
+<nav class="navep"><a href="017.html">← Esaú e Jacó: a briga desde o ventre</a><a class="prox" href="019.html">Jacó luta e vira Israel →</a></nav>
+</main>
+<script>
+(function(){
+  var chave='biblia-lido-018', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
+  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
+  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
+  show(on);
+  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
+})();
+</script>
+
+<script>
+(function(){
+  var el=document.getElementById('mapa-vivo'); if(!el) return;
+  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
+  if(typeof L==='undefined'){ fallback(); return; }
+  var d=JSON.parse(el.getAttribute('data-mapa'));
+  var map=L.map(el,{scrollWheelZoom:false});
+  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
+  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
+  topo.addTo(map);
+  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
+  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
+  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
+  map.on('click',function(){ map.scrollWheelZoom.enable(); });
+  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
+  (d.rotas||[]).forEach(function(r){
+    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
+    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
+    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
+  });
+  (d.lugares||[]).forEach(function(p){
+    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
+    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
+    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
+    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
+    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
+  });
+  map.fitBounds(pts,{padding:[34,34]});
+})();
+</script>
+</body>
+</html>

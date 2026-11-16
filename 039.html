@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Levítico: sacrifícios e santidade</title>
+<meta name="description" content="O livro que mais afasta leitores começa com uma pergunta simples: como alguém pode se aproximar de um Deus santo?">
+<style>:root{
+  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
+  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
+  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
+  --banda:#f6e7da; --eixo:#6b6357;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
+    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
+    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
+    --banda:#3a2a1d; --eixo:#a89f90;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
+main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
+.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
+.topo a{color:var(--suave)}
+a{color:var(--destaque)}
+h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
+h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
+h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
+.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
+.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
+.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
+.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
+.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
+blockquote p{margin:0}
+#historia p{margin:1.1rem 0}
+#historia p strong:first-child{color:var(--destaque)}
+.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
+.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
+.botao:hover{background:var(--destaque-bg)}
+.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
+.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
+.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
+.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
+.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
+@media (max-width:520px){.mapa-vivo{height:340px}}
+.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
+.tabela{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
+th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--destaque-bg)}
+ul,ol{padding-left:1.4rem}
+li{margin:.3rem 0}
+code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
+.quiz li{margin:.9rem 0}
+details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
+summary{cursor:pointer;color:var(--destaque);font-weight:600}
+details p{margin:.4rem 0 0}
+.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
+.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
+.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
+.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
+.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
+.texto-bib summary{padding:8px 0;font-size:16px}
+.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
+.vers{margin:.35rem 0;line-height:1.65}
+.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
+#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
+#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
+#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
+.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
+.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
+.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
+.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
+/* SVG: mapa */
+.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
+.m-river{fill:none;stroke:var(--rio);stroke-width:3}
+.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
+.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
+.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
+.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
+.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
+.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
+.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
+.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
+/* SVG: linha do tempo */
+.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
+.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
+.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
+.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
+.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
+.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
+.l-ev .l-r{fill:var(--suave);font-size:12px}
+.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
+.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
+@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
+</style>
+
+</head>
+<body>
+<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 3 · Êxodo e deserto</span></header>
+<main>
+<article>
+<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
+<p class="selo">Episódio 039 · 4 min de leitura</p>
+<h1>Levítico: sacrifícios e santidade</h1>
+<p class="gancho">O livro que mais afasta leitores começa com uma pergunta simples: <em>como alguém pode se aproximar de um Deus santo?</em></p>
+<ul class="meta">
+  <li><strong>Passagens:</strong> Lv 1–10</li>
+  <li><strong>Época:</strong> ~1450 ou ~1270 a.C. <span class="certeza c-debatida">data: debatida</span></li>
+</ul>
+<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Lv 1–10). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
+<p><strong>1. Da tenda.</strong> O livro de Levítico começa com Deus chamando Moisés <em>da tenda da congregação</em>. Ele diz: <em>fale aos filhos de Israel: quando alguém trouxer uma oferta ao SENHOR...</em> A pergunta por trás do livro é: como alguém se aproxima de um Deus santo?</p>
+<p><strong>2. O holocausto.</strong> A pessoa traz um animal macho, sem defeito, até a entrada da tenda. Coloca a mão sobre a cabeça dele, para que seja aceito em seu lugar. Mata-o, e os sacerdotes espalham o sangue em volta do altar. O animal é queimado inteiro: aroma agradável ao SENHOR.</p>
+<p><strong>3. Cereais e paz.</strong> A oferta de cereais é de flor de farinha, com azeite e incenso, temperada com sal e sem fermento. A oferta de paz é de comunhão: a gordura vai ao SENHOR, e a carne é comida pelo ofertante e sua família diante dele.</p>
+<p><strong>4. Pecado e culpa.</strong> A oferta pelo pecado é para o pecado cometido sem intenção: sangue, purificação e <em>será perdoado</em>. A oferta pela culpa pede também reparação: quem causar dano deve restituir e acrescentar um quinto.</p>
+<p><strong>5. O fogo.</strong> O fogo sobre o altar deve ficar sempre aceso. Os sacerdotes recebem sua parte das ofertas.</p>
+<p><strong>6. A consagração.</strong> Moisés lava Arão e os filhos, veste-os, unge-os, e a cerimônia dura sete dias. No oitavo dia, Arão oferece os sacrifícios, levanta as mãos e abençoa o povo. Moisés e Arão entram na tenda e saem, e a glória do SENHOR aparece a todo o povo. Sai fogo do SENHOR e consome o holocausto sobre o altar. O povo grita e cai de rosto em terra.</p>
+<p><strong>7. O fogo estranho.</strong> Nadabe e Abiú, filhos de Arão, tomam cada um o seu incensário, põem fogo e incenso, e oferecem <em>fogo estranho, que ele não ordenara</em>. Sai fogo do SENHOR e os consome. Moisés diz a Arão: <em>foi isto que o SENHOR disse: serei santificado por aqueles que se aproximam de mim.</em> E Arão se calou.</p>
+<p><strong>8. Sem lamento.</strong> Moisés manda os primos de Arão levar os corpos para fora do acampamento. Arão e os filhos que ficaram não devem descobrir a cabeça nem rasgar as vestes, nem sair da entrada da tenda, para não morrer.</p>
+<h3>O que o texto não diz</h3>
+<ul><li>O que era exatamente o <strong>fogo estranho</strong>: incenso fora da ordem, outro fogo, ou outra coisa. As hipóteses variam.</li><li>Por que <strong>Arão</strong> se calou: o texto relata só o silêncio.</li><li>O sentido preciso de <strong>cada oferta</strong>: substituição, purificação, comunhão. Judeus e cristãos leem de formas diferentes.</li></ul></section>
+<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=Lev%C3%ADtico%201-10&version=ARA" target="_blank" rel="noopener">Ler Lv 1–10 na ARA ↗</a></div></section>
+<section id="mapa"><h2>Mapa e linha do tempo</h2><p class='nota'>Mapa e diagramas deste episódio ainda serão produzidos.</p></section>
+<section><h2>Resumo rápido</h2><ol><li><strong>Os cinco sacrifícios (Lv 1–7):</strong></li></ol>
+<div class='tabela'><table><thead><tr><th>Sacrifício</th><th>Ideia</th></tr></thead><tbody><tr><td><strong>Holocausto</strong></td><td>entrega total a Deus (tudo queimado)</td></tr><tr><td><strong>Oferta de cereais</strong></td><td>gratidão e dedicação</td></tr><tr><td><strong>Oferta de paz</strong></td><td>comunhão (parte é comida pelo ofertante)</td></tr><tr><td><strong>Oferta pelo pecado</strong></td><td>purificação do pecado não intencional</td></tr><tr><td><strong>Oferta pela culpa</strong></td><td>reparação por falhas e dano ao próximo</td></tr></tbody></table></div>
+<ol start="2"><li><strong>Consagração dos sacerdotes (Lv 8–9):</strong> Arão e filhos são ungidos. A glória do SENHOR aparece e o fogo consome o sacrifício.</li><li><strong>Nadabe e Abiú (Lv 10):</strong> filhos de Arão oferecem "fogo estranho" e morrem. O texto ensina: Deus não é manipulável e o culto exige reverência.</li></ol></section>
+<section><h2>Contexto histórico-literário</h2><ul><li>Levítico é <strong>manual de culto</strong>, escrito para sacerdotes e para o povo, com foco em <strong>como viver na presença de Deus</strong>.</li><li>O sangue representa a <strong>vida</strong>; derramá-lo em lugar do ofertante expressa substituição (Lv 17.11).</li><li>Termos-chave: <strong>santo</strong> ("separado, dedicado"), <strong>limpo/imundo</strong>, <strong>expiação</strong>.</li><li>O nome "Levítico" vem dos levitas, a tribo sacerdotal.</li></ul></section>
+<section><h2>Conexões</h2><ul><li><strong>Hb 9–10:</strong> o sacrifício de Cristo é visto como cumprimento definitivo.</li><li><strong>Rm 12.1:</strong> <em>ofereçam o próprio corpo como sacrifício vivo</em>.</li><li><strong>1 Pe 1.15–16:</strong> "sede santos, porque eu sou santo."</li></ul></section>
+<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Cite dois dos cinco sacrifícios e sua ideia.<details><summary>Ver resposta</summary><p>Por exemplo: o holocausto (entrega total a Deus) e a oferta de paz (comunhão: parte é comida pelo ofertante).</p></details></li><li>Qual o papel do sangue?<details><summary>Ver resposta</summary><p>O sangue representa a vida: é dado sobre o altar para a expiação, no lugar do ofertante.</p></details></li><li>O que o episódio de Nadabe e Abiú ensina?<details><summary>Ver resposta</summary><p>Que Deus não é manipulável: quem se aproxima dele deve fazê-lo com reverência e conforme ele ordenou.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> por que um rito tão detalhado dá tanta importância à reverência?</div>
+<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
+<section><h2>Pontos debatidos</h2><ul><li><strong>O que era o "fogo estranho":</strong> várias hipóteses (incenso fora do ritual, bebida, fogo de fonte errada).</li><li><strong>Significado dos sacrifícios:</strong> substituição, purificação, comunhão: leituras variam entre tradições judaica e cristã.</li></ul></section>
+<section class="fontes"><h2>Fontes e revisão</h2>
+<ul>
+<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
+<li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
+</ul></section>
+</article>
+<nav class="navep"><a href="038.html">← O bezerro de ouro e a renovação</a><a class="prox" href="040.html">Puro e impuro; o Dia da Expiação →</a></nav>
+</main>
+<script>
+(function(){
+  var chave='biblia-lido-039', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
+  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
+  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
+  show(on);
+  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
+})();
+</script>
+
+
+</body>
+</html>

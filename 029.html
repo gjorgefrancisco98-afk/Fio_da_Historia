@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Moisés: do Nilo ao deserto</title>
+<meta name="description" content="O libertador de Israel é salvo por uma cesta, criado no palácio do inimigo e vira fugitivo.">
+<style>:root{
+  --bg:#fbf8f3; --card:#ffffff; --texto:#26221c; --suave:#6b6357; --linha:#e5ddd0;
+  --destaque:#9a4a1d; --destaque-bg:#f6e7da; --aviso-bg:#fff4d6; --aviso-bd:#e2b93b;
+  --mar:#cfe3ee; --terra:#f3ead9; --rio:#7fb2cc; --rota:#9a4a1d; --ponto:#2f6f5e; --fim:#9a4a1d;
+  --banda:#f6e7da; --eixo:#6b6357;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --card:#1f1b16; --texto:#ece5d8; --suave:#a89f90; --linha:#3a342b;
+    --destaque:#e59a62; --destaque-bg:#3a2a1d; --aviso-bg:#3a3118; --aviso-bd:#8a7220;
+    --mar:#1d3442; --terra:#241f18; --rio:#4c88a6; --rota:#e59a62; --ponto:#6fc2a8; --fim:#e59a62;
+    --banda:#3a2a1d; --eixo:#a89f90;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--texto);font:18px/1.7 Georgia,'Times New Roman',serif}
+main{max-width:46rem;margin:0 auto;padding:0 16px 56px}
+.topo{max-width:46rem;margin:0 auto;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;font:14px/1.4 system-ui,sans-serif;color:var(--suave)}
+.topo a{color:var(--suave)}
+a{color:var(--destaque)}
+h1{font-size:2.1rem;line-height:1.2;margin:.2rem 0 .6rem}
+h2{font:700 1.25rem/1.3 system-ui,sans-serif;margin:2.4rem 0 .8rem;padding-bottom:.4rem;border-bottom:2px solid var(--linha)}
+h3{font:700 1.05rem/1.4 system-ui,sans-serif;margin:1.4rem 0 .4rem}
+.selo{font:600 .8rem/1 system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--destaque);margin:1rem 0 0}
+.gancho{font-size:1.3rem;line-height:1.5;color:var(--texto);margin:.4rem 0 1rem}
+.meta{list-style:none;padding:0;margin:0 0 1rem;font:15px/1.6 system-ui,sans-serif;color:var(--suave)}
+.certeza{display:inline-block;margin-left:.4rem;padding:1px 9px;border-radius:99px;background:var(--destaque-bg);color:var(--destaque);font-size:.8rem}
+.aviso{font:15px/1.5 system-ui,sans-serif;background:var(--aviso-bg);border:1px solid var(--aviso-bd);border-radius:10px;padding:10px 14px;margin:0 0 .6rem}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--destaque);background:var(--destaque-bg);border-radius:0 8px 8px 0;font:15px/1.5 system-ui,sans-serif}
+blockquote p{margin:0}
+#historia p{margin:1.1rem 0}
+#historia p strong:first-child{color:var(--destaque)}
+.nota{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.botoes{display:flex;flex-wrap:wrap;gap:10px;margin:.6rem 0}
+.botao{display:inline-block;font:600 15px/1.2 system-ui,sans-serif;padding:11px 16px;border:1.5px solid var(--destaque);border-radius:10px;background:var(--card);color:var(--destaque);text-decoration:none;cursor:pointer}
+.botao:hover{background:var(--destaque-bg)}
+.fig{margin:1.2rem 0;padding:12px;background:var(--card);border:1px solid var(--linha);border-radius:12px}
+.fig>svg,.mapa-fallback>svg{width:100%;height:auto;display:block}
+.mapa-vivo{height:460px;border-radius:10px;z-index:0;background:var(--terra)}
+.mapa-vivo .rotulo{font:700 13px system-ui,sans-serif;color:#26221c;background:rgba(255,255,255,.92);border:1px solid #c9bda9;border-radius:6px;box-shadow:none}
+.mapa-vivo .leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#26221c}
+@media (max-width:520px){.mapa-vivo{height:340px}}
+.fig figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--suave);margin-top:8px}
+.tabela{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:15px/1.5 system-ui,sans-serif;margin:1rem 0}
+th,td{border:1px solid var(--linha);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--destaque-bg)}
+ul,ol{padding-left:1.4rem}
+li{margin:.3rem 0}
+code{font:14px ui-monospace,monospace;background:var(--destaque-bg);padding:1px 5px;border-radius:4px}
+.quiz li{margin:.9rem 0}
+details{margin:.4rem 0;font:15px/1.5 system-ui,sans-serif}
+summary{cursor:pointer;color:var(--destaque);font-weight:600}
+details p{margin:.4rem 0 0}
+.reflexao{margin:1.2rem 0;padding:12px 16px;border:1.5px dashed var(--destaque);border-radius:10px;font-style:italic}
+.seletor{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:.6rem 0}
+.vbtn{font:600 14px/1 system-ui,sans-serif;padding:8px 14px;border:1.5px solid var(--linha);border-radius:99px;background:var(--card);color:var(--texto);cursor:pointer}
+.vbtn[aria-pressed="true"]{border-color:var(--destaque);background:var(--destaque-bg);color:var(--destaque)}
+.texto-bib{margin:.8rem 0;border:1px solid var(--linha);border-radius:12px;background:var(--card);padding:6px 14px}
+.texto-bib summary{padding:8px 0;font-size:16px}
+.texto-bib h4{font:700 .95rem/1.4 system-ui,sans-serif;margin:1rem 0 .3rem;color:var(--destaque)}
+.vers{margin:.35rem 0;line-height:1.65}
+.vers sup{font:700 .7rem system-ui,sans-serif;color:var(--destaque);margin-right:3px}
+#texto[data-versao="aa"] .vers-acf,#texto[data-versao="aa"] .vers-nvi,
+#texto[data-versao="acf"] .vers-aa,#texto[data-versao="acf"] .vers-nvi,
+#texto[data-versao="nvi"] .vers-aa,#texto[data-versao="nvi"] .vers-acf{display:none}
+.navep{display:flex;justify-content:space-between;gap:12px;margin-top:2.4rem;font:15px/1.4 system-ui,sans-serif}
+.navep a{padding:10px 14px;border:1px solid var(--linha);border-radius:10px;text-decoration:none;background:var(--card);max-width:48%}
+.fontes{font:14px/1.5 system-ui,sans-serif;color:var(--suave)}
+.item{margin:.35rem 0;font:16px/1.4 system-ui,sans-serif}
+.tag{font:600 11px/1 system-ui,sans-serif;text-transform:uppercase;background:var(--destaque-bg);color:var(--destaque);padding:3px 8px;border-radius:99px;margin-left:6px}
+/* SVG: mapa */
+.m-land{fill:var(--terra)} .m-sea{fill:var(--mar);stroke:var(--rio);stroke-width:1}
+.m-river{fill:none;stroke:var(--rio);stroke-width:3}
+.m-water{fill:var(--rio);font:italic 15px Georgia,serif;font-weight:600}
+.m-region{fill:var(--suave);font:600 12px system-ui,sans-serif;letter-spacing:.08em;opacity:.8}
+.m-route{fill:none;stroke:var(--rota);stroke-width:3;stroke-dasharray:9 7}
+.m-note{fill:var(--rota);font:600 12px system-ui,sans-serif}
+.m-city circle{fill:var(--suave)} .m-city text{fill:var(--texto);font:14px system-ui,sans-serif}
+.m-start circle{fill:var(--ponto)} .m-start text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-end circle{fill:var(--card);stroke:var(--fim);stroke-width:4} .m-end text{fill:var(--texto);font:700 16px system-ui,sans-serif}
+.m-sub{font:12px system-ui,sans-serif !important;fill:var(--suave) !important;font-weight:400 !important}
+.m-scale line{stroke:var(--texto);stroke-width:2} .m-scale text{fill:var(--texto);font:12px system-ui,sans-serif}
+.m-north path{fill:var(--texto)} .m-north text{fill:var(--texto);font:700 14px system-ui,sans-serif}
+/* SVG: linha do tempo */
+.l-axis{stroke:var(--eixo);stroke-width:3} .l-tick line{stroke:var(--eixo);stroke-width:2}
+.l-tick text,.l-axislabel{fill:var(--suave);font:13px system-ui,sans-serif}
+.l-band{fill:var(--banda);stroke:var(--destaque);stroke-width:1.5;stroke-dasharray:5 4}
+.l-bandtxt{fill:var(--destaque);font:600 13px system-ui,sans-serif}
+.l-ev circle{fill:var(--ponto)} .l-ev line{stroke:var(--ponto);stroke-width:2}
+.l-ev text{fill:var(--texto);font:700 14px system-ui,sans-serif} .l-ev .l-s{font:13px system-ui,sans-serif;font-weight:400}
+.l-ev .l-r{fill:var(--suave);font-size:12px}
+.l-key circle{fill:var(--destaque)} .l-key line{stroke:var(--destaque)}
+.l-foot{fill:var(--suave);font:11.5px system-ui,sans-serif}
+@media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} .navep{flex-direction:column} .navep a{max-width:100%} }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+<header class="topo"><a href="index.html">← Todos os episódios</a><span>Era 3 · Êxodo e deserto</span></header>
+<main>
+<article>
+<div class='aviso'><strong>Em revisão.</strong> Este conteúdo foi preparado e ainda não foi conferido por especialista. Datas e interpretações são aproximadas.</div>
+<p class="selo">Episódio 029 · 4 min de leitura</p>
+<h1>Moisés: do Nilo ao deserto</h1>
+<p class="gancho">O libertador de Israel é salvo por uma cesta, criado no palácio do inimigo e vira fugitivo.</p>
+<ul class="meta">
+  <li><strong>Passagens:</strong> Êx 2</li>
+  <li><strong>Época:</strong> ~1500–1300 a.C. <span class="certeza c-debatida">data: debatida</span></li>
+</ul>
+<section id="historia"><h2>A história</h2><blockquote><p><em>Narrativa fiel ao texto (Êx 2). Falas em itálico são paráfrases. Onde o texto cala, está dito: "o texto não diz".</em></p></blockquote>
+<p><strong>1. Um cesto no rio.</strong> Um homem e uma mulher da tribo de Levi têm um filho. Vendo que o menino era formoso, a mãe o esconde por três meses. Quando não pode mais escondê-lo, pega um cesto de juncos, passa betume e piche, põe a criança dentro e o deixa entre os juncos, à beira do rio. A irmã do menino fica de longe, para ver o que lhe acontece.</p>
+<p><strong>2. A filha de Faraó.</strong> A filha de Faraó desce ao rio para se banhar. Vê o cesto, manda trazê-lo, abre e vê o menino chorando. Sente compaixão: <em>este é um dos meninos dos hebreus.</em> A irmã se aproxima e oferece: <em>quer que eu chame uma ama hebreia?</em> Vai e chama a mãe do menino. A filha de Faraó diz: <em>leve este menino, amamente-o para mim, e eu pagarei.</em></p>
+<p><strong>3. Moisés.</strong> O menino cresce, é levado à filha de Faraó, que o adota e o chama <strong>Moisés</strong>, porque o tirou das águas.</p>
+<p><strong>4. O egípcio.</strong> Já adulto, Moisés sai para ver os seus irmãos hebreus e vê um egípcio ferindo um deles. Olha para os lados, vê que ninguém está olhando, mata o egípcio e o esconde na areia.</p>
+<p><strong>5. Descoberto.</strong> No dia seguinte, vê dois hebreus brigando e pergunta ao agressor: <em>por que você bate no seu companheiro?</em> Ele responde: <em>quem o pôs como chefe e juiz sobre nós? Pensa em me matar como matou o egípcio?</em> Moisés teme: <em>o caso é conhecido.</em> Faraó procura matá-lo, e Moisés foge para a terra de Midiã.</p>
+<p><strong>6. O poço.</strong> Moisés se senta junto a um poço. Sete filhas do sacerdote de Midiã vêm dar água ao rebanho do pai, e outros pastores as afastam. Moisés se levanta, defende-as e dá água ao rebanho. O pai, Reuel, pergunta por que voltaram cedo. Elas contam: <em>um egípcio nos livrou.</em> <em>Onde ele está? Chamem-no para comer.</em> Moisés se estabelece com ele e se casa com <strong>Zípora</strong>. Tem um filho, Gérson, nome que lembra <em>estrangeiro em terra estranha</em>.</p>
+<p><strong>7. Muito tempo depois.</strong> Morre o rei do Egito. Os filhos de Israel gemem e clamam por causa da escravidão. O texto fecha com quatro verbos: Deus <em>ouviu</em> o gemido, <em>lembrou-se</em> da aliança com Abraão, Isaque e Jacó, <em>viu</em> os filhos de Israel e <em>tomou conhecimento</em> deles.</p>
+<h3>O que o texto não diz</h3>
+<ul><li>A <strong>idade</strong> de Moisés quando matou o egípcio: Atos 7.23 diz quarenta anos.</li><li>Se Moisés <strong>sabia</strong> de sua origem hebreia desde pequeno: o texto diz que ele foi ver os irmãos.</li><li>Onde fica <strong>Midiã</strong> exatamente: a localização é debatida.</li></ul></section>
+<section id='texto'><h2>Leia o texto bíblico</h2><p class='nota'>Antes ou depois da história, vale ler o próprio texto. A tradução ARA é protegida por direitos autorais; os botões abrem um leitor externo.</p><div class='botoes'><a class="botao" href="https://www.biblegateway.com/passage/?search=%C3%8Axodo%202&version=ARA" target="_blank" rel="noopener">Ler Êx 2 na ARA ↗</a></div></section>
+<section id="mapa"><h2>Mapa e linha do tempo</h2><figure class='fig'><div id='mapa-vivo' class='mapa-vivo' role='region' aria-label='Mapa interativo' data-mapa='{&quot;titulo&quot;: &quot;Do Egito a Midiã&quot;, &quot;lugares&quot;: [{&quot;nome&quot;: &quot;Egito (Mênfis, referência)&quot;, &quot;lat&quot;: 29.8503, &quot;lon&quot;: 31.255, &quot;tipo&quot;: &quot;inicio&quot;, &quot;nota&quot;: &quot;Mênfis foi capital do Egito no Reino Antigo. Marca o Egito como referência; o texto não nomeia a cidade.&quot;}, {&quot;nome&quot;: &quot;Midiã (região)&quot;, &quot;lat&quot;: 28.47, &quot;lon&quot;: 35.0, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Região de Midiã, provavelmente no noroeste da Arábia. A localização exata é debatida.&quot;}, {&quot;nome&quot;: &quot;Sinai/Horebe (tradição: Jebel Musa)&quot;, &quot;lat&quot;: 28.5392, &quot;lon&quot;: 33.975, &quot;tipo&quot;: &quot;debatido&quot;, &quot;nota&quot;: &quot;Localização tradicional, no sul da península do Sinai. Debatida.&quot;}], &quot;rotas&quot;: [{&quot;nome&quot;: &quot;Fuga de Moisés (ilustrativa)&quot;, &quot;pontos&quot;: [[29.8503, 31.255], [30.4, 32.5], [29.0, 34.0], [28.47, 35.0]], &quot;tracejada&quot;: true, &quot;nota&quot;: &quot;A localização de Midiã é debatida; o caminho do texto não é descrito.&quot;}], &quot;aviso&quot;: &quot;Pontos em roxo têm localização debatida.&quot;}'></div><figcaption>Pontos em roxo têm localização debatida. Clique nos pontos para ver detalhes. Verde = partida, laranja = destino, cinza = referência, roxo = localização debatida.</figcaption></figure></section>
+<section><h2>Resumo rápido</h2><ol><li>Uma mulher levita esconde o filho por três meses. Depois o coloca numa cesta de papiro às margens do Nilo; a irmã, <strong>Miriã</strong>, vigia.</li><li>A filha de Faraó o encontra, adota-o e, por acaso, contrata a própria mãe como ama. Ela o chama <strong>Moisés</strong> ("tirado das águas").</li><li>Já adulto, Moisés vê um egípcio espancando um hebreu, mata o egípcio e o esconde na areia.</li><li>No dia seguinte, um hebreu o rejeita: <em>quem lhe deu autoridade de chefe e juiz sobre nós?</em> Moisés teme e foge para <strong>Midiã</strong>.</li><li>Defende as filhas do sacerdote Reuel (Jetro) num poço; casa-se com <strong>Zípora</strong>; nasce Gérson.</li><li>Em Egito, Faraó morre; Israel clama, e o texto conclui: <em>Deus ouviu o gemido do povo e se lembrou da sua aliança</em>.</li></ol></section>
+<section><h2>Contexto histórico-literário</h2><ul><li>O nome "Moisés" parece ter raiz egípcia (como em Tutmés, Ramsés: "nascido de"), embora o texto o explique em hebraico.</li><li>A cesta lembra lendas de reis antigos expostos ao nascer (como Sargão de Acad). Diferença: aqui o ato é de proteção.</li><li>Moisés tem <strong>três vidas de 40 anos</strong>, segundo At 7: príncipe, pastor e líder.</li><li><strong>Midiã</strong> ficava a leste do mar Vermelho; o texto sugere ligação com o Sinai.</li></ul></section>
+<section><h2>Conexões</h2><ul><li><strong>Hb 11.23–27:</strong> a fé dos pais e de Moisés.</li><li><strong>At 7:</strong> a versão de Estêvão.</li></ul></section>
+<section id="teste"><h2>Teste-se</h2><ol class="quiz"><li>Como Moisés sobrevive ao decreto de Faraó?<details><summary>Ver resposta</summary><p>A mãe o esconde por três meses e depois o coloca num cesto no rio. A filha de Faraó o encontra e o adota, e a própria mãe o amamenta.</p></details></li><li>Por que ele foge para Midiã?<details><summary>Ver resposta</summary><p>Mata um egípcio que feria um hebreu; quando o caso é conhecido, Faraó procura matá-lo, e ele foge.</p></details></li><li>Qual a última frase do capítulo e por que ela importa?<details><summary>Ver resposta</summary><p>Que Deus ouviu, lembrou-se da aliança, viu e tomou conhecimento. Prepara o chamado de Moisés no capítulo seguinte.</p></details></li></ol><div class="reflexao"><strong>Reflexão:</strong> a primeira tentativa de libertar o povo falha. O que faltava?</div>
+<p><button id="lido" class="botao" type="button">Marcar como lido</button> <span id="lido-msg" class="nota"></span></p></section>
+<section><h2>Pontos debatidos</h2><ul><li><strong>Localização de Midiã e do monte Sinai:</strong> debatida (Arábia, Sinai egípcio).</li><li><strong>Idade de Moisés</strong> e cronologia dos 40 anos: número redondo ou exato.</li></ul></section>
+<section class="fontes"><h2>Fontes e revisão</h2>
+<ul>
+<li>Texto bíblico: Almeida Revista e Atualizada (ARA), por referência. As falas em itálico são paráfrases.</li>
+<li>Datas aproximadas, com grau de certeza indicado. Posições divergentes são descritas, não resolvidas.</li>
+<li>Referências conferidas contra o texto de Almeida; fatos históricos conferidos por busca. Revisão especializada pendente.</li>
+</ul></section>
+</article>
+<nav class="navep"><a href="028.html">← De hóspedes a escravos: Israel no Egito</a><a class="prox" href="030.html">A sarça ardente e o nome de Deus →</a></nav>
+</main>
+<script>
+(function(){
+  var chave='biblia-lido-029', b=document.getElementById('lido'), m=document.getElementById('lido-msg');
+  function show(on){ b.textContent=on?'✓ Lido':'Marcar como lido'; m.textContent=on?'Anotado neste navegador.':''; }
+  var on=false; try{ on=localStorage.getItem(chave)==='1'; }catch(e){}
+  show(on);
+  b.addEventListener('click',function(){ on=!on; try{ localStorage.setItem(chave,on?'1':'0'); }catch(e){} show(on); });
+})();
+</script>
+
+<script>
+(function(){
+  var el=document.getElementById('mapa-vivo'); if(!el) return;
+  function fallback(){ el.style.display='none'; var f=document.querySelector('.mapa-fallback'); if(f) f.hidden=false; }
+  if(typeof L==='undefined'){ fallback(); return; }
+  var d=JSON.parse(el.getAttribute('data-mapa'));
+  var map=L.map(el,{scrollWheelZoom:false});
+  var topo=L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'Mapa: © OpenTopoMap (CC-BY-SA) · dados © colaboradores do OpenStreetMap'});
+  var osm=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© colaboradores do OpenStreetMap'});
+  topo.addTo(map);
+  L.control.layers({'Relevo':topo,'Ruas':osm},null,{collapsed:false}).addTo(map);
+  var carregou=0; [topo,osm].forEach(function(t){ t.on('tileload',function(){carregou++;}); });
+  setTimeout(function(){ if(!carregou) fallback(); }, 7000);
+  map.on('click',function(){ map.scrollWheelZoom.enable(); });
+  var cores={inicio:'#2f6f5e',fim:'#b0501a',cidade:'#6b6357',debatido:'#7a4fb3'}, pts=[];
+  (d.rotas||[]).forEach(function(r){
+    L.polyline(r.pontos,{color:'#ffffff',weight:9,opacity:.9,interactive:false}).addTo(map);
+    var pl=L.polyline(r.pontos,{color:'#c2410c',weight:5,opacity:1,dashArray:r.tracejada?'10 10':null}).addTo(map);
+    pl.bindPopup('<strong>'+r.nome+'</strong><br>'+(r.nota||'')); r.pontos.forEach(function(p){pts.push(p);});
+  });
+  (d.lugares||[]).forEach(function(p){
+    var ndeb=(d.lugares||[]).filter(function(x){return x.tipo==='debatido';}).length;
+    var principal=(p.tipo==='inicio'||p.tipo==='fim'||(p.tipo==='debatido'&&ndeb<=5));
+    var m=L.circleMarker([p.lat,p.lon],{radius:principal?10:6,color:'#fff',weight:2,fillColor:cores[p.tipo]||'#6b6357',fillOpacity:1}).addTo(map);
+    m.bindTooltip(p.nome,{permanent:principal,direction:'right',offset:[8,0],className:'rotulo'});
+    m.bindPopup('<strong>'+p.nome+'</strong><br>'+(p.nota||'')); pts.push([p.lat,p.lon]);
+  });
+  map.fitBounds(pts,{padding:[34,34]});
+})();
+</script>
+</body>
+</html>
